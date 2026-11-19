@@ -1,0 +1,14 @@
+threads 375s
+sticky 76s
+poll 52s
+prio 37s
+ub 24s
+repack 61s
+tiled 41s
+tb 62s
+omp 60s
+noisy 58s
+ceiling 85s
+load 148s
+thp 45s
+ALLDONE

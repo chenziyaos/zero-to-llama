@@ -1,0 +1,13 @@
+nollamafile configure 9 s build 215 s
+lrwxrwxrwx 1 root root     17 Nov  1 02:32 $WORK/b06/nollamafile/bin/libggml-base.so -> libggml-base.so.0
+lrwxrwxrwx 1 root root     16 Nov  1 02:32 $WORK/b06/nollamafile/bin/libggml-cpu.so -> libggml-cpu.so.0
+lrwxrwxrwx 1 root root     12 Nov  1 02:32 $WORK/b06/nollamafile/bin/libggml.so -> libggml.so.0
+-rwxr-xr-x 1 root root 475584 Nov  1 02:35 $WORK/b06/nollamafile/bin/libllama-bench-impl.so
+lrwxrwxrwx 1 root root     20 Nov  1 02:35 $WORK/b06/nollamafile/bin/libllama-common.so -> libllama-common.so.0
+-rwxr-xr-x 1 root root 141456 Nov  1 02:35 $WORK/b06/nollamafile/bin/libllama-completion-impl.so
+lrwxrwxrwx 1 root root     13 Nov  1 02:34 $WORK/b06/nollamafile/bin/libllama.so -> libllama.so.0
+915280 libggml-base.so.0.28.0
+1406040 libggml-cpu.so.0.28.0
+51352 libggml.so.0.28.0
+ggml_total 2.26 MiB
+so_total 14.0 MiB

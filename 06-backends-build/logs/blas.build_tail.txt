@@ -1,0 +1,40 @@
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:4459:50: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:14148:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:14148:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:14148:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:14148:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+[28/154] Linking CXX shared library bin/libggml-blas.so.0.28.0
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:5946:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:5946:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:5946:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:5946:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:14621:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:8598:53: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:14621:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:14621:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:8598:53: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:14621:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:8598:53: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:14621:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:14621:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:8598:53: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:5946:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+/usr/lib/gcc/x86_64-linux-gnu/12/include/avx512fintrin.h:5946:10: warning: ‘__Y’ may be used uninitialized [-Wmaybe-uninitialized]
+[43/154] Linking CXX shared library bin/libggml-cpu.so.0.28.0
+[45/154] Linking CXX shared library bin/libggml.so.0.28.0
+[91/154] Linking CXX shared library bin/libllama.so.0.8.0
+[149/154] Linking CXX shared library bin/libllama-common.so.0.8.0
+[151/154] Linking CXX shared library bin/libllama-completion-impl.so
+[153/154] Linking CXX shared library bin/libllama-bench-impl.so

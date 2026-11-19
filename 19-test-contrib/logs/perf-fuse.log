@@ -1,0 +1,6 @@
+$ ./perf_fuse.sh
+test_backend_ops: +6 rows as fuse1
+test_backend_ops: +6 rows as fuse0
+test_backend_ops: +6 rows as fuse1
+test_backend_ops: +6 rows as fuse0
+== rc=0 wall_s=27.1 maxrss_mib=47

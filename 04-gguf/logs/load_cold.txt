@@ -1,0 +1,9 @@
+r1 cold-tmp mmap maxrss=782MiB wall=0.91s minflt=94174 majflt=145 518.05 ms
+r1 cold-tmp none maxrss=581MiB wall=0.97s minflt=149730 majflt=140 612.01 ms
+r1 cold-tmp dio maxrss=582MiB wall=1.26s minflt=182681 majflt=140 894.64 ms
+r2 cold-tmp mmap maxrss=782MiB wall=0.92s minflt=94169 majflt=140 515.23 ms
+r2 cold-tmp none maxrss=581MiB wall=0.97s minflt=149745 majflt=139 607.07 ms
+r2 cold-tmp dio maxrss=582MiB wall=1.21s minflt=182697 majflt=141 824.47 ms
+r3 cold-tmp mmap maxrss=783MiB wall=0.97s minflt=94190 majflt=142 560.06 ms
+r3 cold-tmp none maxrss=581MiB wall=1.02s minflt=149732 majflt=141 617.11 ms
+r3 cold-tmp dio maxrss=581MiB wall=1.23s minflt=182672 majflt=143 842.38 ms

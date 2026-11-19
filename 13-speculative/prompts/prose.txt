@@ -1,0 +1,7 @@
+<|im_start|>user
+用三段话向刚入门的后端工程师介绍 TCP 三次握手：为什么需要三次，每一次各带什么标志位，丢包时会发生什么。<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

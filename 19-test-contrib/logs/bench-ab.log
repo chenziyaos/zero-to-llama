@@ -1,0 +1,6 @@
+$ ./bench_ab.sh
+llama_bench: +3 rows as sgemm1
+llama_bench: +3 rows as sgemm0
+llama_bench: +3 rows as sgemm1
+llama_bench: +3 rows as sgemm0
+== rc=0 wall_s=61.7 maxrss_mib=905

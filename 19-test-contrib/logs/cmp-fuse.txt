@@ -1,0 +1,8 @@
+| Backend   | GGML op           | Op parameters                                                                                           |   Bandwidth (GB/s) fuse0 |   Bandwidth (GB/s) fuse1 |   Speedup |
+|:----------|:------------------|:--------------------------------------------------------------------------------------------------------|-------------------------:|-------------------------:|----------:|
+| CPU       | RMS_NORM_MUL_ROPE | ne=[128,32,1,1],eps=0.000001,multi_add=0,mul=1,rope=1,set_rows=0,broadcast=1,mode=2,set_rows_type=f16   |                    15.77 |                    18.01 |      1.14 |
+| CPU       | RMS_NORM_MUL_ROPE | ne=[128,32,512,1],eps=0.000001,multi_add=0,mul=1,rope=1,set_rows=0,broadcast=1,mode=2,set_rows_type=f16 |                    27.07 |                    27.14 |      1.00 |
+| CPU       | RMS_NORM_MUL_ROPE | ne=[128,8,1,1],eps=0.000001,multi_add=0,mul=1,rope=1,set_rows=1,broadcast=1,mode=2,set_rows_type=f16    |                    24.57 |                    35.26 |      1.43 |
+| CPU       | RMS_NORM_MUL_ROPE | ne=[128,8,512,1],eps=0.000001,multi_add=0,mul=1,rope=1,set_rows=1,broadcast=1,mode=2,set_rows_type=f16  |                   143.19 |                   202.10 |      1.41 |
+| CPU       | RMS_NORM_MUL_ROPE | ne=[4096,1,1,1],eps=0.000001,multi_add=0,mul=1,rope=0,set_rows=0,broadcast=1,mode=0,set_rows_type=f16   |                    45.45 |                    57.83 |      1.27 |
+| CPU       | RMS_NORM_MUL_ROPE | ne=[4096,512,1,1],eps=0.000001,multi_add=0,mul=1,rope=0,set_rows=0,broadcast=1,mode=0,set_rows_type=f16 |                   108.26 |                   110.67 |      1.02 |

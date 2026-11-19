@@ -1,0 +1,8 @@
+0.05.143.219 I encoded   31 tokens in    0.093 seconds, speed:  332.775 t/s
+0.05.143.224 I decoded  131 tokens in    2.252 seconds, speed:   58.183 t/s
+0.05.143.225 I n_draft   = 3
+0.05.143.225 I n_predict = 131
+0.05.143.226 I n_drafted = 0
+0.05.143.226 I n_accept  = 0
+0.05.143.226 I accept    = -nan%
+0.05.143.259 I spec common_specu: statistics     ngram-simple: #calls(b,g,a) =    1    131      0, #gen drafts =      0, #acc drafts =     0, #gen tokens =      0, #acc tokens =     0, dur(b,g,a) = 0.001, 0.083, 0.000 ms

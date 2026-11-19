@@ -1,0 +1,29 @@
+0.03.724.572 I load_hparams: projector:          lfm2
+0.03.724.572 I load_hparams: n_embd:             768
+0.03.724.572 I load_hparams: n_head:             12
+0.03.724.572 I load_hparams: n_ff:               3072
+0.03.724.573 I load_hparams: n_layer:            12
+0.03.724.573 I load_hparams: ffn_op:             gelu
+0.03.724.573 I load_hparams: projection_dim:     1024
+0.03.724.574 I load_hparams: image_size:         256
+0.03.724.574 I load_hparams: patch_size:         16
+0.03.724.574 I load_hparams: has_llava_proj:     0
+0.03.724.575 I load_hparams: minicpmv_version:   0
+0.03.724.575 I load_hparams: n_merge:            2
+0.03.724.575 I load_hparams: n_wa_pattern: 0
+0.03.724.575 I load_hparams: image_min_pixels:   65536
+0.03.724.576 I load_hparams: image_max_pixels:   262144
+0.03.724.576 I load_hparams: preproc_tiles:      2 - 10
+0.03.724.581 I load_hparams: model size:         99.07 MiB
+0.03.724.582 I load_hparams: metadata size:      0.07 MiB
+0.04.119.901 W WARN: This is an experimental CLI for testing multimodal capability.
+0.04.153.582 I encoding mtmd batch, n_chunks = 1 (done = 1, total = 3)
+0.04.759.184 I mtmd batch encoding done in 606 ms
+0.04.759.215 I decoding image batch 1/1, n_tokens_batch = 234
+0.05.080.113 I image decoded (batch 1/1) in 321 ms
+0.05.329.183 I llama_perf_context_print:        load time =    2762.30 ms
+0.05.329.255 I llama_perf_context_print: prompt eval time =     979.08 ms /   253 tokens (    3.87 ms per token,   258.41 tokens per second)
+0.05.329.257 I llama_perf_context_print:        eval time =     205.99 ms /    19 runs   (   10.84 ms per token,    92.24 tokens per second)
+0.05.329.258 I llama_perf_context_print:       total time =    1762.38 ms /   272 tokens
+0.05.329.258 I llama_perf_context_print:    graphs reused =         17
+0.05.329.258 I llama_perf_context_print:   graph reallocs =          0    /     0        (same size) / (changed size)

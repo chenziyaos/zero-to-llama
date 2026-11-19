@@ -1,0 +1,6 @@
+0.02.051.643 I llama_context: n_seq_max             = 3
+0.02.051.644 I llama_context: n_ctx                 = 10240
+0.02.051.644 I llama_context: n_ctx_seq             = 10240
+0.02.051.648 I llama_context: kv_unified            = true
+0.02.051.653 I llama_context: n_ctx_seq (10240) < n_ctx_train (40960) -- the full capacity of the model will not be utilized
+0.02.532.216 I llama_kv_cache: size = 1120.00 MiB ( 10240 cells,  28 layers,  3/1 seqs), K (f16):  560.00 MiB, V (f16):  560.00 MiB

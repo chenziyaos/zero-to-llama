@@ -1,0 +1,3 @@
+# model=models/vl/LFM2-VL-450M-Q8_0.gguf mmproj=models/vl/mmproj-LFM2-VL-450M-Q8_0.gguf threads=1 max_tok=-1 reps=3
+size        chunks media_tok   tok_ms    enc_ms    dec_ms   text_ms   enc/tok  img/txt
+640x488          1       234      3.4    2463.1    1338.2    1268.6    10.526     3.00

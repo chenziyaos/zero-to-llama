@@ -1,0 +1,53 @@
+0.03.645.144 I load_hparams: projector:          lfm2
+0.03.645.144 I load_hparams: n_embd:             768
+0.03.645.145 I load_hparams: n_head:             12
+0.03.645.145 I load_hparams: n_ff:               3072
+0.03.645.145 I load_hparams: n_layer:            12
+0.03.645.145 I load_hparams: ffn_op:             gelu
+0.03.645.146 I load_hparams: projection_dim:     1024
+0.03.645.146 I load_hparams: image_size:         256
+0.03.645.147 I load_hparams: patch_size:         16
+0.03.645.147 I load_hparams: has_llava_proj:     0
+0.03.645.147 I load_hparams: minicpmv_version:   0
+0.03.645.147 I load_hparams: n_merge:            2
+0.03.645.148 I load_hparams: n_wa_pattern: 0
+0.03.645.148 I load_hparams: image_min_pixels:   65536
+0.03.645.148 I load_hparams: image_max_pixels:   65536 (custom value)
+0.03.645.149 I load_hparams: preproc_tiles:      2 - 10
+0.03.645.154 I load_hparams: model size:         99.07 MiB
+0.03.645.155 I load_hparams: metadata size:      0.07 MiB
+0.04.459.407 W WARN: This is an experimental CLI for testing multimodal capability.
+0.04.514.745 I encoding mtmd batch, n_chunks = 1 (done = 1, total = 15)
+0.05.170.192 I mtmd batch encoding done in 655 ms
+0.05.170.225 I decoding image batch 1/1, n_tokens_batch = 256
+0.05.560.412 I image decoded (batch 1/1) in 390 ms
+0.05.569.865 I encoding mtmd batch, n_chunks = 1 (done = 3, total = 15)
+0.06.239.456 I mtmd batch encoding done in 670 ms
+0.06.239.467 I decoding image batch 1/1, n_tokens_batch = 256
+0.06.608.771 I image decoded (batch 1/1) in 369 ms
+0.06.619.005 I encoding mtmd batch, n_chunks = 1 (done = 5, total = 15)
+0.07.268.715 I mtmd batch encoding done in 650 ms
+0.07.268.727 I decoding image batch 1/1, n_tokens_batch = 256
+0.07.643.038 I image decoded (batch 1/1) in 374 ms
+0.07.653.408 I encoding mtmd batch, n_chunks = 1 (done = 7, total = 15)
+0.08.301.156 I mtmd batch encoding done in 647 ms
+0.08.301.167 I decoding image batch 1/1, n_tokens_batch = 256
+0.08.683.898 I image decoded (batch 1/1) in 383 ms
+0.08.694.384 I encoding mtmd batch, n_chunks = 1 (done = 9, total = 15)
+0.09.353.061 I mtmd batch encoding done in 658 ms
+0.09.353.073 I decoding image batch 1/1, n_tokens_batch = 256
+0.09.747.618 I image decoded (batch 1/1) in 395 ms
+0.09.758.115 I encoding mtmd batch, n_chunks = 1 (done = 11, total = 15)
+0.10.424.735 I mtmd batch encoding done in 667 ms
+0.10.424.745 I decoding image batch 1/1, n_tokens_batch = 256
+0.10.830.378 I image decoded (batch 1/1) in 406 ms
+0.10.841.012 I encoding mtmd batch, n_chunks = 1 (done = 13, total = 15)
+0.10.963.466 I mtmd batch encoding done in 123 ms
+0.10.963.476 I decoding image batch 1/1, n_tokens_batch = 54
+0.11.094.855 I image decoded (batch 1/1) in 131 ms
+0.11.399.567 I llama_perf_context_print:        load time =    2721.65 ms
+0.11.399.569 I llama_perf_context_print: prompt eval time =    6646.01 ms /  1616 tokens (    4.11 ms per token,   243.15 tokens per second)
+0.11.399.571 I llama_perf_context_print:        eval time =     256.57 ms /    20 runs   (   12.83 ms per token,    77.95 tokens per second)
+0.11.399.571 I llama_perf_context_print:       total time =    7852.60 ms /  1636 tokens
+0.11.399.571 I llama_perf_context_print:    graphs reused =         19
+0.11.399.572 I llama_perf_context_print:   graph reallocs =          0    /     0        (same size) / (changed size)

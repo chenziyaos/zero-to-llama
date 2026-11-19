@@ -1,0 +1,7 @@
+[32/151] Linking CXX shared library bin/libggml-base.so.0.28.0
+[34/151] Linking CXX shared library bin/libggml-cpu.so.0.28.0
+[36/151] Linking CXX shared library bin/libggml.so.0.28.0
+[84/151] Linking CXX shared library bin/libllama.so.0.8.0
+[146/151] Linking CXX shared library bin/libllama-common.so.0.8.0
+[148/151] Linking CXX shared library bin/libllama-completion-impl.so
+[150/151] Linking CXX shared library bin/libllama-bench-impl.so

@@ -1,0 +1,16 @@
+$ /work/llama.cpp/build/bin/llama-debug -m /work/models/conv/qwen3-bf16.gguf -p Hello, my name is --save-logits --logits-output-dir /work/out18/debug512 -t 4 -c 512 --tensor-filter result_output
+0.00.491.738 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.04.111.460 I cmn          init: llama threadpool init, n_threads = 4
+0.04.162.402 I 
+0.04.162.598 I system_info: n_threads = 4 (n_threads_batch = 4) / 4 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VBMI = 1 | AVX512_VNNI = 1 | AVX512_BF16 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.04.162.598 I 
+Model add_bos: false
+Input prompt: "Hello, my name is"
+Token ids (5):
+Hello(9707) ,(11)  my(847)  name(829)  is(374) 
+Data saved to /work/out18/debug512/llamacpp-qwen3-bf16.bin
+Data saved to /work/out18/debug512/llamacpp-qwen3-bf16.txt
+Prompt saved to /work/out18/debug512/llamacpp-qwen3-bf16-prompt.txt
+Tokens saved to /work/out18/debug512/llamacpp-qwen3-bf16-tokens.bin
+
+== rc=0 wall_s=4.7 maxrss_mib=1555

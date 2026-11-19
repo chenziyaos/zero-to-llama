@@ -1,0 +1,16 @@
+{"round": 1, "threads": 1, "model": "q-Q4_K_M", "bw": 28.48, "tg": 52.039436, "model_size": 478268416}
+{"round": 1, "threads": 1, "model": "q-Q8_0", "bw": 28.8, "tg": 28.732672, "model_size": 798801920}
+{"round": 1, "threads": 2, "model": "q-Q4_K_M", "bw": 32.39, "tg": 65.350489, "model_size": 478268416}
+{"round": 1, "threads": 2, "model": "q-Q8_0", "bw": 32.38, "tg": 41.316984, "model_size": 798801920}
+{"round": 1, "threads": 3, "model": "q-Q4_K_M", "bw": 31.82, "tg": 72.309535, "model_size": 478268416}
+{"round": 1, "threads": 3, "model": "q-Q8_0", "bw": 31.95, "tg": 47.158147, "model_size": 798801920}
+{"round": 1, "threads": 4, "model": "q-Q4_K_M", "bw": 33.19, "tg": 71.425411, "model_size": 478268416}
+{"round": 1, "threads": 4, "model": "q-Q8_0", "bw": 33.24, "tg": 47.484734, "model_size": 798801920}
+{"round": 2, "threads": 1, "model": "q-Q4_K_M", "bw": 29.11, "tg": 51.959344, "model_size": 478268416}
+{"round": 2, "threads": 1, "model": "q-Q8_0", "bw": 28.99, "tg": 27.262543, "model_size": 798801920}
+{"round": 2, "threads": 2, "model": "q-Q4_K_M", "bw": 32.39, "tg": 65.572924, "model_size": 478268416}
+{"round": 2, "threads": 2, "model": "q-Q8_0", "bw": 32.3, "tg": 41.036426, "model_size": 798801920}
+{"round": 2, "threads": 3, "model": "q-Q4_K_M", "bw": 31.63, "tg": 71.207424, "model_size": 478268416}
+{"round": 2, "threads": 3, "model": "q-Q8_0", "bw": 31.83, "tg": 45.988481, "model_size": 798801920}
+{"round": 2, "threads": 4, "model": "q-Q4_K_M", "bw": 33.17, "tg": 69.981686, "model_size": 478268416}
+{"round": 2, "threads": 4, "model": "q-Q8_0", "bw": 32.98, "tg": 47.157037, "model_size": 798801920}

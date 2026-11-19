@@ -1,0 +1,24 @@
+0.05.487.104 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.07.649.330 I cmn          init: llama threadpool init, n_threads = 4
+0.11.659.831 I encoded   46 tokens in    0.157 seconds, speed: 1494.224 t/s
+0.11.659.832 I decoded  188 tokens in    3.818 seconds, speed:   49.243 t/s
+0.11.659.833 I 
+0.11.659.833 I n_draft      = 8
+0.11.659.833 I n_predict    = 188
+0.11.659.834 I n_drafted    = 146
+0.11.659.834 I t_draft_flat = 0.04 ms
+0.11.659.835 I t_draft      = 1.71 ms, 11.74 us per token, 85180.86 tokens per second
+0.11.659.835 I n_accept     = 28
+0.11.659.835 I accept       = 19.178%
+0.11.659.835 I 
+target:
+
+0.11.659.862 I common_perf_print:    sampling time =      35.41 ms
+0.11.659.864 I common_perf_print:    samplers time =      11.64 ms /   188 tokens
+0.11.659.868 I common_perf_print:        load time =    2246.03 ms
+0.11.659.870 I common_perf_print: prompt eval time =    1342.81 ms /   215 tokens (    6.25 ms per token,   160.11 tokens per second)
+0.11.659.871 I common_perf_print:        eval time =    2470.64 ms /   136 runs   (   18.17 ms per token,    55.05 tokens per second)
+0.11.659.871 I common_perf_print:       total time =    3975.37 ms /   351 tokens
+0.11.659.871 I common_perf_print: unaccounted time =     126.51 ms /   3.2 %      (total - sampling - prompt eval - eval) / (total)
+0.11.659.872 I common_perf_print:    graphs reused =        114
+0.11.659.872 I common_perf_print:   graph reallocs =          0    /     0        (same size) / (changed size)

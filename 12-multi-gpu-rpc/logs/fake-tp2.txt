@@ -1,0 +1,20 @@
+== FAKE × 2 + RPC × 0  events=0  ngl=-1  ctx=4096  ub=512
+llama_prepare_model_devices: creating a Meta device for tensor parallelism from 2 devices:
+llama_prepare_model_devices: - device 0: FAKE0 (fake gpu 0)
+llama_prepare_model_devices: - device 1: FAKE1 (fake gpu 1)
+llama_prepare_model_devices: using device Meta() (Meta()) (unknown id) - 16000 MiB free
+layers   0- 28 -> Meta()
+load_tensors: offloaded 29/29 layers to GPU
+load_tensors:          CPU model buffer size =     0.00 MiB
+load_tensors:       Meta() model buffer size =     0.00 MiB
+model devices = 1
+llama_kv_cache:     Meta() KV buffer size =     0.00 MiB
+sched_reserve: max_nodes = 2488
+sched_reserve:     Meta() compute buffer size =   308.77 MiB
+sched_reserve:        CPU compute buffer size =    12.02 MiB
+sched_reserve: graph: nodes = 989, splits = 2, input objects = 4, input tensors = 9
+sched_reserve: reserve took 2.79 ms, sched copies = 1
+buffer            model    context    compute      total
+Meta()            358.2      448.0      308.8     1115.0
+CPU                83.5        0.0       12.0       95.5
+sum                                               1210.5 MiB

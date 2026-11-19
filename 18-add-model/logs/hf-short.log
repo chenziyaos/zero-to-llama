@@ -1,0 +1,4 @@
+$ python3 hf_last.py --model /work/models/Qwen3-0.6B --text Hello, my name is --tokens-out /work/out18/short-tokens.bin
+tokens [9707, 11, 847, 829, 374]
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:02<11:32,  2.23s/it]Loading weights:  13%|█▎        | 39/311 [00:02<00:11, 23.26it/s]Loading weights:  51%|█████     | 158/311 [00:02<00:01, 109.44it/s]Loading weights:  65%|██████▌   | 203/311 [00:02<00:00, 114.62it/s]Loading weights:  76%|███████▌  | 235/311 [00:02<00:00, 131.81it/s]Loading weights:  85%|████████▌ | 265/311 [00:03<00:00, 138.92it/s]Loading weights:  94%|█████████▎| 291/311 [00:03<00:00, 135.38it/s]Loading weights: 100%|██████████| 311/311 [00:03<00:00, 89.05it/s] 
+== rc=0 wall_s=27.7 maxrss_mib=4769

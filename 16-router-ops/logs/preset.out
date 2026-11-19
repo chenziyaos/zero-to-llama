@@ -1,0 +1,11 @@
+router argv: --temp 0 --api-key secret -c 4096
+global [*]: {'--jinja': 'true', '--ctx-size': '4096', '--parallel': '2'}
+
+[qwen3-0.6b-bf16] source=preset load-on-startup=- stop-timeout=10
+  llama-server --host 127.0.0.1 --jinja --log-colors off --port 39001 --temperature 0 --alias qwen3-0.6b-bf16 --ctx-size 4096 --no-kv-unified --model /models/qwen3-0.6b-bf16.gguf --parallel 2
+
+[qwen3-0.6b-q4] source=preset load-on-startup=- stop-timeout=10
+  llama-server --host 127.0.0.1 --no-jinja --log-colors off --port 39002 --temperature 0 --alias qwen3-0.6b-q4 --ctx-size 4096 --model /models/q-Q4_0.gguf --parallel 2
+
+[qwen3-0.6b:Q8_0] source=preset load-on-startup=true stop-timeout=5
+  llama-server --host 127.0.0.1 --jinja --log-colors off --port 39003 --temperature 0 --alias qwen3-0.6b:Q8_0 --ctx-size 4096 --model /models/q-Q8_0.gguf --parallel 2

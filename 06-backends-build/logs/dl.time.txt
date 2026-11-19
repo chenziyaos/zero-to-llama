@@ -1,0 +1,43 @@
+dl configure 12 s build 626 s
+lrwxrwxrwx 1 root root      17 Nov  1 02:43 $WORK/b06/dl/bin/libggml-base.so -> libggml-base.so.0
+-rwxr-xr-x 1 root root 1407496 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-alderlake.so
+-rwxr-xr-x 1 root root 1577352 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-cannonlake.so
+-rwxr-xr-x 1 root root 1589344 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-cascadelake.so
+-rwxr-xr-x 1 root root 1589416 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-cooperlake.so
+-rwxr-xr-x 1 root root 1407496 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-haswell.so
+-rwxr-xr-x 1 root root 1589344 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-icelake.so
+-rwxr-xr-x 1 root root 1330856 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-ivybridge.so
+-rwxr-xr-x 1 root root 1326760 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-piledriver.so
+-rwxr-xr-x 1 root root 1329912 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-sandybridge.so
+-rwxr-xr-x 1 root root 1822976 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-sapphirerapids.so
+-rwxr-xr-x 1 root root 1577352 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-skylakex.so
+-rwxr-xr-x 1 root root 1007184 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-sse42.so
+-rwxr-xr-x 1 root root  999072 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-x64.so
+-rwxr-xr-x 1 root root 1589416 Nov  1 02:43 $WORK/b06/dl/bin/libggml-cpu-zen4.so
+lrwxrwxrwx 1 root root      12 Nov  1 02:43 $WORK/b06/dl/bin/libggml.so -> libggml.so.0
+-rwxr-xr-x 1 root root   44408 Nov  1 02:45 $WORK/b06/dl/bin/libllama-batched-bench-impl.so
+-rwxr-xr-x 1 root root  475584 Nov  1 02:45 $WORK/b06/dl/bin/libllama-bench-impl.so
+lrwxrwxrwx 1 root root      20 Nov  1 02:45 $WORK/b06/dl/bin/libllama-common.so -> libllama-common.so.0
+-rwxr-xr-x 1 root root  141456 Nov  1 02:45 $WORK/b06/dl/bin/libllama-completion-impl.so
+-rwxr-xr-x 1 root root   39432 Nov  1 02:46 $WORK/b06/dl/bin/libllama-fit-params-impl.so
+-rwxr-xr-x 1 root root  167472 Nov  1 02:45 $WORK/b06/dl/bin/libllama-perplexity-impl.so
+-rwxr-xr-x 1 root root   85552 Nov  1 02:45 $WORK/b06/dl/bin/libllama-quantize-impl.so
+lrwxrwxrwx 1 root root      13 Nov  1 02:44 $WORK/b06/dl/bin/libllama.so -> libllama.so.0
+915280 libggml-base.so.0.28.0
+1407496 libggml-cpu-alderlake.so
+1577352 libggml-cpu-cannonlake.so
+1589344 libggml-cpu-cascadelake.so
+1589416 libggml-cpu-cooperlake.so
+1407496 libggml-cpu-haswell.so
+1589344 libggml-cpu-icelake.so
+1330856 libggml-cpu-ivybridge.so
+1326760 libggml-cpu-piledriver.so
+1329912 libggml-cpu-sandybridge.so
+1822976 libggml-cpu-sapphirerapids.so
+1577352 libggml-cpu-skylakex.so
+1007184 libggml-cpu-sse42.so
+999072 libggml-cpu-x64.so
+1589416 libggml-cpu-zen4.so
+50912 libggml.so.0.28.0
+ggml_total 20.13 MiB
+so_total 32.2 MiB

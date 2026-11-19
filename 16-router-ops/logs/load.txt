@@ -1,0 +1,9 @@
+q-Q4_0 run=1 load_ms=5459.19
+q-Q4_0 run=2 load_ms=1769.07
+q-Q4_0 run=3 load_ms=1627.61
+q-Q8_0 run=1 load_ms=2364.22
+q-Q8_0 run=2 load_ms=2379.23
+q-Q8_0 run=3 load_ms=2428.55
+qwen3-0.6b-bf16 run=1 load_ms=5877.68
+qwen3-0.6b-bf16 run=2 load_ms=5007.67
+qwen3-0.6b-bf16 run=3 load_ms=5414.37

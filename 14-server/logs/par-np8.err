@@ -1,0 +1,41 @@
+0.02.946.118 I main: n_parallel = 8, n_sequences = 16, cont_batching = 1, system tokens = 273
+0.02.946.157 I main: clearing the KV cache
+0.02.946.603 I [31mClient   0, seq    0, junk =    0, prompt = 285, started decoding ...[0m
+0.02.947.030 I [31mClient   1, seq    1, junk =    0, prompt = 295, started decoding ...[0m
+0.02.947.421 I [31mClient   2, seq    2, junk =    0, prompt = 297, started decoding ...[0m
+0.02.947.775 I [31mClient   3, seq    3, junk =    0, prompt = 285, started decoding ...[0m
+0.02.948.158 I [31mClient   4, seq    4, junk =    0, prompt = 290, started decoding ...[0m
+0.02.948.537 I [31mClient   5, seq    5, junk =    0, prompt = 295, started decoding ...[0m
+0.02.948.886 I [31mClient   6, seq    6, junk =    0, prompt = 290, started decoding ...[0m
+0.02.949.241 I [31mClient   7, seq    7, junk =    0, prompt = 284, started decoding ...[0m
+0.14.800.351 I [31mClient   0, seq   0/ 16, prompt  285 t, response   64 t, time 11.85 s, speed 29.44 t/s, cache miss 0 [0m 
+0.14.800.564 I [31mClient   1, seq   1/ 16, prompt  295 t, response   64 t, time 11.85 s, speed 30.29 t/s, cache miss 0 [0m 
+0.14.800.762 I [31mClient   2, seq   2/ 16, prompt  297 t, response   64 t, time 11.85 s, speed 30.45 t/s, cache miss 0 [0m 
+0.14.801.008 I [31mClient   3, seq   3/ 16, prompt  285 t, response   64 t, time 11.85 s, speed 29.44 t/s, cache miss 0 [0m 
+0.14.801.206 I [31mClient   4, seq   4/ 16, prompt  290 t, response   64 t, time 11.85 s, speed 29.86 t/s, cache miss 0 [0m 
+0.14.801.405 I [31mClient   5, seq   5/ 16, prompt  295 t, response   64 t, time 11.85 s, speed 30.29 t/s, cache miss 0 [0m 
+0.14.801.617 I [31mClient   6, seq   6/ 16, prompt  290 t, response   64 t, time 11.85 s, speed 29.87 t/s, cache miss 0 [0m 
+0.14.801.803 I [31mClient   7, seq   7/ 16, prompt  284 t, response   64 t, time 11.85 s, speed 29.36 t/s, cache miss 0 [0m 
+0.14.801.833 I main: clearing the KV cache
+0.14.802.880 I [31mClient   0, seq    8, junk =    0, prompt = 285, started decoding ...[0m
+0.14.803.348 I [31mClient   1, seq    9, junk =    0, prompt = 284, started decoding ...[0m
+0.14.803.754 I [31mClient   2, seq   10, junk =    0, prompt = 295, started decoding ...[0m
+0.14.804.135 I [31mClient   3, seq   11, junk =    0, prompt = 285, started decoding ...[0m
+0.14.804.515 I [31mClient   4, seq   12, junk =    0, prompt = 288, started decoding ...[0m
+0.14.804.913 I [31mClient   5, seq   13, junk =    0, prompt = 284, started decoding ...[0m
+0.14.805.269 I [31mClient   6, seq   14, junk =    0, prompt = 285, started decoding ...[0m
+0.14.805.622 I [31mClient   7, seq   15, junk =    0, prompt = 287, started decoding ...[0m
+0.26.383.252 I [31mClient   0, seq   8/ 16, prompt  285 t, response   64 t, time 11.58 s, speed 30.13 t/s, cache miss 0 [0m 
+0.26.383.891 I [31mClient   1, seq   9/ 16, prompt  284 t, response   64 t, time 11.58 s, speed 30.05 t/s, cache miss 0 [0m 
+0.26.384.724 I [31mClient   2, seq  10/ 16, prompt  295 t, response   64 t, time 11.58 s, speed 31.00 t/s, cache miss 0 [0m 
+0.26.385.255 I [31mClient   3, seq  11/ 16, prompt  285 t, response   64 t, time 11.58 s, speed 30.13 t/s, cache miss 0 [0m 
+0.26.385.999 I [31mClient   4, seq  12/ 16, prompt  288 t, response   64 t, time 11.58 s, speed 30.39 t/s, cache miss 0 [0m 
+0.26.386.671 I [31mClient   5, seq  13/ 16, prompt  284 t, response   64 t, time 11.58 s, speed 30.05 t/s, cache miss 0 [0m 
+0.26.387.475 I [31mClient   6, seq  14/ 16, prompt  285 t, response   64 t, time 11.58 s, speed 30.13 t/s, cache miss 0 [0m 
+0.26.388.116 I [31mClient   7, seq  15/ 16, prompt  287 t, response   64 t, time 11.58 s, speed 30.30 t/s, cache miss 0 [0m 
+0.26.388.225 I main: clearing the KV cache
+0.26.388.560 I main: n_parallel = 8, n_sequences = 16, cont_batching = 1, system tokens = 273
+0.26.388.587 I Total prompt tokens:   4614, speed: 196.83 t/s
+0.26.388.587 I Total gen tokens:      1024, speed: 43.68 t/s
+0.26.388.588 I Total speed (AVG):           speed: 240.51 t/s
+0.26.388.588 I Cache misses:             0

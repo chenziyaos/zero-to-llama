@@ -1,0 +1,295 @@
+$ /work/llama.cpp/build/bin/test-tokenizer-0 /work/llama.cpp/models/ggml-vocab-qwen2.gguf
+main : reading vocab from: '/work/llama.cpp/models/ggml-vocab-qwen2.gguf'
+llama_model_loader: loaded meta data with 20 key-value pairs and 0 tensors from /work/llama.cpp/models/ggml-vocab-qwen2.gguf (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen2
+llama_model_loader: - kv   1:                               general.name str              = qwen2
+llama_model_loader: - kv   2:                          qwen2.block_count u32              = 32
+llama_model_loader: - kv   3:                       qwen2.context_length u32              = 32768
+llama_model_loader: - kv   4:                     qwen2.embedding_length u32              = 4096
+llama_model_loader: - kv   5:                  qwen2.feed_forward_length u32              = 11008
+llama_model_loader: - kv   6:                 qwen2.attention.head_count u32              = 32
+llama_model_loader: - kv   7:              qwen2.attention.head_count_kv u32              = 32
+llama_model_loader: - kv   8:                       qwen2.rope.freq_base f32              = 1000000.000000
+llama_model_loader: - kv   9:     qwen2.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  10:                          general.file_type u32              = 1
+llama_model_loader: - kv  11:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  12:                         tokenizer.ggml.pre str              = qwen2
+llama_model_loader: - kv  13:                      tokenizer.ggml.tokens arr[str,151936]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  14:                  tokenizer.ggml.token_type arr[i32,151936]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  15:                      tokenizer.ggml.merges arr[str,151387]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  16:                tokenizer.ggml.eos_token_id u32              = 151643
+llama_model_loader: - kv  17:            tokenizer.ggml.padding_token_id u32              = 151643
+llama_model_loader: - kv  18:                tokenizer.ggml.bos_token_id u32              = 151643
+llama_model_loader: - kv  19:                    tokenizer.chat_template str              = {% for message in messages %}{% if lo...
+print_info: file format = GGUF V3 (latest)
+print_info: file type   = F16
+print_info: file size   = 0.00 MiB (-nan BPW) 
+init_tokenizer: initializing tokenizer for type 2
+load: 0 unused tokens
+load: control token: 151644 '<|im_start|>' is not marked as EOG
+load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+load: printing all EOG tokens:
+load:   - 128247 ('</s>')
+load:   - 151643 ('<|endoftext|>')
+load:   - 151645 ('<|im_end|>')
+load: special tokens cache size = 294
+load: token to piece cache size = 0.9338 MB
+print_info: arch                  = qwen2
+print_info: vocab_only            = 1
+print_info: no_alloc              = 0
+print_info: vocab type            = BPE
+print_info: n_vocab               = 151936
+print_info: n_merges              = 151387
+print_info: BOS token             = 151643 '<|endoftext|>'
+print_info: EOS token             = 151643 '<|endoftext|>'
+print_info: EOT token             = 151645 '<|im_end|>'
+print_info: PAD token             = 151643 '<|endoftext|>'
+print_info: LF token              = 198 'Ċ'
+print_info: EOG token             = 128247 '</s>'
+print_info: EOG token             = 151643 '<|endoftext|>'
+print_info: EOG token             = 151645 '<|im_end|>'
+print_info: max token length      = 256
+llama_model_load: vocab only - skipping tensors
+llama_context: constructing llama_context
+llama_context: n_seq_max             = 1
+llama_context: n_ctx                 = 512
+llama_context: n_ctx_seq             = 512
+llama_context: n_batch               = 512
+llama_context: n_ubatch              = 512
+llama_context: causal_attn           = 1
+llama_context: flash_attn            = auto
+llama_context: kv_unified            = false
+llama_context: freq_base             = 0.0
+llama_context: freq_scale            = 1
+llama_context: n_rs_seq              = 0
+llama_context: n_outputs_max         = 512
+llama_context: n_outputs_max_per_seq = 1
+llama_context: n_ctx_seq (512) > n_ctx_train (0) -- possible training context overflow
+
+src: ''
+res: ''
+tok: 
+
+src: '	'
+res: '	'
+tok: 197 
+
+src: '	
+'
+res: '	
+'
+tok: 1572 
+
+src: '
+'
+res: '
+'
+tok: 198 
+
+src: '
+
+'
+res: '
+
+'
+tok: 271 
+
+src: '
+
+
+'
+res: '
+
+
+'
+tok: 1406 
+
+src: '
+ 
+
+ 
+
+
+ 	 		 	
+  
+   
+    
+     
+🚀 (normal) 😶‍🌫️ (multiple emojis concatenated) ✅ 🦙🦙 3 33 333 3333 33333 333333 3333333 33333333 3.3 3..3 3...3 កាន់តែពិសេសអាច😁 ?我想在apple工作1314151天～ ------======= нещо на Български ''''''```````""""......!!!!!!?????? I've been 'told he's there, 'RE you sure? 'M not sure I'll make it, 'D you like some tea? We'Ve a'lL'
+res: '
+ 
+
+ 
+
+
+ 	 		 	
+  
+   
+    
+     
+🚀 (normal) 😶‍🌫️ (multiple emojis concatenated) ✅ 🦙🦙 3 33 333 3333 33333 333333 3333333 33333333 3.3 3..3 3...3 កាន់តែពិសេសអាច😁 ?我想在apple工作1314151天～ ------======= нещо на Български ''''''```````""""......!!!!!!?????? I've been 'told he's there, 'RE you sure? 'M not sure I'll make it, 'D you like some tea? We'Ve a'lL'
+tok: 198 4710 14731 65497 7847 1572 2303 78672 10947 145836 320 8252 8 26525 114 378 235 149921 30543 320 35673 99066 97534 8 25521 227 11162 99 247 149955 220 18 220 18 18 220 18 18 18 220 18 18 18 18 220 18 18 18 18 18 220 18 18 18 18 18 18 220 18 18 18 18 18 18 18 220 18 18 18 18 18 18 18 18 220 18 13 18 220 18 496 18 220 18 1112 18 220 146394 97529 241 44258 233 146568 44258 224 147603 20879 115 146280 44258 223 146280 147272 97529 227 144534 937 104100 18493 22377 99257 16 18 16 19 16 20 16 35727 21216 55460 53237 18658 14144 1456 13073 63471 33594 3038 133178 79012 3355 4605 4605 13874 13874 73594 3014 3014 28149 17085 2928 26610 7646 358 3003 1012 364 83 813 566 594 1052 11 364 787 498 2704 30 364 44 537 2704 358 3278 1281 432 11 364 35 498 1075 1045 15243 30 1205 6 42612 264 63866 43 
+
+src: '
+ ='
+res: '
+ ='
+tok: 198 284 
+
+src: ' '
+res: ' '
+tok: 220 
+
+src: '  '
+res: '  '
+tok: 256 
+
+src: '   '
+res: '   '
+tok: 262 
+
+src: '    Hello'
+res: '    Hello'
+tok: 262 21927 
+
+src: '    Hello
+    Hello'
+res: '    Hello
+    Hello'
+tok: 262 21927 198 262 21927 
+
+src: '   Hello'
+res: '   Hello'
+tok: 256 21927 
+
+src: '  Hello'
+res: '  Hello'
+tok: 220 21927 
+
+src: ' ('
+res: ' ('
+tok: 320 
+
+src: ' Hello'
+res: ' Hello'
+tok: 21927 
+
+src: ' Hello World'
+res: ' Hello World'
+tok: 21927 4337 
+
+src: ' Hello World!'
+res: ' Hello World!'
+tok: 21927 4337 0 
+
+src: ' Hello world'
+res: ' Hello world'
+tok: 21927 1879 
+
+src: ' Hello, world!'
+res: ' Hello, world!'
+tok: 21927 11 1879 0 
+
+src: ' discards'
+res: ' discards'
+tok: 2560 2347 
+
+src: ' this is 🦙.cpp'
+res: ' this is 🦙.cpp'
+tok: 419 374 11162 99 247 13 10821 
+
+src: '!!!!!!'
+res: '!!!!!!'
+tok: 17085 2928 
+
+src: '' era'
+res: '' era'
+tok: 6 11385 
+
+src: '3'
+res: '3'
+tok: 18 
+
+src: '33'
+res: '33'
+tok: 18 18 
+
+src: '333'
+res: '333'
+tok: 18 18 18 
+
+src: '3333'
+res: '3333'
+tok: 18 18 18 18 
+
+src: '33333'
+res: '33333'
+tok: 18 18 18 18 18 
+
+src: '333333'
+res: '333333'
+tok: 18 18 18 18 18 18 
+
+src: '3333333'
+res: '3333333'
+tok: 18 18 18 18 18 18 18 
+
+src: '33333333'
+res: '33333333'
+tok: 18 18 18 18 18 18 18 18 
+
+src: '333333333'
+res: '333333333'
+tok: 18 18 18 18 18 18 18 18 18 
+
+src: 'Cửa Việt'
+res: 'Cửa Việt'
+tok: 34 90063 128324 
+
+src: 'Hello'
+res: 'Hello'
+tok: 9707 
+
+src: 'Hello World'
+res: 'Hello World'
+tok: 9707 4337 
+
+src: 'Hello world'
+res: 'Hello world'
+tok: 9707 1879 
+
+src: 'Hello, world!'
+res: 'Hello, world!'
+tok: 9707 11 1879 0 
+
+src: 'Hello, y'all! How are you 😁 ?我想在apple工作1314151天～'
+res: 'Hello, y'all! How are you 😁 ?我想在apple工作1314151天～'
+tok: 9707 11 379 64848 0 2585 525 498 26525 223 937 104100 18493 22377 99257 16 18 16 19 16 20 16 35727 21216 
+
+src: 'ied 4 ½ months'
+res: 'ied 4 ½ months'
+tok: 1122 220 19 220 26062 3951 
+
+src: 'w048 7tuijk dsdfhu'
+res: 'w048 7tuijk dsdfhu'
+tok: 86 15 19 23 220 22 83 1963 41808 11472 2940 16739 
+
+src: 'Äpfel'
+res: 'Äpfel'
+tok: 86975 15897 301 
+
+src: 'нещо на Български'
+res: 'нещо на Български'
+tok: 78762 14144 1456 13073 63471 33594 3038 133178 79012 
+
+src: 'កាន់តែពិសេសអាចខលចេញ'
+res: 'កាន់តែពិសេសអាចខលចេញ'
+tok: 146394 97529 241 44258 233 146568 44258 224 147603 20879 115 146280 44258 223 146280 147272 97529 227 147805 148301 147270 44258 223 146848 
+
+src: '🚀 (normal) 😶‍🌫️ (multiple emojis concatenated) ✅ (only emoji that has its own token)'
+res: '🚀 (normal) 😶‍🌫️ (multiple emojis concatenated) ✅ (only emoji that has its own token)'
+tok: 145836 320 8252 8 26525 114 378 235 149921 30543 320 35673 99066 97534 8 25521 227 320 3243 42365 429 702 1181 1828 3950 8 
+
+Tests passed
+== rc=0 wall_s=0.4 maxrss_mib=62

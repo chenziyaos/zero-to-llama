@@ -1,0 +1,9 @@
+0.02.551.236 I spec        begin: ngram_mod occupancy = 22/4194304 (0.00)
+0.05.281.690 I encoded   31 tokens in    0.090 seconds, speed:  343.201 t/s
+0.05.281.694 I decoded  131 tokens in    2.730 seconds, speed:   47.978 t/s
+0.05.281.695 I n_draft   = 3
+0.05.281.695 I n_predict = 131
+0.05.281.695 I n_drafted = 0
+0.05.281.695 I n_accept  = 0
+0.05.281.696 I accept    = -nan%
+0.05.281.729 I spec common_specu: statistics        ngram-mod: #calls(b,g,a) =    1    131      0, #gen drafts =      0, #acc drafts =     0, #gen tokens =      0, #acc tokens =     0, dur(b,g,a) = 0.053, 0.299, 0.000 ms

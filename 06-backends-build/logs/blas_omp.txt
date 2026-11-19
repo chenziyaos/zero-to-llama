@@ -1,0 +1,12 @@
+[X=1 blas]
+Q4_K_M.gguf 110.1
+q-Q8_0.gguf 53.0
+[X=1 native]
+Q4_K_M.gguf 366.1
+q-Q8_0.gguf 349.4
+[OMP_WAIT_POLICY=passive blas]
+Q4_K_M.gguf 167.3
+q-Q8_0.gguf 125.5
+[OMP_WAIT_POLICY=passive native]
+Q4_K_M.gguf 373.9
+q-Q8_0.gguf 351.7

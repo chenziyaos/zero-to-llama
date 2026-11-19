@@ -1,0 +1,10 @@
+$ python3 hf_last.py --model /work/models/Qwen3-0.6B --text Hello, my name is --dump /work/out18/s-bf16 /work/out18/s-kv-theta1e4 /work/out18/s-kv-eps1e-5 /work/out18/s-bug-qk-permute /work/out18/s-bug-qk-permute-l14 /work/out18/s-bug-qk-norm-one
+tokens [9707, 11, 847, 829, 374]
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:02<12:42,  2.46s/it]Loading weights:  60%|██████    | 188/311 [00:02<00:01, 102.76it/s]Loading weights:  94%|█████████▍| 293/311 [00:03<00:00, 114.06it/s]Loading weights: 100%|██████████| 311/311 [00:03<00:00, 91.63it/s] 
+s-bf16: nmse_var 4.334e-05 (excellent)  top1 same  top10 overlap 10/10  max_abs 0.04592
+s-kv-theta1e4: nmse_var 1.036e-02 (acceptable)  top1 DIFF  top10 overlap 9/10  max_abs 0.7806
+s-kv-eps1e-5: nmse_var 1.228e-05 (excellent)  top1 same  top10 overlap 10/10  max_abs 0.03656
+s-bug-qk-permute: nmse_var 1.422e+00 (very poor)  top1 DIFF  top10 overlap 0/10  max_abs 15.83
+s-bug-qk-permute-l14: nmse_var 5.149e-03 (good)  top1 DIFF  top10 overlap 10/10  max_abs 0.8757
+s-bug-qk-norm-one: nmse_var 2.383e+00 (very poor)  top1 DIFF  top10 overlap 0/10  max_abs 13.4
+== rc=0 wall_s=30.4 maxrss_mib=4769

@@ -1,0 +1,31 @@
+0.03.402.244 I load_hparams: projector:          idefics3
+0.03.402.244 I load_hparams: n_embd:             768
+0.03.402.245 I load_hparams: n_head:             12
+0.03.402.245 I load_hparams: n_ff:               3072
+0.03.402.245 I load_hparams: n_layer:            12
+0.03.402.246 I load_hparams: ffn_op:             gelu
+0.03.402.246 I load_hparams: projection_dim:     576
+0.03.402.247 I load_hparams: image_size:         512
+0.03.402.247 I load_hparams: patch_size:         16
+0.03.402.247 I load_hparams: has_llava_proj:     0
+0.03.402.247 I load_hparams: minicpmv_version:   0
+0.03.402.248 I load_hparams: n_merge:            4
+0.03.402.248 I load_hparams: n_wa_pattern: 0
+0.03.402.249 I load_hparams: image_max_pixels:   262144 (custom value)
+0.03.402.251 I load_hparams: model size:         98.95 MiB
+0.03.402.252 I load_hparams: metadata size:      0.07 MiB
+0.04.189.945 W WARN: This is an experimental CLI for testing multimodal capability.
+0.04.233.607 I encoding mtmd batch, n_chunks = 1 (done = 1, total = 5)
+0.04.954.325 I mtmd batch encoding done in 721 ms
+0.04.954.342 I decoding image batch 1/1, n_tokens_batch = 64
+0.05.010.436 I image decoded (batch 1/1) in 56 ms
+0.05.019.389 I encoding mtmd batch, n_chunks = 1 (done = 3, total = 5)
+0.05.718.495 I mtmd batch encoding done in 699 ms
+0.05.718.505 I decoding image batch 1/1, n_tokens_batch = 64
+0.05.786.098 I image decoded (batch 1/1) in 67 ms
+0.05.976.783 I llama_perf_context_print:        load time =    1826.11 ms
+0.05.976.785 I llama_perf_context_print: prompt eval time =    1583.77 ms /   150 tokens (   10.56 ms per token,    94.71 tokens per second)
+0.05.976.787 I llama_perf_context_print:        eval time =     155.39 ms /    30 runs   (    5.18 ms per token,   193.06 tokens per second)
+0.05.976.787 I llama_perf_context_print:       total time =    2608.38 ms /   180 tokens
+0.05.976.787 I llama_perf_context_print:    graphs reused =         29
+0.05.976.788 I llama_perf_context_print:   graph reallocs =          0    /     0        (same size) / (changed size)

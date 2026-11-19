@@ -1,0 +1,16 @@
+n_split: 3
+split 00001: n_tensors = 2, total_size = 133M
+split 00002: n_tensors = 132, total_size = 198M
+split 00003: n_tensors = 177, total_size = 152M
+Writing file /tmp/sp/q4-00001-of-00003.gguf ... done
+Writing file /tmp/sp/q4-00002-of-00003.gguf ... done
+Writing file /tmp/sp/q4-00003-of-00003.gguf ... gguf_split: 3 gguf split written with a total of 311 tensors.
+done
+gguf_merge: /tmp/sp/q4-00001-of-00003.gguf -> /tmp/sp/merged.gguf
+gguf_merge: reading metadata /tmp/sp/q4-00001-of-00003.gguf ...[3Ddone
+gguf_merge: reading metadata /tmp/sp/q4-00002-of-00003.gguf ...[3Ddone
+gguf_merge: reading metadata /tmp/sp/q4-00003-of-00003.gguf ...[3Ddone
+gguf_merge: writing tensors /tmp/sp/q4-00001-of-00003.gguf ...[3Ddone
+gguf_merge: writing tensors /tmp/sp/q4-00002-of-00003.gguf ...[3Ddone
+gguf_merge: writing tensors /tmp/sp/q4-00003-of-00003.gguf ...[3Ddone
+gguf_merge: /tmp/sp/merged.gguf merged from 3 split with 311 tensors.

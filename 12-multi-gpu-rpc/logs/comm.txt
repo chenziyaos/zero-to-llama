@@ -1,0 +1,21 @@
+q-Q4_0.gguf  n_embd 1024  n_layer 28
+dev   tok |      PP 每跳      PP 合计 |  TP 次数     单次 F32  NCCL     ring 每卡     bfly 每卡  ring 轮  bfly 轮
+  2     1 |    4.0 KiB    4.0 KiB |     56    4.0 KiB   F32   224.0 KiB   224.0 KiB     112      56
+  2   512 |   2.00 MiB   2.00 MiB |     56   2.00 MiB  BF16   56.00 MiB  112.00 MiB     112      56
+  3     1 |    4.0 KiB    8.0 KiB |     56    4.0 KiB   F32   298.7 KiB   448.0 KiB     224     168
+  3   512 |   2.00 MiB   4.00 MiB |     56   2.00 MiB  BF16   74.67 MiB  224.00 MiB     224     168
+  4     1 |    4.0 KiB   12.0 KiB |     56    4.0 KiB   F32   336.0 KiB   448.0 KiB     336     112
+  4   512 |   2.00 MiB   6.00 MiB |     56   2.00 MiB  BF16   84.00 MiB  224.00 MiB     336     112
+RPC 图 n_nodes=1000 n_tensors=1500：首次 441.4 KiB（452029 B），重放 21 B
+llama-8B  n_embd 4096  n_layer 32
+dev   tok |      PP 每跳      PP 合计 |  TP 次数     单次 F32  NCCL     ring 每卡     bfly 每卡  ring 轮  bfly 轮
+  2     1 |   16.0 KiB   16.0 KiB |     64   16.0 KiB   F32    1.00 MiB    1.00 MiB     128      64 | 纯带宽 PP 0.5 us  ring 32.8 us  bfly 32.8 us
+  2   512 |   8.00 MiB   8.00 MiB |     64   8.00 MiB  BF16  256.00 MiB  512.00 MiB     128      64 | 纯带宽 PP 262.1 us  ring 8388.6 us  bfly 16777.2 us
+  2  2048 |  32.00 MiB  32.00 MiB |     64  32.00 MiB  BF16 1024.00 MiB 2048.00 MiB     128      64 | 纯带宽 PP 1048.6 us  ring 33554.4 us  bfly 67108.9 us
+  4     1 |   16.0 KiB   48.0 KiB |     64   16.0 KiB   F32    1.50 MiB    2.00 MiB     384     128 | 纯带宽 PP 1.5 us  ring 49.2 us  bfly 65.5 us
+  4   512 |   8.00 MiB  24.00 MiB |     64   8.00 MiB  BF16  384.00 MiB 1024.00 MiB     384     128 | 纯带宽 PP 786.4 us  ring 12582.9 us  bfly 33554.4 us
+  4  2048 |  32.00 MiB  96.00 MiB |     64  32.00 MiB  BF16 1536.00 MiB 4096.00 MiB     384     128 | 纯带宽 PP 3145.7 us  ring 50331.6 us  bfly 134217.7 us
+llama-70B  n_embd 8192  n_layer 80
+dev   tok |      PP 每跳      PP 合计 |  TP 次数     单次 F32  NCCL     ring 每卡     bfly 每卡  ring 轮  bfly 轮
+  4     1 |   32.0 KiB   96.0 KiB |    160   32.0 KiB   F32    7.50 MiB   10.00 MiB     960     320 | 纯带宽 PP 3.1 us  ring 245.8 us  bfly 327.7 us
+  4   512 |  16.00 MiB  48.00 MiB |    160  16.00 MiB  BF16 1920.00 MiB 5120.00 MiB     960     320 | 纯带宽 PP 1572.9 us  ring 62914.6 us  bfly 167772.2 us

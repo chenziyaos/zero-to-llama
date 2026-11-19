@@ -1,0 +1,23 @@
+== FAKE × 2 + RPC × 0  events=0  ngl=-1  ctx=4096  ub=2048
+llama_prepare_model_devices: using device FAKE0 (fake gpu 0) (fake:0) - 8000 MiB free
+llama_prepare_model_devices: using device FAKE1 (fake gpu 1) (fake:1) - 8000 MiB free
+layers   0- 14 -> FAKE0
+layers  15- 28 -> FAKE1
+load_tensors: offloaded 29/29 layers to GPU
+load_tensors:          CPU model buffer size =     0.00 MiB
+load_tensors:        FAKE0 model buffer size =     0.00 MiB
+load_tensors:        FAKE1 model buffer size =     0.00 MiB
+model devices = 2
+llama_kv_cache:      FAKE0 KV buffer size =     0.00 MiB
+llama_kv_cache:      FAKE1 KV buffer size =     0.00 MiB
+sched_reserve: max_nodes = 2488
+sched_reserve:      FAKE0 compute buffer size =   120.05 MiB
+sched_reserve:      FAKE1 compute buffer size =  1195.00 MiB
+sched_reserve:        CPU compute buffer size =    48.08 MiB
+sched_reserve: graph: nodes = 989, splits = 3, input objects = 4, input tensors = 9
+sched_reserve: reserve took 2.81 ms, sched copies = 1
+buffer            model    context    compute      total
+FAKE0             126.7      240.0      120.1      486.7
+FAKE1             231.5      208.0     1195.0     1634.5
+CPU                83.5        0.0       48.1      131.5
+sum                                               2252.8 MiB

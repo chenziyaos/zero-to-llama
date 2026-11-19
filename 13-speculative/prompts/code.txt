@@ -1,0 +1,7 @@
+<|im_start|>user
+请用 Python 写一个快速排序函数，并用三句话解释它的时间复杂度。<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

@@ -1,0 +1,8 @@
+    Chunk 1: loaded id 'image_1' (orig 'image_1')
+Chunk save/load round-trip OK
+tokenize part with both text and bitmap rc = 1 (expect 1)
+tokenize part with neither text nor bitmap rc = 1 (expect 1)
+tokenize part with null text pointer rc = 1 (expect 1)
+
+
+DONE: test libmtmd C API...

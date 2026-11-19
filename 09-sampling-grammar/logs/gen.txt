@@ -1,0 +1,52 @@
+== seed 1 mode reject
+{"name": "momo", "age": 2, "color": "blue"}
+
+[gen] mode reject temp 0.80 steps 19 rejected 2 (10.5%) sample_us_per_token 2501.5
+== seed 1 mode first
+{
+    "name": "Puffa",
+    "age": 8,
+    "color": "black and white"
+}
+
+[gen] mode first temp 0.80 steps 27 rejected 0 (0.0%) sample_us_per_token 18715.9
+== seed 2 mode reject
+{"name":"Milo","age":25,"color":"brown"}
+[gen] mode reject temp 0.80 steps 15 rejected 1 (6.7%) sample_us_per_token 1745.3
+== seed 2 mode first
+{"name": "Bella", "age": 5, "color": "black and white"}
+
+[gen] mode first temp 0.80 steps 21 rejected 0 (0.0%) sample_us_per_token 19450.0
+== seed 3 mode reject
+{"name":"Bella","age":2,"color":"black and white"}
+[gen] mode reject temp 0.80 steps 16 rejected 1 (6.2%) sample_us_per_token 2168.7
+== seed 3 mode first
+{"name":"lila","age":23,"color":"black and white"}
+[gen] mode first temp 0.80 steps 17 rejected 0 (0.0%) sample_us_per_token 19882.7
+== seed 4 mode reject
+{"name":"cat1","age":2,"color":"black"}
+[gen] mode reject temp 0.80 steps 14 rejected 1 (7.1%) sample_us_per_token 1773.5
+== seed 4 mode first
+{"name":"cat1","age":4,"color":"black"}
+
+[gen] mode first temp 0.80 steps 14 rejected 0 (0.0%) sample_us_per_token 20001.2
+== seed 5 mode reject
+{"name": "momo", "age": 3, "color": "black and white"}
+
+[gen] mode reject temp 0.80 steps 21 rejected 1 (4.8%) sample_us_per_token 1265.7
+== seed 5 mode first
+{"name":"Lucy","age":6,"color":"black and white"}
+
+[gen] mode first temp 0.80 steps 16 rejected 0 (0.0%) sample_us_per_token 20148.5
+== greedy reject
+{"name":"Luna","age":12,"color":"black and white"}
+
+[gen] mode reject temp 0.00 steps 17 rejected 1 (5.9%) sample_us_per_token 1555.6
+== story reject
+{"name": "Romeo", "age": 25, "favorite_color": "red", "interests": ["reading", "music", "sports"]}
+
+[gen] mode reject temp 0.80 steps 36 rejected 2 (5.6%) sample_us_per_token 1968.4
+== story first
+{}
+
+[gen] mode first temp 0.80 steps 1 rejected 0 (0.0%) sample_us_per_token 32004.2

@@ -1,0 +1,4 @@
+# model=models/vl/SmolVLM2-256M-Video-Instruct-Q8_0.gguf mmproj=models/vl/mmproj-SmolVLM2-256M-Video-Instruct-Q8_0.gguf threads=4 max_tok=64 reps=3
+size        chunks media_tok   tok_ms    enc_ms    dec_ms   text_ms   enc/tok  img/txt
+640x488          2       128     11.3    1644.8     160.9     124.2    12.850    14.54
+2048x1024        2       128     30.5    1691.7     160.8     123.5    13.216    15.00

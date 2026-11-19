@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "description": "LCPP 系列双模型通用基线：稠密 Qwen3.8-27B 与 MoE Qwen3.5-35B-A3B。只登记已核实的官方几何与 GGUF 制品字节；没有真实 GPU 实测，性能一律 measurement_status=pending。",
+  "source_baseline": {
+    "llama_cpp_commit": "0ec4027a2a0183de87c007069adddc06e665f7de",
+    "llama_cpp_release": "v0.8.0",
+    "ggml_version": "0.28.0",
+    "arch_dense": "qwen35",
+    "arch_moe": "qwen35moe"
+  },
+  "facts_checked_date": "2026-11-11",
+  "byte_unit_note": "gguf.files 与 sidecars 是发布者文件的精确字节数（HF tree API，blobs=true）；显存预算按 GiB（2^30）算，两者不互换。",
+  "models": {
+    "qwen3.8-27b": {
+      "role": "dense",
+      "official_id": "Qwen/Qwen3.8-27B",
+      "official_revision": "37561816e66b5b9153b1b64c10968c18c1e6f4a0",
+      "architectures": ["Qwen3_5ForConditionalGeneration"],
+      "model_type_top": "qwen3_5",
+      "model_type_text": "qwen3_5_text",
+      "llama_cpp_arch": "qwen35",
+      "ffn": "dense",
+      "native_multimodal": true,
+      "context_native": 262144,
+      "context_extensible_claim": 1000000,
+      "mtp_num_hidden_layers": 1,
+      "measurement_status": "pending_gpu_measurement",
+      "geometry": {
+        "n_layer": 64,
+        "hidden_size": 5120,
+        "vocab_size": 248320,
+        "intermediate_size": 17408,
+        "full_attention_interval": 4,
+        "kv_layers": 16,
+        "rec_layers": 48,
+        "full_attention": {
+          "n_q_heads": 24,
+          "n_kv_heads": 4,
+          "head_dim": 256,
+          "partial_rotary_dim": 64
+        },
+        "deltanet": {
+          "k_heads": 16,
+          "v_heads": 48,
+          "k_head_dim": 128,
+          "v_head_dim": 128,
+          "d_state": 128,
+          "d_conv": 4,
+          "state_dtype": "float32"
+        }
+      },
+      "moe": null,
+      "gguf": {
+        "bartowski": {
+          "repo": "bartowski/Qwen3.8-27B-GGUF",
+          "revision": "87410e7b9a5c21e6ca70c0c9cc5237de909fe621",
+          "mtp_handling": "内嵌主文件，imatrix 档 MTP 存 Q4_0（Q8_0 除外）",
+          "files": {
+            "IQ2_M": 10522248928,
+            "Q3_K_M": 13404051168,
+            "IQ3_M": 14860629728,
+            "IQ4_XS": 15475951328,
+            "Q4_K_M": 17442399968,
+            "Q5_K_M": 20923877088,
+            "Q6_K": 23860565728,
+            "Q8_0": 29116388960
+          },
+          "sidecars": {
+            "mmproj_bf16": 931145952,
+            "mmproj_f16": 927607008
+          }
+        },
+        "lmstudio-community": {
+          "repo": "lmstudio-community/Qwen3.8-27B-GGUF",
+          "revision": "5a7da681f60570ab5b439a587e912d2e5eddb582",
+          "mtp_handling": "模型卡未写明，pending 核实",
+          "files": {
+            "Q4_K_M": 16810714336,
+            "Q6_K": 22430999776,
+            "Q8_0": 29047084256
+          },
+          "sidecars": {
+            "mmproj_bf16": 931145856
+          }
+        },
+        "unsloth": {
+          "repo": "unsloth/Qwen3.8-27B-GGUF",
+          "revision": "43f522df59109a037f64f1e29ab1eff5c00e8e1e",
+          "mtp_handling": "MTP 单独文件，放 MTP/ 目录",
+          "files": {
+            "IQ4_XS": 14252845984,
+            "Q4_K_M": 16464440224,
+            "Q5_K_M": 19771509664,
+            "Q6_K": 21983677344,
+            "Q8_0": 29047086048
+          },
+          "sidecars": {
+            "mmproj_bf16": 931146432,
+            "mmproj_f16": 927607488,
+            "mtp_q4_0": 1369590656
+          }
+        }
+      }
+    },
+    "qwen3.5-35b-a3b": {
+      "role": "moe",
+      "official_id": "Qwen/Qwen3.5-35B-A3B",
+      "official_revision": "59d61f3ce65a6d9863b86d2e96597125219dc754",
+      "architectures": ["Qwen3_5MoeForConditionalGeneration"],
+      "model_type_top": "qwen3_5_moe",
+      "model_type_text": "qwen3_5_moe_text",
+      "llama_cpp_arch": "qwen35moe",
+      "ffn": "moe",
+      "native_multimodal": true,
+      "context_native": 262144,
+      "context_extensible_claim": 1010000,
+      "mtp_num_hidden_layers": 1,
+      "measurement_status": "pending_gpu_measurement",
+      "geometry": {
+        "n_layer": 40,
+        "hidden_size": 2048,
+        "vocab_size": 248320,
+        "full_attention_interval": 4,
+        "kv_layers": 10,
+        "rec_layers": 30,
+        "full_attention": {
+          "n_q_heads": 16,
+          "n_kv_heads": 2,
+          "head_dim": 256,
+          "partial_rotary_dim": 64
+        },
+        "deltanet": {
+          "k_heads": 16,
+          "v_heads": 32,
+          "k_head_dim": 128,
+          "v_head_dim": 128,
+          "d_state": 128,
+          "d_conv": 4,
+          "state_dtype": "float32"
+        }
+      },
+      "moe": {
+        "total_params_b": 35,
+        "activated_params_b": 3,
+        "n_routed_experts": 256,
+        "n_routed_per_tok": 8,
+        "n_shared_experts": 1,
+        "expert_intermediate_size": 512,
+        "shared_expert_intermediate_size": 512,
+        "memory_warning": "3B 是每 token 激活参数，不能用来估常驻显存；权重存储按 35B 总量化文件字节算。"
+      },
+      "gguf": {
+        "unsloth": {
+          "repo": "unsloth/Qwen3.5-35B-A3B-GGUF",
+          "revision": "bc014a17be43adabd7066b7a86075ff935c6a4e2",
+          "mtp_handling": "标准仓库无 MTP 文件；带 MTP 的整模型在独立仓库 unsloth/Qwen3.5-35B-A3B-MTP-GGUF（revision 63af8373893a7a73c6dfcb84cb63d815981da5e0），不是独立 MTP sidecar，draft-mtp 兼容性 pending 上机核实",
+          "files": {
+            "IQ2_M": 11391613568,
+            "IQ4_XS": 17486174848,
+            "Q3_K_M": 16356375168,
+            "Q4_K_M": 22016023168,
+            "Q5_K_M": 26249607808,
+            "Q6_K": 28852861568,
+            "Q8_0": 36903139968
+          },
+          "sidecars": {
+            "mmproj_bf16": 902822592,
+            "mmproj_f16": 899283648,
+            "mmproj_f32": 1786305216
+          }
+        },
+        "lmstudio-community": {
+          "repo": "lmstudio-community/Qwen3.5-35B-A3B-GGUF",
+          "revision": "529ae8d8705097e646043ff81181c6564b6a8449",
+          "mtp_handling": "模型卡未写明，pending 核实",
+          "files": {
+            "Q4_K_M": 21169116992,
+            "Q6_K": 28514152256,
+            "Q8_0": 36903139136
+          },
+          "sidecars": {
+            "mmproj_bf16": 902822016
+          }
+        },
+        "bartowski": {
+          "repo": "bartowski/Qwen_Qwen3.5-35B-A3B-GGUF",
+          "revision": "3d2a22d4eb631b9c8fd2be94599dc2fd84b4a595",
+          "mtp_handling": "标准仓库无独立 MTP sidecar，pending 核实",
+          "files": {
+            "IQ2_M": 12964403008,
+            "Q3_K_M": 17117951808,
+            "IQ3_M": 17791661888,
+            "IQ4_XS": 19699554112,
+            "Q4_K_M": 22285080384,
+            "Q5_K_M": 25913186112,
+            "Q6_K": 30947309376,
+            "Q8_0": 37812647744
+          },
+          "sidecars": {
+            "mmproj_bf16": 902822496,
+            "mmproj_f16": 899283552
+          }
+        }
+      }
+    }
+  },
+  "retired_or_special_cases": {
+    "Qwen3-0.6B": "降级为无 GPU smoke test、解析器/预测器回归夹具和历史实验，不再充当通用主线案例。",
+    "Qwen3-30B-A3B": "旧 MoE 章节夹具保留作回归与架构对比，新 MoE 主线用 Qwen3.5-35B-A3B。",
+    "Qwen3-32B": "LCPP-20 旧稠密对照，保留历史口径，不得与 Qwen3.5-35B-A3B 混淆。",
+    "DeepSeek-V4.1-Flash": "LCPP-21 专项，不纳入双模型通用基线。",
+    "SmolVLM2/Qwen3-ASR/Qwen2-VL": "LCPP-15 多模态专项，保留。"
+  }
+}

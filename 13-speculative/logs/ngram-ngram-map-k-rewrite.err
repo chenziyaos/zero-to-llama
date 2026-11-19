@@ -1,0 +1,14 @@
+0.03.547.700 D common_ngram_map_begin: begin, idx_last_draft=0, new begin=310, #keys=0
+0.05.239.240 D common_ngram_map_send_accepted: n_accepted = 48, prev value_num = 48
+0.05.527.720 D common_ngram_map_send_accepted: n_accepted = 34, prev value_num = 48
+0.06.091.867 D common_ngram_map_send_accepted: n_accepted = 0, prev value_num = 48
+0.06.659.041 D common_ngram_map_send_accepted: n_accepted = 13, prev value_num = 48
+0.07.527.288 D common_ngram_map_send_accepted: n_accepted = 26, prev value_num = 48
+0.08.174.118 I encoded  311 tokens in    0.933 seconds, speed:  333.459 t/s
+0.08.174.119 I decoded  257 tokens in    4.626 seconds, speed:   55.551 t/s
+0.08.174.120 I n_draft   = 3
+0.08.174.120 I n_predict = 257
+0.08.174.120 I n_drafted = 240
+0.08.174.120 I n_accept  = 121
+0.08.174.120 I accept    = 50.417%
+0.08.174.168 I spec common_specu: statistics      ngram-map-k: #calls(b,g,a) =    1    136     78, #gen drafts =      5, #acc drafts =     4, #gen tokens =    240, #acc tokens =   121, #mean acc len = 2.55, #acc rate/pos = (0.051, 0.051, 0.051, 0.051, 0.051, 0.051, 0.051, 0.051, 0.051, 0.051, 0.051, 0.051, 0.051, 0.038, 0.038, 0.038, 0.038, 0.038, 0.038, 0.038, 0.038, 0.038, 0.038, 0.038, 0.038, 0.038, 0.026, 0.026, 0.026, 0.026, 0.026, 0.026, 0.026, 0.026, 0.013, 0.013, 0.013, 0.013, 0.013, 0.013, 0.013, 0.013, 0.013, 0.013, 0.013, 0.013, 0.013, 0.013), dur(b,g,a) = 0.049, 0.218, 0.156 ms

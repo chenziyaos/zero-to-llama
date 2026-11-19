@@ -1,0 +1,54 @@
+get_slice_instructions: original size: 2000 x 1500, overview size: 576 x 416, refined size: 1536 x 1024, grid size: 3 x 2
+get_slice_instructions: slice 0: x=0, y=0, size=512 x 512
+get_slice_instructions: slice 1: x=512, y=0, size=512 x 512
+get_slice_instructions: slice 2: x=1024, y=0, size=512 x 512
+get_slice_instructions: slice 3: x=0, y=512, size=512 x 512
+get_slice_instructions: slice 4: x=512, y=512, size=512 x 512
+get_slice_instructions: slice 5: x=1024, y=512, size=512 x 512
+get_slice_instructions: original size: 2000 x 1500, overview size: 576 x 416, refined size: 1536 x 1024, grid size: 3 x 2
+get_slice_instructions: slice 0: x=0, y=0, size=512 x 512
+get_slice_instructions: slice 1: x=512, y=0, size=512 x 512
+get_slice_instructions: slice 2: x=1024, y=0, size=512 x 512
+get_slice_instructions: slice 3: x=0, y=512, size=512 x 512
+get_slice_instructions: slice 4: x=512, y=512, size=512 x 512
+get_slice_instructions: slice 5: x=1024, y=512, size=512 x 512
+mtmd_group_mergeable_bitmaps: merging 2 frames at part index 0 and 1
+mtmd_group_mergeable_bitmaps: merging 2 frames at part index 0 and 1
+mtmd_group_mergeable_bitmaps: no merging for part index 1
+mtmd_group_mergeable_bitmaps: merging 2 frames at part index 0 and 1
+mtmd_group_mergeable_bitmaps: merging 2 frames at part index 1 and 2
+mtmd_group_mergeable_bitmaps: merging 2 frames at part index 0 and 1
+mtmd_group_mergeable_bitmaps: no merging for part index 1
+mtmd_group_mergeable_bitmaps: merging 2 frames at part index 1 and 2
+mtmd_group_mergeable_bitmaps: no merging for part index 0
+mtmd_group_mergeable_bitmaps: no merging for part index 2
+mtmd_group_mergeable_bitmaps: no merging for part index 0
+mtmd_group_mergeable_bitmaps: no merging for part index 1
+mtmd_group_mergeable_bitmaps: no merging for part index 0
+mtmd_group_mergeable_bitmaps: no merging for part index 1
+mtmd_group_mergeable_bitmaps: no merging for part index 0
+mtmd_group_mergeable_bitmaps: no merging for part index 1
+mtmd_group_mergeable_bitmaps: no merging for part index 0
+mtmd_group_mergeable_bitmaps: no merging for part index 1
+mtmd_group_mergeable_bitmaps: no merging for part index 0
+mtmd_group_mergeable_bitmaps: no merging for part index 1
+mtmd_group_mergeable_bitmaps: no merging for part index 0
+mtmd_group_mergeable_bitmaps: no merging for part index 1
+test_image_preprocessor_longest_edge
+test_image_preprocessor_longest_edge (8 assertion(s))                           [PASS]
+test_image_preprocessor_dyn_size
+test_image_preprocessor_dyn_size (10 assertion(s))                              [PASS]
+test_image_preprocessor_lfm2
+test_image_preprocessor_lfm2 (14 assertion(s))                                  [PASS]
+test_image_preprocessor_lfm2_torch_resize
+test_image_preprocessor_lfm2_torch_resize (4 assertion(s))                      [PASS]
+test_temporal_merge_grouping
+test_temporal_merge_grouping (24 assertion(s))                                  [PASS]
+test_audio_preprocessor_conformer
+test_audio_preprocessor_conformer (6 assertion(s))                              [PASS]
+
+tests      : 6
+assertions : 66
+failures   : 0
+exceptions : 0
+skipped    : 0

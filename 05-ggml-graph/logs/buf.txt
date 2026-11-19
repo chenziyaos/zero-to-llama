@@ -1,0 +1,16 @@
+c=4096 fa=on ub=32 CPU compute buffer size =    19.55 MiB graph: nodes = 989, splits = 1, input objects = 4, input tensors = 9 
+c=4096 fa=on ub=128 CPU compute buffer size =    78.19 MiB graph: nodes = 989, splits = 1, input objects = 4, input tensors = 9 
+c=4096 fa=on ub=512 CPU compute buffer size =   312.77 MiB graph: nodes = 989, splits = 1, input objects = 4, input tensors = 9 
+c=4096 fa=on ub=2048 CPU compute buffer size =  1251.08 MiB graph: nodes = 989, splits = 1, input objects = 4, input tensors = 9 
+c=4096 fa=off ub=32 CPU compute buffer size =    19.92 MiB graph: nodes = 1129, splits = 1, input objects = 4, input tensors = 9 
+c=4096 fa=off ub=128 CPU compute buffer size =    79.69 MiB graph: nodes = 1129, splits = 1, input objects = 4, input tensors = 9 
+c=4096 fa=off ub=512 CPU compute buffer size =   318.77 MiB graph: nodes = 1129, splits = 1, input objects = 4, input tensors = 9 
+c=4096 fa=off ub=2048 CPU compute buffer size =  1275.06 MiB graph: nodes = 1129, splits = 1, input objects = 4, input tensors = 9 
+c=16384 fa=on ub=32 CPU compute buffer size =    20.17 MiB graph: nodes = 989, splits = 1, input objects = 4, input tensors = 9 
+c=16384 fa=on ub=128 CPU compute buffer size =    80.69 MiB graph: nodes = 989, splits = 1, input objects = 4, input tensors = 9 
+c=16384 fa=on ub=512 CPU compute buffer size =   322.77 MiB graph: nodes = 989, splits = 1, input objects = 4, input tensors = 9 
+c=16384 fa=on ub=2048 CPU compute buffer size =  1291.08 MiB graph: nodes = 989, splits = 1, input objects = 4, input tensors = 9 
+c=16384 fa=off ub=32 CPU compute buffer size =    35.38 MiB graph: nodes = 1129, splits = 1, input objects = 4, input tensors = 9 
+c=16384 fa=off ub=128 CPU compute buffer size =   141.50 MiB graph: nodes = 1129, splits = 1, input objects = 4, input tensors = 9 
+c=16384 fa=off ub=512 CPU compute buffer size =   566.02 MiB graph: nodes = 1129, splits = 1, input objects = 4, input tensors = 9 
+c=16384 fa=off ub=2048 CPU compute buffer size =  2264.06 MiB graph: nodes = 1129, splits = 1, input objects = 4, input tensors = 9 

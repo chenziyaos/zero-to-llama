@@ -1,0 +1,6 @@
+dis=0 0.02.940.882 I common_perf_print: eval time = 786.07 ms / 63 runs ( 12.48 ms per token, 80.15 tokens per second) 0.02.940.924 I common_perf_print: graphs reused = 62 
+dis=1 0.03.135.981 I common_perf_print: eval time = 846.94 ms / 63 runs ( 13.44 ms per token, 74.39 tokens per second) 0.03.136.013 I common_perf_print: graphs reused = 0 
+dis=0 0.02.945.097 I common_perf_print: eval time = 806.48 ms / 63 runs ( 12.80 ms per token, 78.12 tokens per second) 0.02.945.140 I common_perf_print: graphs reused = 62 
+dis=1 0.02.990.811 I common_perf_print: eval time = 842.03 ms / 63 runs ( 13.37 ms per token, 74.82 tokens per second) 0.02.990.813 I common_perf_print: graphs reused = 0 
+dis=0 0.02.989.521 I common_perf_print: eval time = 777.44 ms / 63 runs ( 12.34 ms per token, 81.04 tokens per second) 0.02.989.564 I common_perf_print: graphs reused = 62 
+dis=1 0.03.086.456 I common_perf_print: eval time = 847.25 ms / 63 runs ( 13.45 ms per token, 74.36 tokens per second) 0.03.086.458 I common_perf_print: graphs reused = 0 

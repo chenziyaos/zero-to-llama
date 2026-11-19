@@ -1,0 +1,8 @@
+$ /work/llama.cpp/build/bin/test-llama-archs -a qwen3
+0.00.003.644 I main: using seed 3870861925, stdev 0.100000
+|     Model arch.|        Device|Config|   NMSE vs. CPU|Roundtrip|    Mixed batch|
+|----------------|--------------|------|---------------|---------|---------------|
+|           qwen3|AMD EPYC (CPU)| Dense|  [1;32mOK[0m (0.00e+00)|       [1;32mOK[0m|  [1;32mOK[0m (1.92e-08)|
+|           qwen3|          Meta| Dense|[1;33mSKIP[0m           |     [1;33mSKIP[0m|[1;33mSKIP[0m           |
+Summary: all 1 test(s) passed
+== rc=0 wall_s=0.5 maxrss_mib=98

@@ -1,0 +1,5 @@
+{"threads": 4, "mib_per_array": 1, "copy_GBps": 373.29, "scale_GBps": 343.29, "add_GBps": 365.65, "triad_GBps": 365.65, "read_GBps": 250.44}
+{"threads": 4, "mib_per_array": 4, "copy_GBps": 314.53, "scale_GBps": 316.80, "add_GBps": 334.78, "triad_GBps": 339.21, "read_GBps": 290.42}
+{"threads": 4, "mib_per_array": 16, "copy_GBps": 103.53, "scale_GBps": 57.59, "add_GBps": 74.46, "triad_GBps": 75.03, "read_GBps": 95.87}
+{"threads": 4, "mib_per_array": 64, "copy_GBps": 33.89, "scale_GBps": 31.75, "add_GBps": 34.06, "triad_GBps": 35.41, "read_GBps": 42.59}
+{"threads": 4, "mib_per_array": 256, "copy_GBps": 30.29, "scale_GBps": 29.76, "add_GBps": 32.49, "triad_GBps": 32.35, "read_GBps": 36.15}

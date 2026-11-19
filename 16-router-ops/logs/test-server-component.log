@@ -1,0 +1,104 @@
+server_tokens
+  basic
+  basic (10 assertion(s))                                                       [PASS]
+  pos
+  pos (6 assertion(s))                                                          [PASS]
+  keep_first
+  keep_first (3 assertion(s))                                                   [PASS]
+  common_prefix
+  common_prefix (7 assertion(s))                                                [PASS]
+  serialize
+    roundtrip
+    roundtrip (2 assertion(s))                                                  [PASS]
+    roundtrip empty
+    roundtrip empty (1 assertion(s))                                            [PASS]
+    legacy plain token list
+    legacy plain token list (1 assertion(s))                                    [PASS]
+    corrupted
+    corrupted (5 assertion(s))                                                  [PASS]
+  serialize (9 assertion(s))                                                    [PASS]
+  clone
+  clone (3 assertion(s))                                                        [PASS]
+server_tokens (38 assertion(s))                                                 [PASS]
+utf8
+  validate_utf8
+  validate_utf8 (13 assertion(s))                                               [PASS]
+  is_valid_utf8
+  is_valid_utf8 (7 assertion(s))                                                [PASS]
+utf8 (20 assertion(s))                                                          [PASS]
+sse
+  oai
+  oai (3 assertion(s))                                                          [PASS]
+  oai_resp
+  oai_resp (2 assertion(s))                                                     [PASS]
+  anthropic
+  anthropic (2 assertion(s))                                                    [PASS]
+sse (7 assertion(s))                                                            [PASS]
+json_helpers
+  json_is_array_of_numbers
+  json_is_array_of_numbers (5 assertion(s))                                     [PASS]
+  json_is_array_of_mixed_numbers_strings
+  json_is_array_of_mixed_numbers_strings (4 assertion(s))                       [PASS]
+  json_is_array_and_contains_numbers
+  json_is_array_and_contains_numbers (3 assertion(s))                           [PASS]
+  json_get_nested_values
+  json_get_nested_values (6 assertion(s))                                       [PASS]
+json_helpers (18 assertion(s))                                                  [PASS]
+lora_helpers
+  parse_lora_request
+  parse_lora_request (4 assertion(s))                                           [PASS]
+  are_lora_equal
+  are_lora_equal (5 assertion(s))                                               [PASS]
+  lora_get_enabled_ids
+  lora_get_enabled_ids (1 assertion(s))                                         [PASS]
+lora_helpers (10 assertion(s))                                                  [PASS]
+server_pipe
+  drain then eof
+  drain then eof (5 assertion(s))                                               [PASS]
+  broken pipe
+  broken pipe (1 assertion(s))                                                  [PASS]
+  max_size drops oldest
+  max_size drops oldest (3 assertion(s))                                        [PASS]
+  queued data wins over should_stop
+  queued data wins over should_stop (1 assertion(s))                            [PASS]
+  should_stop closes the pipe
+  should_stop closes the pipe (2 assertion(s))                                  [PASS]
+  should_stop as deadline keeps the pipe open
+  should_stop as deadline keeps the pipe open (3 assertion(s))                  [PASS]
+  cross thread
+  cross thread (2 assertion(s))                                                 [PASS]
+server_pipe (17 assertion(s))                                                   [PASS]
+decision_escape
+  cases
+  cases (11 assertion(s))                                                       [PASS]
+  same as std::regex
+  same as std::regex (1 assertion(s))                                           [PASS]
+  long input
+  long input (2 assertion(s))                                                   [PASS]
+decision_escape (14 assertion(s))                                               [PASS]
+rerank_template
+rerank_template (14 assertion(s))                                               [PASS]
+decision_class_scores
+decision_class_scores (27 assertion(s))                                         [PASS]
+decision_ocr_jev_validation
+decision_ocr_jev_validation (8 assertion(s))                                    [PASS]
+decision_depth
+  state at the limit
+  state at the limit (1 assertion(s))                                           [PASS]
+  deep state
+  deep state (1 assertion(s))                                                   [PASS]
+decision_depth (2 assertion(s))                                                 [PASS]
+glob_match
+  patterns
+  patterns (11 assertion(s))                                                    [PASS]
+  long input
+  long input (3 assertion(s))                                                   [PASS]
+glob_match (14 assertion(s))                                                    [PASS]
+dry_sequence_breakers
+dry_sequence_breakers (2 assertion(s))                                          [PASS]
+
+tests      : 49
+assertions : 191
+failures   : 0
+exceptions : 0
+skipped    : 0

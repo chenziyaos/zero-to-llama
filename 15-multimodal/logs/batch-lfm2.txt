@@ -1,0 +1,4 @@
+...................................................................
+# model=models/vl/LFM2-VL-450M-Q8_0.gguf mmproj=models/vl/mmproj-LFM2-VL-450M-Q8_0.gguf threads=4 bmax=1024
+1024x768 rep=0 chunks=7 one_by_one_ms=4798.9 batched_ms=4676.5 n_batches=7
+1024x768 rep=1 chunks=7 one_by_one_ms=5068.2 batched_ms=5241.6 n_batches=7

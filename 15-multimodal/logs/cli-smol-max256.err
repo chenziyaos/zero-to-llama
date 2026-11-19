@@ -1,0 +1,35 @@
+0.03.384.643 I load_hparams: projector:          idefics3
+0.03.384.643 I load_hparams: n_embd:             768
+0.03.384.643 I load_hparams: n_head:             12
+0.03.384.643 I load_hparams: n_ff:               3072
+0.03.384.643 I load_hparams: n_layer:            12
+0.03.384.644 I load_hparams: ffn_op:             gelu
+0.03.384.644 I load_hparams: projection_dim:     576
+0.03.384.644 I load_hparams: image_size:         512
+0.03.384.645 I load_hparams: patch_size:         16
+0.03.384.645 I load_hparams: has_llava_proj:     0
+0.03.384.645 I load_hparams: minicpmv_version:   0
+0.03.384.645 I load_hparams: n_merge:            4
+0.03.384.645 I load_hparams: n_wa_pattern: 0
+0.03.384.646 I load_hparams: image_max_pixels:   1048576 (custom value)
+0.03.384.648 I load_hparams: model size:         98.95 MiB
+0.03.384.649 I load_hparams: metadata size:      0.07 MiB
+0.03.738.536 W WARN: This is an experimental CLI for testing multimodal capability.
+0.03.771.367 I encoding mtmd batch, n_chunks = 1 (done = 1, total = 7)
+0.04.442.040 I mtmd batch encoding done in 671 ms
+0.04.442.057 I decoding image batch 1/1, n_tokens_batch = 64
+0.04.490.304 I image decoded (batch 1/1) in 48 ms
+0.04.498.424 I encoding mtmd batch, n_chunks = 1 (done = 3, total = 7)
+0.05.141.028 I mtmd batch encoding done in 643 ms
+0.05.141.037 I decoding image batch 1/1, n_tokens_batch = 64
+0.05.193.991 I image decoded (batch 1/1) in 53 ms
+0.05.202.212 I encoding mtmd batch, n_chunks = 1 (done = 5, total = 7)
+0.05.855.705 I mtmd batch encoding done in 653 ms
+0.05.855.714 I decoding image batch 1/1, n_tokens_batch = 64
+0.05.913.671 I image decoded (batch 1/1) in 58 ms
+0.06.080.189 I llama_perf_context_print:        load time =    1951.00 ms
+0.06.080.191 I llama_perf_context_print: prompt eval time =    2169.07 ms /   216 tokens (   10.04 ms per token,    99.58 tokens per second)
+0.06.080.192 I llama_perf_context_print:        eval time =     134.89 ms /    27 runs   (    5.00 ms per token,   200.16 tokens per second)
+0.06.080.193 I llama_perf_context_print:       total time =    2728.07 ms /   243 tokens
+0.06.080.193 I llama_perf_context_print:    graphs reused =         26
+0.06.080.194 I llama_perf_context_print:   graph reallocs =          0    /     0        (same size) / (changed size)

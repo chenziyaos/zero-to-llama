@@ -1,0 +1,21 @@
+0.00.390.360 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.02.446.851 I cmn          init: llama threadpool init, n_threads = 4
+0.52.292.162 I encoded  311 tokens in    0.877 seconds, speed:  354.732 t/s
+0.52.292.167 I decoded  257 tokens in   48.904 seconds, speed:    5.255 t/s
+0.52.292.167 I 
+0.52.292.167 I W = 15
+0.52.292.168 I N =  5
+0.52.292.168 I G = 15
+0.52.292.168 I 
+0.52.292.169 I n_predict = 257
+0.52.292.169 I n_accept  = 116
+0.52.292.169 I 
+0.52.292.178 I common_perf_print:    sampling time =     357.26 ms
+0.52.292.178 I common_perf_print:    samplers time =     126.89 ms /   258 tokens
+0.52.292.183 I common_perf_print:        load time =    2151.53 ms
+0.52.292.184 I common_perf_print: prompt eval time =   47326.09 ms / 11327 tokens (    4.18 ms per token,   239.34 tokens per second)
+0.52.292.185 I common_perf_print:        eval time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+0.52.292.185 I common_perf_print:       total time =   49797.19 ms / 11328 tokens
+0.52.292.186 I common_perf_print: unaccounted time =    2113.84 ms /   4.2 %      (total - sampling - prompt eval - eval) / (total)
+0.52.292.186 I common_perf_print:    graphs reused =         38
+0.52.292.186 I common_perf_print:   graph reallocs =          0    /     0        (same size) / (changed size)

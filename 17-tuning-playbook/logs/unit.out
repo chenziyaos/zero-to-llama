@@ -1,0 +1,18 @@
+test_c4096 (__main__.DefaultsTest.test_c4096) ... ok
+test_no_c_means_train_ctx (__main__.DefaultsTest.test_no_c_means_train_ctx) ... ok
+test_base_clean (__main__.MisconfigTest.test_base_clean) ... ok
+test_errors (__main__.MisconfigTest.test_errors) ... ok
+test_silent (__main__.MisconfigTest.test_silent) ... ok
+test_warns (__main__.MisconfigTest.test_warns) ... ok
+test_rules_order (__main__.ParseTest.test_rules_order) ... ok
+test_synthetic_fields (__main__.ParseTest.test_synthetic_fields) ... ok
+test_synthetic_silent (__main__.ParseTest.test_synthetic_silent) ... ok
+test_verdict (__main__.ParseTest.test_verdict) ... ok
+test_c4096_q8 (__main__.PlanTest.test_c4096_q8) ... ok
+test_default_kv (__main__.PlanTest.test_default_kv) ... ok
+test_np_note (__main__.PlanTest.test_np_note) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.675s
+
+OK

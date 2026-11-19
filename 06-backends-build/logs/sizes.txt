@@ -1,0 +1,20 @@
+native ggml 2.45 MiB so 14.2 MiB
+generic ggml 2.26 MiB so 14.0 MiB
+sse42 ggml 1.87 MiB so 13.7 MiB
+blas ggml 2.52 MiB so 14.3 MiB
+nollamafile ggml 2.26 MiB so 14.0 MiB
+dl ggml 20.13 MiB so 32.2 MiB
+999072 libggml-cpu-x64.so
+1007184 libggml-cpu-sse42.so
+1326760 libggml-cpu-piledriver.so
+1329912 libggml-cpu-sandybridge.so
+1330856 libggml-cpu-ivybridge.so
+1407496 libggml-cpu-alderlake.so
+1407496 libggml-cpu-haswell.so
+1577352 libggml-cpu-cannonlake.so
+1577352 libggml-cpu-skylakex.so
+1589344 libggml-cpu-cascadelake.so
+1589344 libggml-cpu-icelake.so
+1589416 libggml-cpu-cooperlake.so
+1589416 libggml-cpu-zen4.so
+1822976 libggml-cpu-sapphirerapids.so

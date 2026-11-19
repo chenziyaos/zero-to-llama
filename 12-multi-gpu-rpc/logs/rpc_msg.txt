@@ -1,0 +1,20 @@
+rpc_tensor             296 B
+HELLO 请求            24 B  （上线 33 B）
+HELLO 回应            28 B
+ALLOC_BUFFER            12 B  （上线 21 B）
+GET_ALLOC_SIZE        3260 B  （上线 3269 B）
+INIT_TENSOR            296 B  （上线 305 B）
+MEMSET_TENSOR          313 B  （上线 322 B）
+SET_TENSOR_HASH        312 B  （上线 321 B）
+GET_TENSOR             312 B  （上线 321 B）
+GET_TENSOR_2D          328 B  （上线 337 B）
+COPY_TENSOR            592 B  （上线 601 B）
+GET_DEVICE_MEMORY 回应   16 B
+GRAPH_RECOMPUTE         12 B  （上线 21 B）
+COMM_INIT               80 B  （上线 89 B）
+COMM_ALLREDUCE         300 B  （上线 309 B）
+SET_TENSOR 头部         305 B + 数据
+10 MiB 权重：哈希命中 321 B，未命中 10486395 B
+GRAPH_COMPUTE n_nodes=1000 n_tensors=1500：452029 B（441.4 KiB），重放 GRAPH_RECOMPUTE 21 B，21525 倍
+GRAPH_COMPUTE n_nodes=3000 n_tensors=4500：1356029 B（1324.2 KiB），重放 GRAPH_RECOMPUTE 21 B，64573 倍
+GRAPH_COMPUTE n_nodes=8000 n_tensors=12000：3616029 B（3531.3 KiB），重放 GRAPH_RECOMPUTE 21 B，172192 倍

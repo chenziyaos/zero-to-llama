@@ -1,0 +1,27 @@
+
+
+<|im_start|>user
+请用 Python 写一个快速排序函数，并用三句话解释它的时间复杂度。<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+当然可以！以下是一个使用 Python 实现快速排序的函数，它在每一步选择一个基准元素进行排序，并将数组分割成小于或等于基准元素和大于基准元素的两个子数组：
+
+```python
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + [pivot] + quick_sort(right)
+```
+
+时间复杂度分析如下：
+1. 该排序算法的时间复杂度为 **O(n log n)**，因为每趟排序操作将数组分成两个子数组，每次排序操作的时间是 O(n)，而 `log n` 的次数表示了每次分区操作的深度，因此总时间复杂度为 O(n log n)。
+
+这是快速排序最常用的实现方式，适用于较大的数据集。
+
+
+

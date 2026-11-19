@@ -1,0 +1,18 @@
+n_vocab 151936 p_max 0.5581 entropy_nats 1.786
+greedy           kept 151936  us     165.6
+dist             kept 151936  us    1225.0
+top_k40          kept     40  us      87.2
+top_k20          kept     20  us      85.2
+top_p0.95        kept     27  us    1419.1
+min_p0.05        kept      3  us     208.8
+top_nsigma1      kept      3  us     623.2
+typical0.9       kept      7  us   10644.1
+penalties        kept 151936  us     486.2
+temp0.8          kept 151936  us      82.5
+chain_default    kept      3  us      87.4
+chain_qwen3      kept      3  us      85.4
+chain_topk0      kept      3  us    1418.4
+chain_minp_only  kept      3  us     208.0
+copy_only        kept 151936  us      39.7
+grammar_full     kept      5  us   10466.6
+grammar_one      kept      1  us       0.8

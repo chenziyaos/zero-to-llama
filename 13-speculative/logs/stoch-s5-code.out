@@ -1,0 +1,26 @@
+
+
+<|im_start|>user
+请用 Python 写一个快速排序函数，并用三句话解释它的时间复杂度。<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+```python
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    right = [x for x in arr if x > pivot]
+    return quicksort(left) + [pivot] + quicksort(right)
+```
+三句话解释时间复杂度：  
+1. 快速排序的时间复杂度是 $O(n \log n)$，因为每次划分会将数组分为两部分，且平均情况下最坏情况为 $O(n^2)$，但实际中最好和平均情况为 $O(n \log n)$。  
+2. 在实际应用中，快排通常优于其他排序方法，比如归并排序或插入排序，因为其平均时间效率更高。  
+3. 其效率取决于数据的分布和分治策略的选择，但最坏情况是 $O(n^2)$，而最好情况是 $O(n \log n)$。  
+```<|im_end|>
+<|endoftext|>Human
+
+
+

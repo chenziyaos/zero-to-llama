@@ -1,0 +1,9 @@
+0.02.802.493 D common_ngram_map_begin: begin, idx_last_draft=0, new begin=30, #keys=0
+0.05.216.164 I encoded   31 tokens in    0.105 seconds, speed:  296.602 t/s
+0.05.216.165 I decoded  131 tokens in    2.414 seconds, speed:   54.275 t/s
+0.05.216.166 I n_draft   = 3
+0.05.216.166 I n_predict = 131
+0.05.216.166 I n_drafted = 0
+0.05.216.166 I n_accept  = 0
+0.05.216.167 I accept    = -nan%
+0.05.216.198 I spec common_specu: statistics      ngram-map-k: #calls(b,g,a) =    1    131      0, #gen drafts =      0, #acc drafts =     0, #gen tokens =      0, #acc tokens =     0, dur(b,g,a) = 0.016, 0.114, 0.000 ms

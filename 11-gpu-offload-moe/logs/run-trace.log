@@ -1,0 +1,4 @@
+text: arch=granitemoe layers=24 experts=32 used=8 tokens=16384 -> logs/trace-1b-wiki.bin
+text: arch=granitemoe layers=32 experts=40 used=8 tokens=8192 -> logs/trace-3b-wiki.bin
+gen: arch=granitemoe layers=24 experts=32 used=8 tokens=256 -> logs/trace-1b-gen-code.bin
+gen: arch=granitemoe layers=24 experts=32 used=8 tokens=256 -> logs/trace-1b-gen-prose.bin

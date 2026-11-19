@@ -1,0 +1,41 @@
+0.03.270.451 I main: n_parallel = 4, n_sequences = 16, cont_batching = 1, system tokens = 273
+0.04.028.714 I main: clearing the KV cache
+0.04.029.043 I [31mClient   0, seq    0, junk =    0, prompt = 12, started decoding ...[0m
+0.04.029.176 I [31mClient   1, seq    1, junk =    0, prompt = 22, started decoding ...[0m
+0.04.029.270 I [31mClient   2, seq    2, junk =    0, prompt = 24, started decoding ...[0m
+0.04.029.292 I [31mClient   3, seq    3, junk =    0, prompt = 12, started decoding ...[0m
+0.07.895.636 I [31mClient   0, seq   0/ 16, prompt   12 t, response   64 t, time  3.87 s, speed 19.65 t/s, cache miss 0 [0m 
+0.07.896.183 I [31mClient   1, seq   1/ 16, prompt   22 t, response   64 t, time  3.87 s, speed 22.24 t/s, cache miss 0 [0m 
+0.07.896.727 I [31mClient   2, seq   2/ 16, prompt   24 t, response   64 t, time  3.87 s, speed 22.75 t/s, cache miss 0 [0m 
+0.07.897.189 I [31mClient   3, seq   3/ 16, prompt   12 t, response   64 t, time  3.87 s, speed 19.65 t/s, cache miss 0 [0m 
+0.07.897.547 I main: clearing the KV cache
+0.07.898.036 I [31mClient   0, seq    4, junk =    0, prompt = 17, started decoding ...[0m
+0.07.898.454 I [31mClient   1, seq    5, junk =    0, prompt = 22, started decoding ...[0m
+0.07.898.573 I [31mClient   2, seq    6, junk =    0, prompt = 17, started decoding ...[0m
+0.07.898.709 I [31mClient   3, seq    7, junk =    0, prompt = 11, started decoding ...[0m
+0.10.781.168 I [31mClient   0, seq   4/ 16, prompt   17 t, response   40 t, time  2.88 s, speed 19.77 t/s, cache miss 0 [0m 
+0.10.781.621 I [31mClient   2, seq   6/ 16, prompt   17 t, response   40 t, time  2.88 s, speed 19.77 t/s, cache miss 0 [0m 
+0.10.781.891 I [31mClient   0, seq    8, junk =    0, prompt = 12, started decoding ...[0m
+0.10.781.931 I [31mClient   2, seq    9, junk =    0, prompt = 11, started decoding ...[0m
+0.12.186.723 I [31mClient   1, seq   5/ 16, prompt   22 t, response   64 t, time  4.29 s, speed 20.05 t/s, cache miss 0 [0m 
+0.12.187.170 I [31mClient   3, seq   7/ 16, prompt   11 t, response   64 t, time  4.29 s, speed 17.49 t/s, cache miss 0 [0m 
+0.12.187.351 I [31mClient   1, seq   10, junk =    0, prompt = 22, started decoding ...[0m
+0.12.187.385 I [31mClient   3, seq   11, junk =    0, prompt = 12, started decoding ...[0m
+0.14.424.456 I [31mClient   0, seq   8/ 16, prompt   12 t, response   64 t, time  3.64 s, speed 20.86 t/s, cache miss 0 [0m 
+0.14.425.077 I [31mClient   2, seq   9/ 16, prompt   11 t, response   64 t, time  3.64 s, speed 20.59 t/s, cache miss 0 [0m 
+0.14.425.460 I [31mClient   0, seq   12, junk =    0, prompt = 15, started decoding ...[0m
+0.14.425.666 I [31mClient   2, seq   13, junk =    0, prompt = 11, started decoding ...[0m
+0.15.846.424 I [31mClient   1, seq  10/ 16, prompt   22 t, response   64 t, time  3.66 s, speed 23.50 t/s, cache miss 0 [0m 
+0.15.847.454 I [31mClient   3, seq  11/ 16, prompt   12 t, response   64 t, time  3.66 s, speed 20.76 t/s, cache miss 0 [0m 
+0.15.847.670 I [31mClient   1, seq   14, junk =    0, prompt = 12, started decoding ...[0m
+0.15.847.717 I [31mClient   3, seq   15, junk =    0, prompt = 14, started decoding ...[0m
+0.18.206.944 I [31mClient   0, seq  12/ 16, prompt   15 t, response   64 t, time  3.78 s, speed 20.89 t/s, cache miss 0 [0m 
+0.18.207.372 I [31mClient   2, seq  13/ 16, prompt   11 t, response   64 t, time  3.78 s, speed 19.83 t/s, cache miss 0 [0m 
+0.19.457.032 I [31mClient   1, seq  14/ 16, prompt   12 t, response   64 t, time  3.61 s, speed 21.06 t/s, cache miss 0 [0m 
+0.19.457.476 I [31mClient   3, seq  15/ 16, prompt   14 t, response   64 t, time  3.61 s, speed 21.61 t/s, cache miss 0 [0m 
+0.19.457.754 I main: clearing the KV cache
+0.19.457.824 I main: n_parallel = 4, n_sequences = 16, cont_batching = 1, system tokens = 273
+0.19.457.827 I Total prompt tokens:    246, speed: 15.20 t/s
+0.19.457.827 I Total gen tokens:       976, speed: 60.29 t/s
+0.19.457.828 I Total speed (AVG):           speed: 75.49 t/s
+0.19.457.904 I Cache misses:             0

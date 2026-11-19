@@ -1,0 +1,5 @@
+none    Host 761 448 312 
+config  Host 761 896 316 
+env     Host 761 224 310 
+cli     Host 761 112 307 
+0.00.003.460 I using config file: $XDG_CONFIG_HOME/llama.cpp/config.ini

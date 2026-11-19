@@ -1,0 +1,10 @@
+Using target model 'models/q-Q4_0.gguf'
+
+Empirical vs target distribution after 5 trials:
+0.18.061.791 E token 1741: empirical probability 0.200000 too far from target 0.000399 (diff 0.199601 > tol 0.053597)
+0.18.061.838 E token 19257: empirical probability 0.200000 too far from target 0.000271 (diff 0.199729 > tol 0.044129)
+0.18.136.152 E token 16366: empirical probability 0.200000 too far from target 0.000097 (diff 0.199903 > tol 0.026376)
+
+Some tests failed.
+exit=1 sec=41
+(151936 lines of 'token ... target = ...' omitted)

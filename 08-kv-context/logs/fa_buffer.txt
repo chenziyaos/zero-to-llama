@@ -1,0 +1,12 @@
+== ctx 4096 fa on
+0.00.255.665 I llama_kv_cache: size =  448.00 MiB (  4096 cells,  28 layers,  1/1 seqs), K (f16):  224.00 MiB, V (f16):  224.00 MiB
+0.00.258.896 I sched_reserve:        CPU compute buffer size =   312.77 MiB
+== ctx 4096 fa off
+0.00.265.286 I llama_kv_cache: size =  448.00 MiB (  4096 cells,  28 layers,  1/1 seqs), K (f16):  224.00 MiB, V (f16):  224.00 MiB
+0.00.271.569 I sched_reserve:        CPU compute buffer size =   318.77 MiB
+== ctx 16384 fa on
+0.00.250.986 I llama_kv_cache: size = 1792.00 MiB ( 16384 cells,  28 layers,  1/1 seqs), K (f16):  896.00 MiB, V (f16):  896.00 MiB
+0.00.254.983 I sched_reserve:        CPU compute buffer size =   322.77 MiB
+== ctx 16384 fa off
+0.00.248.975 I llama_kv_cache: size = 1792.00 MiB ( 16384 cells,  28 layers,  1/1 seqs), K (f16):  896.00 MiB, V (f16):  896.00 MiB
+0.00.255.081 I sched_reserve:        CPU compute buffer size =   566.02 MiB

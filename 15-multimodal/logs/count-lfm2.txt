@@ -1,0 +1,9 @@
+# model=/work/zero-to-llama/15-multimodal/../../../models/vl/LFM2-VL-450M-Q8_0.gguf mmproj=/work/zero-to-llama/15-multimodal/../../../models/vl/mmproj-LFM2-VL-450M-Q8_0.gguf max_tok=-1
+size        chunks media_tok  text_tok   n_pos  per_chunk
+256x256          1        64         8      72  64
+512x512          1       256         8     264  256
+640x488          1       234         8     242  234
+1024x768         7      1770        15    1785  256,256,256,256,256,256,234
+1536x1536       10      2560        18    2578  256,256,256,256,256,256,256,256,256,256
+2048x1024        9      2290        17    2307  256,256,256,256,256,256,256,256,242
+4000x3000        7      1770        15    1785  256,256,256,256,256,256,234

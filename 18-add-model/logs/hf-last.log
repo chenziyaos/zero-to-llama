@@ -1,0 +1,5 @@
+$ python3 hf_last.py --model /work/models/Qwen3-0.6B --text Hello, my name is --llama /work/out18/debug/llamacpp-qwen3-bf16.bin
+tokens [9707, 11, 847, 829, 374]
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:02<12:03,  2.33s/it]Loading weights:  40%|████      | 125/311 [00:02<00:02, 71.19it/s]Loading weights:  60%|██████    | 187/311 [00:02<00:01, 85.54it/s]Loading weights:  73%|███████▎  | 227/311 [00:03<00:00, 87.12it/s]Loading weights:  82%|████████▏ | 255/311 [00:03<00:00, 87.65it/s]Loading weights:  89%|████████▊ | 276/311 [00:03<00:00, 90.53it/s]Loading weights: 100%|██████████| 311/311 [00:04<00:00, 77.37it/s]
+llamacpp-qwen3-bf16.bin: nmse_var 4.334e-05 (excellent)  top1 same  top10 overlap 10/10  max_abs 0.04592
+== rc=0 wall_s=31.2 maxrss_mib=4723

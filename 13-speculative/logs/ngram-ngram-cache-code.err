@@ -1,0 +1,9 @@
+0.02.502.419 I spec common_specu: - n_draft=8, cache_static=none, cache_dynamic=none
+0.05.476.910 I encoded   31 tokens in    0.130 seconds, speed:  238.989 t/s
+0.05.476.912 I decoded  131 tokens in    2.845 seconds, speed:   46.050 t/s
+0.05.476.912 I n_draft   = 3
+0.05.476.912 I n_predict = 131
+0.05.476.912 I n_drafted = 72
+0.05.476.912 I n_accept  = 20
+0.05.476.913 I accept    = 27.778%
+0.05.476.950 I spec common_specu: statistics      ngram-cache: #calls(b,g,a) =    1    111     60, #gen drafts =      9, #acc drafts =     8, #gen tokens =     72, #acc tokens =    20, #mean acc len = 1.33, #acc rate/pos = (0.133, 0.067, 0.033, 0.033, 0.033, 0.033), dur(b,g,a) = 0.002, 3.446, 0.022 ms

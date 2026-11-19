@@ -1,0 +1,4 @@
+$ python3 hf_ref.py --model /work/models/Qwen3-0.6B --text prompt.txt --out /work/ref18/bf16 --dtype bf16
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  43%|████▎     | 134/311 [00:00<00:00, 1314.60it/s]Loading weights:  86%|████████▌ | 266/311 [00:00<00:00, 1269.86it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1281.29it/s]
+hf_ref: 212 tokens, dtype bf16, load 5.4s, forward 3.4s -> /work/ref18/bf16
+== rc=0 wall_s=25.6 maxrss_mib=2197

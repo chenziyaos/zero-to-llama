@@ -1,0 +1,19 @@
+user
+请用 Python 写一个快速排序函数，并用三句话解释它的时间复杂度。
+assistant
+<think>
+
+</think>
+```python
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    right = [x for x in arr if x > pivot]
+    return quicksort(left) + [pivot] + quicksort(right)
+```
+
+时间复杂度：O(n log n)。在平均情况下，快速排序的平均时间复杂度为 O(n log n)，而在最坏情况下，其时间复杂度为 O(n²)。 [end of text]
+
+

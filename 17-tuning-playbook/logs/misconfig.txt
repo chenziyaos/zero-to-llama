@@ -1,0 +1,48 @@
+base rc=0 wall=2.5 args=-c 4096
+c100k rc=1 wall=1.9 args=-c 100000
+ctv-fa-off rc=1 wall=1.8 args=-c 4096 -ctv q8_0 -fa off
+ngl rc=0 wall=2.4 args=-c 4096 -ngl 10
+smrow rc=0 wall=2.4 args=-c 4096 -sm row
+mask rc=0 wall=98.1 args=-c 4096 -C 0x3 --cpu-strict 1 -t 4
+t8 rc=0 wall=2.9 args=-c 4096 -t 8
+b256 rc=0 wall=2.5 args=-c 4096 -b 256 -ub 512
+np4 rc=0 wall=2.6 args=-c 4096 -np 4
+ub16 rc=0 wall=2.5 args=-c 4096 -ub 16
+nofile rc=1 wall=0.1 args=-m /work/zero-to-llama/17-tuning-playbook/../../../models/does-not-exist.gguf
+== mis-b256.log
+== mis-base.log
+== mis-c100k.log
+[error] --fit 放弃了：按你给的 -c 怎么压都放不下（common/fit.cpp:976）
+        改法：把 -c 改小，或者 -c 0 交给 --fit 按内存挑
+[warn] 每条序列的上下文超过训练长度（src/llama-context.cpp:425）
+        改法：-c 不要超过 n_ctx_train 乘 -np，要更长先确认模型的 RoPE 缩放
+[error] 分配内存失败（ggml/src/ggml-backend.cpp:2831）
+        改法：看紧跟着的是 kv cache 还是 compute，前者改 -c 或 -ctk/-ctv，后者改 -ub
+[error] 上下文没建起来（tools/completion/completion.cpp:150）
+        改法：往上找第一条 E 级日志，多半是内存或参数冲突
+== mis-ctv-fa-off.log
+[error] 量化 V cache 必须开 Flash Attention（src/llama-context.cpp:4137）
+        改法：去掉 -fa off，或者 -ctv 改回 f16
+[error] 上下文没建起来（tools/completion/completion.cpp:150）
+        改法：往上找第一条 E 级日志，多半是内存或参数冲突
+== mis-mask.log
+[warn] CPU 掩码里的核比线程少，多出来的线程会挤在同几个核上（common/common.cpp:329）
+        改法：-t 不超过掩码里的核数，或者去掉 --cpu-strict
+== mis-ngl.log
+[warn] 没有可用 GPU，-ngl 被忽略（common/arg.cpp:2761）
+        改法：纯 CPU 构建不用写 -ngl；有卡时检查构建选项和驱动
+== mis-nofile.log
+[error] 模型没加载起来（src/llama.cpp）
+        改法：检查路径、文件是否完整、GGUF 版本
+[error] 上下文没建起来（tools/completion/completion.cpp:150）
+        改法：往上找第一条 E 级日志，多半是内存或参数冲突
+== mis-np4.log
+== mis-smrow.log
+[warn] 没有 GPU 后端，-sm 不起作用（common/arg.cpp:2787）
+        改法：删掉 -sm
+== mis-t8.log
+[silent] -t 8 超过机器的 4 个逻辑核，线程会互相抢核
+        改法：-t 不超过物理核数，decode 一般 2 到 3 个就饱和
+== mis-ub16.log
+[silent] n_ubatch 只有 16，prefill 每步太小
+        改法：-ub 回到 512，或至少 128

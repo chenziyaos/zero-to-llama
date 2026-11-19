@@ -1,0 +1,25 @@
+orig-tmp maxrss=782MiB wall=0.76s minflt=92303 majflt=142 370.62 ms
+split-tmp maxrss=782MiB wall=0.71s minflt=92682 majflt=143 371.63 ms
+orig-tmp-none maxrss=580MiB wall=0.83s minflt=149639 majflt=141 460.96 ms
+orig-tmp maxrss=782MiB wall=0.73s minflt=92313 majflt=140 371.47 ms
+split-tmp maxrss=782MiB wall=0.71s minflt=92710 majflt=138 364.01 ms
+orig-tmp-none maxrss=581MiB wall=0.79s minflt=149711 majflt=144 445.07 ms
+orig-tmp maxrss=782MiB wall=0.72s minflt=92331 majflt=141 370.99 ms
+split-tmp maxrss=782MiB wall=0.71s minflt=92732 majflt=143 372.95 ms
+orig-tmp-none maxrss=581MiB wall=0.84s minflt=149676 majflt=140 457.03 ms
+r1 tmp mmap repack=1 maxrss=782MiB wall=0.70s minflt=92390 majflt=144 368.29 ms
+r1 tmp mmap repack=0 maxrss=581MiB wall=0.49s minflt=40423 majflt=140 175.32 ms
+r1 tmp none repack=1 maxrss=581MiB wall=0.81s minflt=149760 majflt=146 466.99 ms
+r1 tmp none repack=0 maxrss=581MiB wall=0.73s minflt=149767 majflt=141 375.29 ms
+r1 tmp dio repack=1 maxrss=581MiB wall=1.54s minflt=182750 majflt=139 1162.49 ms
+r1 tmp dio repack=0 maxrss=590MiB wall=1.08s minflt=185031 majflt=144 714.50 ms
+r1 tmp mmap+mlock repack=1 maxrss=782MiB wall=0.77s minflt=92408 majflt=138 393.91 ms
+r1 tmp mmap+mlock repack=0 maxrss=581MiB wall=0.60s minflt=40459 majflt=142 247.62 ms
+r2 tmp mmap repack=1 maxrss=783MiB wall=0.74s minflt=92396 majflt=140 390.54 ms
+r2 tmp mmap repack=0 maxrss=581MiB wall=0.57s minflt=40450 majflt=140 192.13 ms
+r2 tmp none repack=1 maxrss=581MiB wall=0.83s minflt=149778 majflt=140 465.72 ms
+r2 tmp none repack=0 maxrss=581MiB wall=0.73s minflt=149815 majflt=148 371.08 ms
+r2 tmp dio repack=1 maxrss=582MiB wall=1.22s minflt=182771 majflt=140 851.51 ms
+r2 tmp dio repack=0 maxrss=590MiB wall=1.10s minflt=185073 majflt=140 742.40 ms
+r2 tmp mmap+mlock repack=1 maxrss=782MiB wall=0.79s minflt=92391 majflt=143 411.39 ms
+r2 tmp mmap+mlock repack=0 maxrss=581MiB wall=0.62s minflt=40435 majflt=144 234.44 ms

@@ -1,0 +1,4 @@
+fusion_off=0 512 0 354.1 2.5
+fusion_off=0 0 64 75.0 3.1
+fusion_off=1 512 0 354.7 6.6
+fusion_off=1 0 64 71.0 0.9

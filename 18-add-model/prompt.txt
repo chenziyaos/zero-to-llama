@@ -1,0 +1,4 @@
+The transformer architecture replaced recurrence with attention. Each layer normalizes its input, projects it into queries, keys and values, rotates queries and keys by a position-dependent angle, and mixes information across tokens. A gated feed-forward block then transforms every position independently. When a new model family appears, the inference engine has to reproduce this computation exactly: the same tensor shapes, the same normalization epsilon, the same rotary layout, and the same vocabulary.
+把一个新模型接进推理引擎，最怕的不是程序崩溃，而是程序照常运行、输出看起来通顺，但每一层都和原始实现差了一点。这种误差会随着层数累积，到最后几层才显现出来。所以我先拿原始实现跑一遍，把每个位置的 logits 和每一层的输出存下来，再拿转换后的模型逐层对拍。
+def rms_norm(x, w, eps=1e-6):
+    return x * torch.rsqrt(x.pow(2).mean(-1, keepdim=True) + eps) * w

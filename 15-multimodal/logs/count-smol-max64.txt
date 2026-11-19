@@ -1,0 +1,9 @@
+# model=/work/zero-to-llama/15-multimodal/../../../models/vl/SmolVLM2-256M-Video-Instruct-Q8_0.gguf mmproj=/work/zero-to-llama/15-multimodal/../../../models/vl/mmproj-SmolVLM2-256M-Video-Instruct-Q8_0.gguf max_tok=64
+size        chunks media_tok  text_tok   n_pos  per_chunk
+256x256          2       128        10     138  64,64
+512x512          2       128        10     138  64,64
+640x488          2       128        10     138  64,64
+1024x768         2       128        10     138  64,64
+1536x1536        2       128        10     138  64,64
+2048x1024        2       128        10     138  64,64
+4000x3000        2       128        10     138  64,64

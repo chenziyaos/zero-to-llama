@@ -1,0 +1,7 @@
+0.01.958.721 W llama_context: n_ctx is not divisible by n_seq_max - rounding down to 10752
+0.01.958.722 I llama_context: n_seq_max             = 3
+0.01.958.723 I llama_context: n_ctx                 = 10752
+0.01.958.723 I llama_context: n_ctx_seq             = 3584
+0.01.958.726 I llama_context: kv_unified            = false
+0.01.958.730 I llama_context: n_ctx_seq (3584) < n_ctx_train (40960) -- the full capacity of the model will not be utilized
+0.02.461.876 I llama_kv_cache: size = 1176.00 MiB (  3584 cells,  28 layers,  3/3 seqs), K (f16):  588.00 MiB, V (f16):  588.00 MiB

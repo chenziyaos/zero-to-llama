@@ -1,0 +1,13 @@
+--- a/ggml/src/ggml-cpu/ops.cpp
++++ b/ggml/src/ggml-cpu/ops.cpp
+@@ -4132,7 +4132,9 @@
+                     const int64_t i13 = i03 % ne13;
+                     const float * w = (float *) ((char *) src1->data + i11*nb11 + i12*nb12 + i13*nb13);
+ 
+-                    for (int64_t i00 = 0; i00 < ne00; i00++) {
++                    // bug on purpose: the loop was "unrolled by 16" and the tail was forgotten
++                    const int64_t ne00_16 = ne00 & ~((int64_t) 15);
++                    for (int64_t i00 = 0; i00 < ne00_16; i00++) {
+                         y[i00] = x[i00] * scale * w[i00];
+                     }
+                 } else {

@@ -1,0 +1,57 @@
+== FAKE × 3 + RPC × 0  events=0  ngl=-1  ctx=4096  ub=512
+llama_prepare_model_devices: using device FAKE0 (fake gpu 0) (fake:0) - 8000 MiB free
+llama_prepare_model_devices: using device FAKE1 (fake gpu 1) (fake:1) - 8000 MiB free
+llama_prepare_model_devices: using device FAKE2 (fake gpu 2) (fake:2) - 8000 MiB free
+layers   0-  9 -> FAKE0
+layers  10- 19 -> FAKE1
+layers  20- 28 -> FAKE2
+load_tensors: offloaded 29/29 layers to GPU
+load_tensors:          CPU model buffer size =     0.00 MiB
+load_tensors:        FAKE0 model buffer size =     0.00 MiB
+load_tensors:        FAKE1 model buffer size =     0.00 MiB
+load_tensors:        FAKE2 model buffer size =     0.00 MiB
+model devices = 3
+llama_kv_cache:      FAKE0 KV buffer size =     0.00 MiB
+llama_kv_cache:      FAKE1 KV buffer size =     0.00 MiB
+llama_kv_cache:      FAKE2 KV buffer size =     0.00 MiB
+sched_reserve: max_nodes = 2488
+## SPLIT #0: CPU # 0 inputs
+## SPLIT #1: FAKE0 # 8 inputs: [inp_mixed_embd (   4K)] [node_1 (   4K)] [inp_mixed_slots (   0K)] [embd (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] 
+## SPLIT #2: FAKE1 # 5 inputs: [l_out-9 (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] 
+## SPLIT #3: FAKE2 # 6 inputs: [l_out-19 (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] [out_ids (   0K)] 
+## SPLIT #0: CPU # 0 inputs
+## SPLIT #1: FAKE0 # 8 inputs: [inp_mixed_embd (   4K)] [node_1 (   4K)] [inp_mixed_slots (   0K)] [embd (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] 
+## SPLIT #2: FAKE1 # 5 inputs: [l_out-9 (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] 
+## SPLIT #3: FAKE2 # 6 inputs: [l_out-19 (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] [out_ids (   0K)] 
+## SPLIT #0: CPU # 0 inputs
+## SPLIT #1: FAKE0 # 8 inputs: [inp_mixed_embd (   4K)] [node_1 (   4K)] [inp_mixed_slots (   0K)] [embd (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] 
+## SPLIT #2: FAKE1 # 5 inputs: [l_out-9 (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] 
+## SPLIT #3: FAKE2 # 6 inputs: [l_out-19 (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] [out_ids (   0K)] 
+## SPLIT #0: CPU # 0 inputs
+## SPLIT #1: FAKE0 # 8 inputs: [inp_mixed_embd (   4K)] [node_1 (   4K)] [inp_mixed_slots (   0K)] [embd (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] 
+## SPLIT #2: FAKE1 # 5 inputs: [l_out-9 (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] 
+## SPLIT #3: FAKE2 # 6 inputs: [l_out-19 (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] [out_ids (   0K)] 
+## SPLIT #0: CPU # 0 inputs
+## SPLIT #1: FAKE0 # 8 inputs: [inp_mixed_embd (   2M)] [node_1 (   2M)] [inp_mixed_slots (   4K)] [embd (   2M)] [inp_pos (   2K)] [attn_inp_k_idxs (   4K)] [attn_inp_v_idxs (   4K)] [attn_inp_kq_mask (   4M)] 
+## SPLIT #2: FAKE1 # 6 inputs: [norm-10 (   2M)] [inp_pos (   2K)] [attn_inp_k_idxs (   4K)] [attn_inp_v_idxs (   4K)] [attn_inp_kq_mask (   4M)] [l_out-9 (   2M)] 
+## SPLIT #3: FAKE2 # 7 inputs: [norm-20 (   2M)] [inp_pos (   2K)] [attn_inp_k_idxs (   4K)] [attn_inp_v_idxs (   4K)] [attn_inp_kq_mask (   4M)] [l_out-19 (   2M)] [out_ids (   2K)] 
+## SPLIT #0: CPU # 0 inputs
+## SPLIT #1: FAKE0 # 8 inputs: [inp_mixed_embd (   4K)] [node_1 (   4K)] [inp_mixed_slots (   0K)] [embd (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] 
+## SPLIT #2: FAKE1 # 5 inputs: [l_out-9 (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] 
+## SPLIT #3: FAKE2 # 6 inputs: [l_out-19 (   4K)] [inp_pos (   0K)] [attn_inp_k_idxs (   0K)] [attn_inp_v_idxs (   0K)] [attn_inp_kq_mask (   8K)] [out_ids (   0K)] 
+## SPLIT #0: CPU # 0 inputs
+## SPLIT #1: FAKE0 # 8 inputs: [inp_mixed_embd (   2M)] [node_1 (   2M)] [inp_mixed_slots (   4K)] [embd (   2M)] [inp_pos (   2K)] [attn_inp_k_idxs (   4K)] [attn_inp_v_idxs (   4K)] [attn_inp_kq_mask (   4M)] 
+## SPLIT #2: FAKE1 # 5 inputs: [l_out-9 (   2M)] [inp_pos (   2K)] [attn_inp_k_idxs (   4K)] [attn_inp_v_idxs (   4K)] [attn_inp_kq_mask (   4M)] 
+## SPLIT #3: FAKE2 # 6 inputs: [l_out-19 (   2M)] [inp_pos (   2K)] [attn_inp_k_idxs (   4K)] [attn_inp_v_idxs (   4K)] [attn_inp_kq_mask (   4M)] [out_ids (   2K)] 
+sched_reserve:      FAKE0 compute buffer size =    30.01 MiB
+sched_reserve:      FAKE1 compute buffer size =    26.01 MiB
+sched_reserve:      FAKE2 compute buffer size =   298.75 MiB
+sched_reserve:        CPU compute buffer size =    12.02 MiB
+sched_reserve: graph: nodes = 989, splits = 4, input objects = 4, input tensors = 9
+sched_reserve: reserve took 3.05 ms, sched copies = 1
+buffer            model    context    compute      total
+FAKE0              84.5      160.0       30.0      274.5
+FAKE1              84.5      160.0       26.0      270.5
+FAKE2             189.3      128.0      298.8      616.0
+CPU                83.5        0.0       12.0       95.5
+sum                                               1256.5 MiB

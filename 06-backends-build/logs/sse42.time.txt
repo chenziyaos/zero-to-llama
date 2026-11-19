@@ -1,0 +1,13 @@
+sse42 configure 11 s build 214 s
+lrwxrwxrwx 1 root root     17 Nov  1 02:24 $WORK/b06/sse42/bin/libggml-base.so -> libggml-base.so.0
+lrwxrwxrwx 1 root root     16 Nov  1 02:24 $WORK/b06/sse42/bin/libggml-cpu.so -> libggml-cpu.so.0
+lrwxrwxrwx 1 root root     12 Nov  1 02:24 $WORK/b06/sse42/bin/libggml.so -> libggml.so.0
+-rwxr-xr-x 1 root root 475584 Nov  1 02:27 $WORK/b06/sse42/bin/libllama-bench-impl.so
+lrwxrwxrwx 1 root root     20 Nov  1 02:27 $WORK/b06/sse42/bin/libllama-common.so -> libllama-common.so.0
+-rwxr-xr-x 1 root root 141456 Nov  1 02:27 $WORK/b06/sse42/bin/libllama-completion-impl.so
+lrwxrwxrwx 1 root root     13 Nov  1 02:25 $WORK/b06/sse42/bin/libllama.so -> libllama.so.0
+915280 libggml-base.so.0.28.0
+998512 libggml-cpu.so.0.28.0
+51352 libggml.so.0.28.0
+ggml_total 1.87 MiB
+so_total 13.7 MiB

@@ -1,0 +1,49 @@
+$ ctest -L main -E test-model-resolution --timeout 900
+Test project /work/llama.cpp/build
+      Start 28: test-generate-fp8-models
+ 1/18 Test #28: test-generate-fp8-models ..............   Passed    0.60 sec
+      Start 29: test-fp8-requantize
+ 2/18 Test #29: test-fp8-requantize ...................   Passed    1.52 sec
+      Start 30: test-generate-models
+ 3/18 Test #30: test-generate-models ..................   Passed    8.88 sec
+      Start 31: test-generate-speculative-target
+ 4/18 Test #31: test-generate-speculative-target ......   Passed    0.47 sec
+      Start 32: test-speculative-rejection-sampling
+ 5/18 Test #32: test-speculative-rejection-sampling ...   Passed    0.22 sec
+      Start 33: test-llama-context
+ 6/18 Test #33: test-llama-context ....................   Passed   84.03 sec
+      Start 43: test-download-model
+ 7/18 Test #43: test-download-model ...................   Passed    2.31 sec
+      Start 45: test-thread-safety
+ 8/18 Test #45: test-thread-safety ....................   Passed    0.72 sec
+      Start 47: test-opt
+ 9/18 Test #47: test-opt ..............................   Passed    0.27 sec
+      Start 48: test-backend-tensor
+10/18 Test #48: test-backend-tensor ...................   Passed    0.15 sec
+      Start 49: test-tiled-mulmat
+11/18 Test #49: test-tiled-mulmat .....................   Passed    4.55 sec
+      Start 53: test-barrier
+12/18 Test #53: test-barrier ..........................   Passed    0.89 sec
+      Start 54: test-quantize-fns
+13/18 Test #54: test-quantize-fns .....................   Passed    3.94 sec
+      Start 55: test-quantize-perf
+14/18 Test #55: test-quantize-perf ....................   Passed    0.09 sec
+      Start 56: test-rope
+15/18 Test #56: test-rope .............................   Passed    0.08 sec
+      Start 57: test-col2im-1d
+16/18 Test #57: test-col2im-1d ........................   Passed    0.05 sec
+      Start 58: test-conv-1d
+17/18 Test #58: test-conv-1d ..........................   Passed    0.06 sec
+      Start 59: test-gelu-quick
+18/18 Test #59: test-gelu-quick .......................   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 18
+
+Label Time Summary:
+main                     =   0.85 sec*proc (3 tests)
+main backend             =   0.72 sec*proc (1 test)
+main behavior            =   4.83 sec*proc (2 tests)
+main behavior backend    = 100.21 sec*proc (11 tests)
+
+Total Test time (real) = 109.59 sec
+== rc=0 wall_s=109.6 maxrss_mib=444

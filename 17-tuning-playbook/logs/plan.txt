@@ -1,0 +1,26 @@
+== q-Q4_K_M -c 0
+n_ctx 40960，模型 251 + repack 205 + KV 4480 + 计算 343 = 5279 MiB
+decode 预测 56.5 t/s，带宽上限 86.2 t/s（33.695 GB/s）
+注意：没写 -c：取训练长度 40960，KV 4480 MiB；--fit 只在放不下时才往下压，内存够就照单全收
+== q-Q4_K_M -c 4096
+n_ctx 4096，模型 251 + repack 205 + KV 448 + 计算 313 = 1217 MiB
+decode 预测 56.5 t/s，带宽上限 86.2 t/s（33.695 GB/s）
+== q-Q4_K_M -c 4096 -ctk q8_0 -ctv q8_0
+n_ctx 4096，模型 251 + repack 205 + KV 238 + 计算 313 = 1007 MiB
+decode 预测 56.5 t/s，带宽上限 86.2 t/s（33.695 GB/s）
+== q-Q4_K_M -c 16384
+n_ctx 16384，模型 251 + repack 205 + KV 1792 + 计算 323 = 2571 MiB
+decode 预测 56.5 t/s，带宽上限 86.2 t/s（33.695 GB/s）
+== q-Q4_K_M -c 4096 -np 4
+n_ctx 4096，模型 251 + repack 205 + KV 448 + 计算 313 = 1217 MiB
+decode 预测 56.5 t/s，带宽上限 86.2 t/s（33.695 GB/s）
+注意：-np 4：-c 是总量，每条序列只分到 1024
+== q-Q4_0 -c 4096
+n_ctx 4096，模型 205 + repack 236 + KV 448 + 计算 313 = 1202 MiB
+decode 预测 56.5 t/s，带宽上限 89.7 t/s（33.695 GB/s）
+== q-Q8_0 -c 4096
+n_ctx 4096，模型 762 + repack 0 + KV 448 + 计算 313 = 1523 MiB
+decode 预测 44.6 t/s，带宽上限 53.2 t/s（33.695 GB/s）
+== qwen3-0.6b-bf16 -c 4096
+n_ctx 4096，模型 1434 + repack 0 + KV 448 + 计算 313 = 2195 MiB
+decode 预测 25.7 t/s，带宽上限 28.3 t/s（33.695 GB/s）

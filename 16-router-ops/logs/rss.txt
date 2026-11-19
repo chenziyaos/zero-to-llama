@@ -1,0 +1,15 @@
+q-Q8_0 c=4096 rc=0 maxrss_mib=1276 load_ms=2295.36
+q-Q8_0 c=8192 rc=0 maxrss_mib=1724 load_ms=2503.29
+q-Q8_0 c=16384 rc=0 maxrss_mib=2620 load_ms=2886.17
+smolvlm c=4096 text rc=0 maxrss_mib=290 load_ms=553.02
+smolvlm c=4096 mmproj rc=0 maxrss_mib=511 load_ms=-1.0
+smolvlm fit Host 165 90 107 
+0.00.307.632 I llama_kv_cache:        CPU KV buffer size =     0.00 MiB
+0.00.311.598 I sched_reserve:        CPU compute buffer size =   107.02 MiB
+0.00.830.040 I load_tensors:   CPU_Mapped model buffer size =   165.24 MiB
+0.00.872.428 I llama_kv_cache:        CPU KV buffer size =    90.00 MiB
+0.00.875.700 I sched_reserve:        CPU compute buffer size =   107.02 MiB
+0.01.275.564 I reserve_compute_meta:        CPU compute buffer size =    21.00 MiB
+0.15.108.126 D ~llama_context:        CPU compute buffer size is 107.0195 MiB, matches expectation of 107.0195 MiB
+MemTotal:        8156828 kB
+MemAvailable:    7182820 kB

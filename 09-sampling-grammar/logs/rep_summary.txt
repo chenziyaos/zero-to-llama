@@ -1,0 +1,5 @@
+config        words    rep4  dup_lines  longest
+dry             101    6.1%          0        6
+none            120   78.6%          0       77
+presence        129   12.7%          0       11
+repeat          120    5.1%          0        6

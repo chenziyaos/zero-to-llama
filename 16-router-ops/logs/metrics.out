@@ -1,0 +1,16 @@
+# conc  pl gauge_predicted_tps wall_tps per_req_tps busy
+conc 1 53.7 51.2 54.2 0.95
+conc 4 19.1 68.3 19.3 3.54
+
+# long  t_scrape gauge_predicted_tps tokens_predicted_total
+long 5.0 0.0 0
+long 10.0 0.0 0
+long 15.0 0.0 0
+long 20.0 0.0 0
+long 25.0 0.0 0
+long 30.0 0.0 0
+long 35.0 0.0 0
+long 40.0 53.7 2000
+long 45.0 0.0 2000
+
+sample /work/zero-to-llama/16-router-ops/logs/metrics_sample.txt 15 series 10 counters

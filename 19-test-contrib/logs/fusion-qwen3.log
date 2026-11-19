@@ -1,0 +1,3 @@
+$ /work/llama.cpp/build/bin/test-fusion --model /work/llama.cpp/build/tests/test-models/qwen3-dense.gguf --device CPU --record logs/fusion-cpu-qwen3.csv
+0.00.003.588 E main: device 'CPU' does not export the generic fusion debugging API (ggml_backend_fusion_*) - cannot run the fusion regression test
+== rc=1 wall_s=0.1 maxrss_mib=17

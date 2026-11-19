@@ -1,0 +1,101 @@
+# 输入：A=Q4_0 B=Q8_0 C=bf16；加载秒数(冷, 热) 和 -c 4096 下的 min MiB
+input A 5.46 1.63 965
+input B 2.36 2.38 1521
+input C 5.88 5.01 2193
+
+# lru  models_max pattern loads load_s wait_mean wait_max
+lru 1 rr 12 40.74 3.85 6.38
+lru 1 local 4 15.33 1.05 6.38
+lru 1 hot2 12 31.36 3.07 6.38
+lru 2 rr 12 40.74 3.81 6.38
+lru 2 local 3 13.7 0.89 6.38
+lru 2 hot2 3 13.7 1.18 6.38
+lru 3 rr 3 13.7 1.14 5.88
+lru 3 local 3 13.7 0.86 5.88
+lru 3 hot2 3 13.7 1.14 5.88
+
+# busy
+busy    0.00  请求 0 要 A，排队
+busy    0.00  spawn A（加载 5.5 s）
+busy    5.00  请求 1 要 B，排队
+busy    5.46  A 就绪，占 965 MiB
+busy    5.46  请求 0 交给 A（等了 5.5 s）
+busy   35.46  tick：为排队的请求卸载最久没用的 A
+busy   35.96  A 已卸载
+busy   35.96  spawn B（加载 2.4 s）
+busy   38.32  B 就绪，占 1521 MiB
+busy   38.32  请求 1 交给 B（等了 33.3 s）
+
+# cpu  margin resident_after loads
+cpu 0 ABC 3
+cpu 1024 ABC 3
+cpu 99999 ABC 3
+
+# gpu  margin resident_after loads evictions
+gpu 0 ABC 3 0
+gpu 512 ABC 3 0
+gpu 1024 BC 3 1
+gpu 2048 C 3 2
+gpulog    0.00  请求 0 要 A，排队
+gpulog    0.00  spawn A（加载 5.5 s）
+gpulog    5.46  A 就绪，占 965 MiB
+gpulog    5.46  请求 0 交给 A（等了 5.5 s）
+gpulog   20.00  请求 1 要 B，排队
+gpulog   20.00  spawn B（加载 2.4 s）
+gpulog   22.36  B 就绪，占 1521 MiB
+gpulog   22.36  请求 1 交给 B（等了 2.4 s）
+gpulog   40.00  请求 2 要 C，排队
+gpulog   40.00  make_room：超限，卸载最久没用的 A
+gpulog   40.50  A 已卸载
+gpulog   40.50  spawn C（加载 5.9 s）
+gpulog   46.38  C 就绪，占 2193 MiB
+gpulog   46.38  请求 2 交给 C（等了 6.4 s）
+gpuledger {'total': 6144, 'external': 512, 'held': 3714, 'avail': 1918, 'real_free': 1918}
+
+# anyway
+anyway    0.00  请求 0 要 C，排队
+anyway    0.00  WARN C 预计在 GPU0 上差 1169 MiB，但没有别的模型可卸，照样加载
+anyway    0.00  spawn C（加载 5.9 s）
+anyway    5.88  C 就绪，占 2193 MiB
+anyway    5.88  请求 0 交给 C（等了 5.9 s）
+
+# mmproj  extra_mib resident_after evictions real_free_after router_avail_after
+mmproj 0 AB 0 586 586
+mmproj 220 AB 0 366 366
+mmproj 600 AB 0 -14 -14
+
+# fitgreedy  pinned resident_after loads evictions
+fitgreedy 1 ABC 3 0
+fitgreedy 0 BC 6 4
+fitlog    0.00  请求 0 要 A，排队
+fitlog    0.00  spawn A（加载 5.5 s）
+fitlog    5.46  A 就绪，占 5031 MiB
+fitlog    5.46  请求 0 交给 A（等了 5.5 s）
+fitlog   20.00  请求 1 要 B，排队
+fitlog   20.00  spawn B（加载 2.4 s）
+fitlog   22.36  B 就绪，占 2137 MiB
+fitlog   22.36  请求 1 交给 B（等了 2.4 s）
+fitlog   40.00  请求 2 要 C，排队
+fitlog   40.00  make_room：超限，卸载最久没用的 A
+fitlog   40.50  A 已卸载
+fitlog   40.50  spawn C（加载 5.9 s）
+fitlog   46.38  C 就绪，占 5031 MiB
+fitlog   46.38  请求 2 交给 C（等了 6.4 s）
+fitlog   60.00  请求 3 要 A，排队
+fitlog   60.00  make_room：超限，卸载最久没用的 B
+fitlog   60.50  B 已卸载
+fitlog   60.50  spawn A（加载 1.6 s）
+fitlog   62.13  A 就绪，占 2137 MiB
+fitlog   62.13  请求 3 交给 A（等了 2.1 s）
+fitlog   80.00  请求 4 要 B，排队
+fitlog   80.00  make_room：超限，卸载最久没用的 C
+fitlog   80.50  C 已卸载
+fitlog   80.50  spawn B（加载 2.4 s）
+fitlog   82.88  B 就绪，占 5031 MiB
+fitlog   82.88  请求 4 交给 B（等了 2.9 s）
+fitlog  100.00  请求 5 要 C，排队
+fitlog  100.00  make_room：超限，卸载最久没用的 A
+fitlog  100.50  A 已卸载
+fitlog  100.50  spawn C（加载 5.0 s）
+fitlog  105.51  C 就绪，占 2193 MiB
+fitlog  105.51  请求 5 交给 C（等了 5.5 s）

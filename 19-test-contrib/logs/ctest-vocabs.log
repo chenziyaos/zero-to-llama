@@ -1,0 +1,12 @@
+$ ctest -R test-tokenizers-ggml-vocabs --output-on-failure --timeout 900
+Test project /work/llama.cpp/build
+    Start 16: test-tokenizers-ggml-vocabs
+1/1 Test #16: test-tokenizers-ggml-vocabs ......   Passed    7.47 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+behavior    =   7.47 sec*proc (1 test)
+
+Total Test time (real) =   7.72 sec
+== rc=0 wall_s=7.8 maxrss_mib=144

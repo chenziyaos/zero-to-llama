@@ -1,0 +1,9 @@
+generic configure 10 s build 233 s
+lrwxrwxrwx 1 root root     17 Nov  1 02:20 $WORK/b06/generic/bin/libggml-base.so -> libggml-base.so.0
+lrwxrwxrwx 1 root root     16 Nov  1 02:20 $WORK/b06/generic/bin/libggml-cpu.so -> libggml-cpu.so.0
+lrwxrwxrwx 1 root root     12 Nov  1 02:20 $WORK/b06/generic/bin/libggml.so -> libggml.so.0
+-rwxr-xr-x 1 root root 475584 Nov  1 02:23 $WORK/b06/generic/bin/libllama-bench-impl.so
+lrwxrwxrwx 1 root root     20 Nov  1 02:23 $WORK/b06/generic/bin/libllama-common.so -> libllama-common.so.0
+-rwxr-xr-x 1 root root 141456 Nov  1 02:23 $WORK/b06/generic/bin/libllama-completion-impl.so
+lrwxrwxrwx 1 root root     13 Nov  1 02:21 $WORK/b06/generic/bin/libllama.so -> libllama.so.0
+so_total 0.6 MiB

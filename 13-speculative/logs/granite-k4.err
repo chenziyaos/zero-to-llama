@@ -1,0 +1,8 @@
+0.18.821.106 I encoded   23 tokens in    0.254 seconds, speed:   90.504 t/s
+0.18.821.107 I decoded  261 tokens in    8.883 seconds, speed:   29.381 t/s
+0.18.821.107 I n_draft   = 4
+0.18.821.107 I n_predict = 261
+0.18.821.108 I n_drafted = 269
+0.18.821.108 I n_accept  = 193
+0.18.821.108 I accept    = 71.747%
+0.18.821.151 I spec common_specu: statistics     draft-simple: #calls(b,g,a) =    1     68     68, #gen drafts =     68, #acc drafts =    62, #gen tokens =    269, #acc tokens =   193, #mean acc len = 3.84, #acc rate/pos = (0.912, 0.750, 0.618, 0.559), dur(b,g,a) = 0.016, 2723.432, 0.040 ms

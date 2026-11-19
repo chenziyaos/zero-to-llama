@@ -1,0 +1,49 @@
+granite-1b-a400m-Q4_K_M.gguf  arch=granitemoe  24 层  专家 32 选 8
+每层非专家 1.9 MiB，专家 29.1 MiB；专家合计 698 MiB，占权重 84.9%
+-ngl -1 -ncmoe 0 -c 4096：第 0 层起上卡
+  显卡  dense 45  exps 698  kv 192  output 39  合计 974 MiB
+  主存  dense 0  exps 0  kv 0  embd 39  合计 39 MiB
+granite-1b-a400m-Q4_K_M.gguf  arch=granitemoe  24 层  专家 32 选 8
+每层非专家 1.9 MiB，专家 29.1 MiB；专家合计 698 MiB，占权重 84.9%
+-ngl -1 -ncmoe 24 -c 4096：第 0 层起上卡
+  显卡  dense 45  exps 0  kv 192  output 39  合计 277 MiB
+  主存  dense 0  exps 698  kv 0  embd 39  合计 737 MiB
+granite-3b-a800m-Q4_K_M.gguf  arch=granitemoe  32 层  专家 40 选 8
+每层非专家 3.7 MiB，专家 54.5 MiB；专家合计 1744 MiB，占权重 88.0%
+-ngl -1 -ncmoe 0 -c 4096：第 0 层起上卡
+  显卡  dense 119  exps 1744  kv 256  output 59  合计 2178 MiB
+  主存  dense 0  exps 0  kv 0  embd 59  合计 59 MiB
+granite-3b-a800m-Q4_K_M.gguf  arch=granitemoe  32 层  专家 40 选 8
+每层非专家 3.7 MiB，专家 54.5 MiB；专家合计 1744 MiB，占权重 88.0%
+-ngl -1 -ncmoe 32 -c 4096：第 0 层起上卡
+  显卡  dense 119  exps 0  kv 256  output 59  合计 434 MiB
+  主存  dense 0  exps 1744  kv 0  embd 59  合计 1803 MiB
+qwen3-30b-a3b-Q4_K_M.head  arch=qwen3moe  48 层  专家 128 选 8
+每层非专家 11.3 MiB，专家 348.8 MiB；专家合计 16740 MiB，占权重 94.6%
+-ngl -1 -ncmoe 0 -c 4096：第 0 层起上卡
+  显卡  dense 541  exps 16740  kv 384  output 243  合计 17908 MiB
+  主存  dense 0  exps 0  kv 0  embd 167  合计 167 MiB
+qwen3-30b-a3b-Q4_K_M.head  arch=qwen3moe  48 层  专家 128 选 8
+每层非专家 11.3 MiB，专家 348.8 MiB；专家合计 16740 MiB，占权重 94.6%
+-ngl -1 -ncmoe 48 -c 4096：第 0 层起上卡
+  显卡  dense 541  exps 0  kv 384  output 243  合计 1168 MiB
+  主存  dense 0  exps 16740  kv 0  embd 167  合计 16907 MiB
+24576 MiB 留 1024：-ngl all -ncmoe 0，显卡 17908 MiB
+16384 MiB 留 1024：-ngl all -ncmoe 7，显卡 15343 MiB
+12288 MiB 留 1024：-ngl all -ncmoe 19，显卡 11257 MiB
+8192 MiB 留 1024：-ngl all -ncmoe 32，显卡 6847 MiB
+qwen3-30b-a3b-Q4_K_M.head  arch=qwen3moe  48 层  专家 128 选 8  按 F16 重算
+每层非专家 37.0 MiB，专家 1152.0 MiB；专家合计 55296 MiB，占权重 94.9%
+-ngl 48 -ncmoe 0 -c 4096：第 0 层起上卡
+  显卡  dense 1777  exps 16128  kv 384  output 0  合计 18289 MiB
+  主存  dense 594  exps 39168  kv 0  embd 594  合计 40355 MiB
+qwen3-30b-a3b-Q4_K_M.head  arch=qwen3moe  48 层  专家 128 选 8  按 F16 重算
+每层非专家 37.0 MiB，专家 1152.0 MiB；专家合计 55296 MiB，占权重 94.9%
+-ngl 48 -ncmoe 0 -c 4096：第 1 层起上卡
+  显卡  dense 1740  exps 14976  kv 376  output 594  合计 17685 MiB
+  主存  dense 37  exps 40320  kv 8  embd 594  合计 40959 MiB
+Qwen3-14B-Q4_K_M.head  arch=qwen3  40 层  专家 None 选 None
+每层非专家 188.8 MiB，专家 0.0 MiB；专家合计 0 MiB，占权重 0.0%
+-ngl -1 -ncmoe 0 -c 4096：第 0 层起上卡
+  显卡  dense 7553  exps 0  kv 640  output 609  合计 8802 MiB
+  主存  dense 0  exps 0  kv 0  embd 417  合计 417 MiB

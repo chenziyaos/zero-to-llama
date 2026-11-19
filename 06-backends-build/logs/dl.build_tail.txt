@@ -1,0 +1,40 @@
+[274/398] Linking CXX shared module bin/libggml-cpu-cascadelake.so
+[275/398] Linking CXX shared module bin/libggml-cpu-icelake.so
+[276/398] Linking CXX shared module bin/libggml-cpu-cooperlake.so
+[277/398] Linking CXX shared module bin/libggml-cpu-zen4.so
+[278/398] Linking CXX shared module bin/libggml-cpu-alderlake.so
+[279/398] Linking CXX shared module bin/libggml-cpu-sapphirerapids.so
+[280/398] Linking CXX shared library bin/libggml.so.0.28.0
+[334/398] Linking CXX shared library bin/libllama.so.0.8.0
+[393/398] Linking CXX shared library bin/libllama-common.so.0.8.0
+[395/398] Linking CXX shared library bin/libllama-completion-impl.so
+[397/398] Linking CXX shared library bin/libllama-bench-impl.so
+[7/182] Linking CXX shared library bin/libggml-base.so.0.28.0
+[9/182] Linking CXX shared module bin/libggml-cpu-x64.so
+[10/182] Linking CXX shared module bin/libggml-cpu-sse42.so
+[12/182] Linking CXX shared module bin/libggml-cpu-sandybridge.so
+[13/182] Linking CXX shared module bin/libggml-cpu-ivybridge.so
+[16/182] Linking CXX shared module bin/libggml-cpu-haswell.so
+[17/182] Linking CXX shared module bin/libggml-cpu-piledriver.so
+[18/182] Linking CXX shared module bin/libggml-cpu-skylakex.so
+[19/182] Linking CXX shared module bin/libggml-cpu-cannonlake.so
+[20/182] Linking CXX shared module bin/libggml-cpu-cascadelake.so
+[21/182] Linking CXX shared module bin/libggml-cpu-icelake.so
+[22/182] Linking CXX shared module bin/libggml-cpu-zen4.so
+[23/182] Linking CXX shared module bin/libggml-cpu-cooperlake.so
+[24/182] Linking CXX shared module bin/libggml-cpu-sapphirerapids.so
+[25/182] Linking CXX shared module bin/libggml-cpu-alderlake.so
+[26/182] Linking CXX shared library bin/libggml.so.0.28.0
+[36/182] Linking CXX shared library bin/libllama.so.0.8.0
+[48/182] Linking CXX shared library bin/libllama-common.so.0.8.0
+[114/182] Linking CXX shared library bin/libllama-batched-bench-impl.so
+[120/182] Linking CXX shared library bin/libllama-perplexity-impl.so
+[122/182] Linking CXX shared library bin/libllama-completion-impl.so
+[124/182] Linking CXX shared library bin/libllama-quantize-impl.so
+[125/182] Linking CXX shared library bin/libllama-bench-impl.so
+[126/182] Building CXX object tools/mtmd/CMakeFiles/llama-llava-cli.dir/deprecation-warning.cpp.o
+[127/182] Building CXX object tools/mtmd/CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.o
+[128/182] Building CXX object tools/mtmd/CMakeFiles/llama-minicpmv-cli.dir/deprecation-warning.cpp.o
+[129/182] Building CXX object tools/mtmd/CMakeFiles/llama-qwen2vl-cli.dir/deprecation-warning.cpp.o
+[132/182] Linking CXX shared library bin/libllama-fit-params-impl.so
+collect2: error: ld returned 1 exit status

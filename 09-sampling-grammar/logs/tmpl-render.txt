@@ -1,0 +1,55 @@
+# chat_template 4168 字符
+== 单轮，缺省（62 字符）
+<|im_start|>user\n
+What is 2+3?<|im_end|>\n
+<|im_start|>assistant\n
+
+
+== 单轮，enable_thinking=false（81 字符）
+<|im_start|>user\n
+What is 2+3?<|im_end|>\n
+<|im_start|>assistant\n
+<think>\n
+\n
+</think>\n
+\n
+
+
+== 带系统提示词（107 字符）
+<|im_start|>system\n
+Answer briefly.<|im_end|>\n
+<|im_start|>user\n
+What is 2+3?<|im_end|>\n
+<|im_start|>assistant\n
+
+
+== 多轮：上一轮的思考被删掉（141 字符）
+<|im_start|>user\n
+What is 2+3?<|im_end|>\n
+<|im_start|>assistant\n
+2 + 3 = 5.<|im_end|>\n
+<|im_start|>user\n
+And 4+4?<|im_end|>\n
+<|im_start|>assistant\n
+
+
+== 带工具（656 字符）
+<|im_start|>system\n
+# Tools\n
+\n
+You may call one or more functions to assist with the user query.\n
+\n
+You are provided with function signatures within <tools></tools> XML tags:\n
+<tools>\n
+{"type": "function", "function": {"name": "get_weather", "description": "Get weather", "parameters": {"type": "object", "properties": {"city": {"type": "string"}}, "required": ["city"]}}}\n
+</tools>\n
+\n
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n
+<tool_call>\n
+{"name": <function-name>, "arguments": <args-json-object>}\n
+</tool_call><|im_end|>\n
+<|im_start|>user\n
+Weather in Paris?<|im_end|>\n
+<|im_start|>assistant\n
+
+

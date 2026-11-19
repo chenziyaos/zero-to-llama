@@ -1,0 +1,8 @@
+== flags: 
+0.09.043.789 I llama_completion: prompt: 'What is 2+3?'
+0.09.043.791 I llama_completion: number of tokens in prompt = 15
+== flags: --reasoning off
+0.03.798.861 I llama_completion: prompt: 'What is 2+3?'
+0.03.798.864 I llama_completion: number of tokens in prompt = 15
+== flags: --chat-template-kwargs {"enable_thinking":false}
+error: invalid argument: --chat-template-kwargs

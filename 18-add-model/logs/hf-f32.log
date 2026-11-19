@@ -1,0 +1,4 @@
+$ python3 hf_ref.py --model /work/models/Qwen3-0.6B --text prompt.txt --out /work/ref18/f32 --dtype f32
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:02<11:26,  2.21s/it]Loading weights:   1%|          | 2/311 [00:02<05:11,  1.01s/it]Loading weights:  44%|████▎     | 136/311 [00:02<00:01, 100.04it/s]Loading weights:  57%|█████▋    | 177/311 [00:02<00:01, 107.72it/s]Loading weights:  67%|██████▋   | 207/311 [00:03<00:00, 108.63it/s]Loading weights:  76%|███████▌  | 236/311 [00:03<00:00, 119.59it/s]Loading weights:  85%|████████▌ | 265/311 [00:03<00:00, 133.05it/s]Loading weights:  92%|█████████▏| 286/311 [00:03<00:00, 139.88it/s]Loading weights:  98%|█████████▊| 306/311 [00:03<00:00, 141.13it/s]Loading weights: 100%|██████████| 311/311 [00:03<00:00, 83.91it/s] 
+hf_ref: 212 tokens, dtype f32, load 10.0s, forward 1.7s -> /work/ref18/f32
+== rc=0 wall_s=32.3 maxrss_mib=4767

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+logs/run-*.log
+models/
+12-multi-gpu-rpc/fake_devs
+12-multi-gpu-rpc/rpc_msg
+02-ledger/peak
+02-ledger/stream
+09-sampling-grammar/samp_bench

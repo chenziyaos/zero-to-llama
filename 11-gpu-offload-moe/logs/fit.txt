@@ -1,0 +1,20 @@
+== granite-1b-a400m-Q4_K_M.gguf
+common_params_fit_impl: getting device memory data for initial parameters:
+common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Host               |                  507 =   204 +     192 +     110                |
+common_memory_breakdown_print: |   - CPU_REPACK         |                  577 =   577 +       0 +       0                |
+common_params_fit_impl: projected to use 507 MiB of host memory vs. 7965 MiB of total host memory
+common_params_fit_impl: will leave 7458 >= 1024 MiB of system memory, no changes needed
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 0.08 seconds
+-c 4096 -ngl -1
+== granite-3b-a800m-Q4_K_M.gguf
+common_params_fit_impl: getting device memory data for initial parameters:
+common_memory_breakdown_print: | memory breakdown [MiB] | total   free    self   model   context   compute    unaccounted |
+common_memory_breakdown_print: |   - Host               |                  841 =   470 +     256 +     115                |
+common_memory_breakdown_print: |   - CPU_REPACK         |                 1451 =  1451 +       0 +       0                |
+common_params_fit_impl: projected to use 841 MiB of host memory vs. 7965 MiB of total host memory
+common_params_fit_impl: will leave 7124 >= 1024 MiB of system memory, no changes needed
+common_fit_params: successfully fit params to free device memory
+common_fit_params: fitting params to free memory took 0.35 seconds
+-c 4096 -ngl -1

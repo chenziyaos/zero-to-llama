@@ -1,0 +1,4 @@
+madvise mmap AnonHugePages:      4096 kB
+madvise none AnonHugePages:      4096 kB
+always mmap AnonHugePages:     14336 kB
+always none AnonHugePages:     14336 kB

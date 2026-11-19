@@ -1,0 +1,7 @@
+$ python3 tok_compare.py --hf /work/models/Qwen3-0.6B --gguf /work/models/conv/vocab/qwen2.gguf --tokenize /work/llama.cpp/build/bin/llama-tokenize --tag qwen2 --json logs/tok-qwen2.json
+MISMATCH 'é combining acute'
+  hf    [963, 34171, 29783]
+  llama [68, 53839, 34171, 29783]
+  first diff at 0
+tok_compare[qwen2]: 24/25 identical
+== rc=0 wall_s=24.0 maxrss_mib=369

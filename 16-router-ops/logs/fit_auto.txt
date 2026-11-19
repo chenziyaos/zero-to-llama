@@ -1,0 +1,17 @@
+q-Q8_0 np=1 fitt=1024 -c 40960 -ngl -1
+q-Q8_0 np=1 fitt=2048 -c 40960 -ngl -1
+q-Q8_0 np=1 fitt=3072 -c 34560 -ngl -1
+q-Q8_0 np=1 fitt=4096 -c 25344 -ngl -1
+q-Q8_0 np=4 fitt=1024 -c 53248 -ngl -1
+q-Q8_0 np=4 fitt=2048 -c 44032 -ngl -1
+q-Q8_0 np=4 fitt=3072 -c 34816 -ngl -1
+q-Q8_0 np=4 fitt=4096 -c 24576 -ngl -1
+qwen3-0.6b-bf16 np=1 fitt=1024 -c 40960 -ngl -1
+qwen3-0.6b-bf16 np=1 fitt=2048 -c 37632 -ngl -1
+qwen3-0.6b-bf16 np=1 fitt=3072 -c 28416 -ngl -1
+qwen3-0.6b-bf16 np=1 fitt=4096 -c 19200 -ngl -1
+qwen3-0.6b-bf16 np=4 fitt=1024 -c 47104 -ngl -1
+qwen3-0.6b-bf16 np=4 fitt=2048 -c 37888 -ngl -1
+qwen3-0.6b-bf16 np=4 fitt=3072 -c 28672 -ngl -1
+qwen3-0.6b-bf16 np=4 fitt=4096 -c 18432 -ngl -1
+MemTotal:        8156828 kB

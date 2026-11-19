@@ -1,0 +1,25 @@
+test_derive (__main__.MetricsTest.test_derive) ... ok
+test_first_token_free_and_reset (__main__.MetricsTest.test_first_token_free_and_reset) ... ok
+test_long_request_invisible_until_done (__main__.MetricsTest.test_long_request_invisible_until_done) ... ok
+test_roundtrip (__main__.MetricsTest.test_roundtrip) ... ok
+test_canonical_tag (__main__.PresetTest.test_canonical_tag) ... ok
+test_cascade_and_router_cli_wins (__main__.PresetTest.test_cascade_and_router_cli_wins) ... ok
+test_models_dir (__main__.PresetTest.test_models_dir) ... ok
+test_negated_bool_and_version (__main__.PresetTest.test_negated_bool_and_version) ... ok
+test_preset_only_keys_not_rendered (__main__.PresetTest.test_preset_only_keys_not_rendered) ... ok
+test_reserved_removed (__main__.PresetTest.test_reserved_removed) ... ok
+test_section_tag_normalized (__main__.PresetTest.test_section_tag_normalized) ... ok
+test_stop_timeout_fallback (__main__.PresetTest.test_stop_timeout_fallback) ... ok
+test_unknown_key (__main__.PresetTest.test_unknown_key) ... ok
+test_busy_not_evicted (__main__.RouterTest.test_busy_not_evicted) ... ok
+test_cpu_margin_ignored (__main__.RouterTest.test_cpu_margin_ignored) ... ok
+test_gpu_margin_evicts (__main__.RouterTest.test_gpu_margin_evicts) ... ok
+test_loading_anyway (__main__.RouterTest.test_loading_anyway) ... ok
+test_lru_victim (__main__.RouterTest.test_lru_victim) ... ok
+test_models_max_zero_unlimited (__main__.RouterTest.test_models_max_zero_unlimited) ... ok
+test_unseen_mmproj_goes_negative (__main__.RouterTest.test_unseen_mmproj_goes_negative) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.011s
+
+OK

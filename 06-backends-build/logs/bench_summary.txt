@@ -1,0 +1,60 @@
+native q-Q4_K_M.gguf pp512 467.2 ± 23.4
+native q-Q4_K_M.gguf tg64 67.4 ± 5.5
+native q-Q4_0.gguf pp512 447.7 ± 3.5
+native q-Q4_0.gguf tg64 71.0 ± 2.1
+native q-Q8_0.gguf pp512 341.4 ± 24.6
+native q-Q8_0.gguf tg64 54.1 ± 0.6
+generic q-Q4_K_M.gguf pp512 319.2 ± 1.0
+generic q-Q4_K_M.gguf tg64 74.1 ± 1.3
+generic q-Q4_0.gguf pp512 282.3 ± 0.3
+generic q-Q4_0.gguf tg64 74.1 ± 1.6
+generic q-Q8_0.gguf pp512 266.9 ± 0.9
+generic q-Q8_0.gguf tg64 53.8 ± 0.4
+sse42 q-Q4_K_M.gguf pp512 58.2 ± 0.5
+sse42 q-Q4_K_M.gguf tg64 31.2 ± 1.0
+sse42 q-Q4_0.gguf pp512 103.2 ± 0.3
+sse42 q-Q4_0.gguf tg64 41.1 ± 0.4
+sse42 q-Q8_0.gguf pp512 55.0 ± 0.2
+sse42 q-Q8_0.gguf tg64 31.0 ± 0.3
+blas q-Q4_K_M.gguf pp512 164.9 ± 13.9
+blas q-Q4_K_M.gguf tg64 79.4 ± 0.7
+blas q-Q4_0.gguf pp512 387.3 ± 17.2
+blas q-Q4_0.gguf tg64 84.1 ± 0.2
+blas q-Q8_0.gguf pp512 86.0 ± 6.4
+blas q-Q8_0.gguf tg64 61.1 ± 1.1
+nollamafile q-Q4_K_M.gguf pp512 357.1 ± 8.3
+nollamafile q-Q4_K_M.gguf tg64 84.6 ± 1.4
+nollamafile q-Q4_0.gguf pp512 377.7 ± 0.6
+nollamafile q-Q4_0.gguf tg64 90.6 ± 1.7
+nollamafile q-Q8_0.gguf pp512 194.1 ± 1.7
+nollamafile q-Q8_0.gguf tg64 61.2 ± 0.2
+dl q-Q4_K_M.gguf pp512 402.4 ± 4.3
+dl q-Q4_K_M.gguf tg64 78.7 ± 0.4
+dl q-Q4_0.gguf pp512 389.1 ± 1.6
+dl q-Q4_0.gguf tg64 84.8 ± 1.2
+dl q-Q8_0.gguf pp512 341.0 ± 2.3
+dl q-Q8_0.gguf tg64 56.5 ± 0.2
+dl:cannonlake pp512 399.8 ± 2.2
+dl:cannonlake tg64 82.4 ± 4.4
+dl:cascadelake pp512 394.2 ± 1.4
+dl:cascadelake tg64 82.2 ± 4.0
+dl:cooperlake pp512 403.0 ± 0.8
+dl:cooperlake tg64 84.0 ± 4.1
+dl:haswell pp512 336.0 ± 1.2
+dl:haswell tg64 83.0 ± 0.3
+dl:icelake pp512 421.3 ± 2.2
+dl:icelake tg64 88.1 ± 3.2
+dl:ivybridge pp512 228.0 ± 1.0
+dl:ivybridge tg64 65.5 ± 0.5
+dl:piledriver pp512 232.5 ± 0.8
+dl:piledriver tg64 65.4 ± 2.5
+dl:sandybridge pp512 218.1 ± 1.3
+dl:sandybridge tg64 53.4 ± 2.1
+dl:skylakex pp512 389.6 ± 2.0
+dl:skylakex tg64 84.1 ± 0.1
+dl:sse42 pp512 56.6 ± 0.2
+dl:sse42 tg64 31.2 ± 0.2
+dl:x64 pp512 12.9 ± 1.9
+dl:x64 tg64 9.9 ± 0.0
+dl:zen4 pp512 405.7 ± 11.3
+dl:zen4 tg64 84.0 ± 1.2

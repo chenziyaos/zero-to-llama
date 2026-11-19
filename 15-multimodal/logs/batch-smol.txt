@@ -1,0 +1,4 @@
+....................................................................
+# model=models/vl/SmolVLM2-256M-Video-Instruct-Q8_0.gguf mmproj=models/vl/mmproj-SmolVLM2-256M-Video-Instruct-Q8_0.gguf threads=4 bmax=1024
+640x488 rep=0 chunks=17 one_by_one_ms=12156.2 batched_ms=16235.3 n_batches=17
+640x488 rep=1 chunks=17 one_by_one_ms=12470.3 batched_ms=14225.7 n_batches=17

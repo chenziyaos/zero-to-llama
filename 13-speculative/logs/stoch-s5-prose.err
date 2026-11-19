@@ -1,0 +1,7 @@
+0.11.680.609 I encoded   46 tokens in    0.271 seconds, speed:  169.446 t/s
+0.11.680.613 I decoded  181 tokens in    6.350 seconds, speed:   28.504 t/s
+0.11.680.614 I n_draft   = 4
+0.11.680.614 I n_predict = 181
+0.11.680.614 I n_drafted = 224
+0.11.680.614 I n_accept  = 124
+0.11.680.614 I accept    = 55.357%

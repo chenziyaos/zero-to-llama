@@ -1,0 +1,40 @@
+0.02.899.536 I main: n_parallel = 8, n_sequences = 16, cont_batching = 1, system tokens = 273
+0.03.649.259 I main: clearing the KV cache
+0.03.649.370 I [31mClient   0, seq    0, junk =    0, prompt = 12, started decoding ...[0m
+0.03.649.474 I [31mClient   1, seq    1, junk =    0, prompt = 22, started decoding ...[0m
+0.03.649.537 I [31mClient   2, seq    2, junk =    0, prompt = 24, started decoding ...[0m
+0.03.649.552 I [31mClient   3, seq    3, junk =    0, prompt = 12, started decoding ...[0m
+0.03.649.596 I [31mClient   4, seq    4, junk =    0, prompt = 17, started decoding ...[0m
+0.03.649.630 I [31mClient   5, seq    5, junk =    0, prompt = 22, started decoding ...[0m
+0.03.649.651 I [31mClient   6, seq    6, junk =    0, prompt = 17, started decoding ...[0m
+0.03.649.676 I [31mClient   7, seq    7, junk =    0, prompt = 11, started decoding ...[0m
+0.07.255.344 I [31mClient   4, seq   4/ 16, prompt   17 t, response   40 t, time  3.61 s, speed 15.81 t/s, cache miss 0 [0m 
+0.07.255.736 I [31mClient   6, seq   6/ 16, prompt   17 t, response   40 t, time  3.61 s, speed 15.81 t/s, cache miss 0 [0m 
+0.07.255.998 I [31mClient   4, seq    8, junk =    0, prompt = 12, started decoding ...[0m
+0.07.256.037 I [31mClient   6, seq    9, junk =    0, prompt = 11, started decoding ...[0m
+0.09.290.825 I [31mClient   0, seq   0/ 16, prompt   12 t, response   64 t, time  5.64 s, speed 13.47 t/s, cache miss 0 [0m 
+0.09.291.213 I [31mClient   1, seq   1/ 16, prompt   22 t, response   64 t, time  5.64 s, speed 15.24 t/s, cache miss 0 [0m 
+0.09.291.440 I [31mClient   2, seq   2/ 16, prompt   24 t, response   64 t, time  5.64 s, speed 15.60 t/s, cache miss 0 [0m 
+0.09.291.772 I [31mClient   3, seq   3/ 16, prompt   12 t, response   64 t, time  5.64 s, speed 13.47 t/s, cache miss 0 [0m 
+0.09.292.224 I [31mClient   5, seq   5/ 16, prompt   22 t, response   64 t, time  5.64 s, speed 15.24 t/s, cache miss 0 [0m 
+0.09.292.662 I [31mClient   7, seq   7/ 16, prompt   11 t, response   64 t, time  5.64 s, speed 13.29 t/s, cache miss 0 [0m 
+0.09.292.834 I [31mClient   0, seq   10, junk =    0, prompt = 22, started decoding ...[0m
+0.09.292.870 I [31mClient   1, seq   11, junk =    0, prompt = 12, started decoding ...[0m
+0.09.293.011 I [31mClient   2, seq   12, junk =    0, prompt = 15, started decoding ...[0m
+0.09.293.065 I [31mClient   3, seq   13, junk =    0, prompt = 11, started decoding ...[0m
+0.09.293.112 I [31mClient   5, seq   14, junk =    0, prompt = 12, started decoding ...[0m
+0.09.293.133 I [31mClient   7, seq   15, junk =    0, prompt = 14, started decoding ...[0m
+0.12.680.454 I [31mClient   4, seq   8/ 16, prompt   12 t, response   64 t, time  5.42 s, speed 14.01 t/s, cache miss 0 [0m 
+0.12.680.823 I [31mClient   6, seq   9/ 16, prompt   11 t, response   64 t, time  5.42 s, speed 13.83 t/s, cache miss 0 [0m 
+0.14.819.281 I [31mClient   0, seq  10/ 16, prompt   22 t, response   64 t, time  5.53 s, speed 15.56 t/s, cache miss 0 [0m 
+0.14.819.658 I [31mClient   1, seq  11/ 16, prompt   12 t, response   64 t, time  5.53 s, speed 13.75 t/s, cache miss 0 [0m 
+0.14.819.980 I [31mClient   2, seq  12/ 16, prompt   15 t, response   64 t, time  5.53 s, speed 14.29 t/s, cache miss 0 [0m 
+0.14.820.220 I [31mClient   3, seq  13/ 16, prompt   11 t, response   64 t, time  5.53 s, speed 13.57 t/s, cache miss 0 [0m 
+0.14.820.428 I [31mClient   5, seq  14/ 16, prompt   12 t, response   64 t, time  5.53 s, speed 13.75 t/s, cache miss 0 [0m 
+0.14.820.706 I [31mClient   7, seq  15/ 16, prompt   14 t, response   64 t, time  5.53 s, speed 14.11 t/s, cache miss 0 [0m 
+0.14.821.065 I main: clearing the KV cache
+0.14.821.147 I main: n_parallel = 8, n_sequences = 16, cont_batching = 1, system tokens = 273
+0.14.821.149 I Total prompt tokens:    246, speed: 20.63 t/s
+0.14.821.150 I Total gen tokens:       976, speed: 81.87 t/s
+0.14.821.150 I Total speed (AVG):           speed: 102.50 t/s
+0.14.821.151 I Cache misses:             0

@@ -1,0 +1,42 @@
+0.08.150.562 I main: n_parallel = 2, n_sequences = 16, cont_batching = 1, system tokens = 273
+0.08.150.625 I main: clearing the KV cache
+0.08.151.253 I [31mClient   0, seq    0, junk =    0, prompt = 285, started decoding ...[0m
+0.08.151.971 I [31mClient   1, seq    1, junk =    0, prompt = 295, started decoding ...[0m
+0.12.335.909 I [31mClient   0, seq   0/ 16, prompt  285 t, response   64 t, time  4.19 s, speed 83.39 t/s, cache miss 0 [0m 
+0.12.336.161 I [31mClient   1, seq   1/ 16, prompt  295 t, response   64 t, time  4.18 s, speed 85.78 t/s, cache miss 0 [0m 
+0.12.336.178 I main: clearing the KV cache
+0.12.337.463 I [31mClient   0, seq    2, junk =    0, prompt = 297, started decoding ...[0m
+0.12.338.148 I [31mClient   1, seq    3, junk =    0, prompt = 285, started decoding ...[0m
+0.16.648.928 I [31mClient   0, seq   2/ 16, prompt  297 t, response   64 t, time  4.31 s, speed 83.71 t/s, cache miss 0 [0m 
+0.16.649.155 I [31mClient   1, seq   3/ 16, prompt  285 t, response   64 t, time  4.31 s, speed 80.94 t/s, cache miss 0 [0m 
+0.16.649.172 I main: clearing the KV cache
+0.16.650.195 I [31mClient   0, seq    4, junk =    0, prompt = 290, started decoding ...[0m
+0.16.650.761 I [31mClient   1, seq    5, junk =    0, prompt = 295, started decoding ...[0m
+0.20.449.517 I [31mClient   0, seq   4/ 16, prompt  290 t, response   53 t, time  3.80 s, speed 90.26 t/s, cache miss 0 [0m 
+0.20.450.580 I [31mClient   0, seq    6, junk =    0, prompt = 290, started decoding ...[0m
+0.21.779.272 I [31mClient   1, seq   5/ 16, prompt  295 t, response   64 t, time  5.13 s, speed 69.99 t/s, cache miss 0 [0m 
+0.21.780.870 I [31mClient   1, seq    7, junk =    0, prompt = 284, started decoding ...[0m
+0.24.673.781 I [31mClient   0, seq   6/ 16, prompt  290 t, response   64 t, time  4.22 s, speed 83.81 t/s, cache miss 0 [0m 
+0.24.675.161 I [31mClient   0, seq    8, junk =    0, prompt = 285, started decoding ...[0m
+0.25.941.290 I [31mClient   1, seq   7/ 16, prompt  284 t, response   64 t, time  4.16 s, speed 83.61 t/s, cache miss 0 [0m 
+0.25.942.529 I [31mClient   1, seq    9, junk =    0, prompt = 284, started decoding ...[0m
+0.28.884.194 I [31mClient   0, seq   8/ 16, prompt  285 t, response   64 t, time  4.21 s, speed 82.89 t/s, cache miss 0 [0m 
+0.28.885.648 I [31mClient   0, seq   10, junk =    0, prompt = 295, started decoding ...[0m
+0.30.165.107 I [31mClient   1, seq   9/ 16, prompt  284 t, response   64 t, time  4.22 s, speed 82.39 t/s, cache miss 0 [0m 
+0.30.166.006 I [31mClient   1, seq   11, junk =    0, prompt = 285, started decoding ...[0m
+0.33.063.432 I [31mClient   0, seq  10/ 16, prompt  295 t, response   64 t, time  4.18 s, speed 85.91 t/s, cache miss 0 [0m 
+0.33.064.535 I [31mClient   0, seq   12, junk =    0, prompt = 288, started decoding ...[0m
+0.34.338.591 I [31mClient   1, seq  11/ 16, prompt  285 t, response   64 t, time  4.17 s, speed 83.62 t/s, cache miss 0 [0m 
+0.34.339.504 I [31mClient   1, seq   13, junk =    0, prompt = 284, started decoding ...[0m
+0.37.235.186 I [31mClient   0, seq  12/ 16, prompt  288 t, response   64 t, time  4.17 s, speed 84.38 t/s, cache miss 0 [0m 
+0.37.236.305 I [31mClient   0, seq   14, junk =    0, prompt = 285, started decoding ...[0m
+0.38.505.776 I [31mClient   1, seq  13/ 16, prompt  284 t, response   64 t, time  4.17 s, speed 83.51 t/s, cache miss 0 [0m 
+0.38.506.669 I [31mClient   1, seq   15, junk =    0, prompt = 287, started decoding ...[0m
+0.41.416.173 I [31mClient   0, seq  14/ 16, prompt  285 t, response   64 t, time  4.18 s, speed 83.48 t/s, cache miss 0 [0m 
+0.41.681.600 I [31mClient   1, seq  15/ 16, prompt  287 t, response   64 t, time  3.18 s, speed 110.52 t/s, cache miss 0 [0m 
+0.41.681.635 I main: clearing the KV cache
+0.41.681.715 I main: n_parallel = 2, n_sequences = 16, cont_batching = 1, system tokens = 273
+0.41.681.717 I Total prompt tokens:   4614, speed: 137.60 t/s
+0.41.681.718 I Total gen tokens:      1013, speed: 30.21 t/s
+0.41.681.718 I Total speed (AVG):           speed: 167.81 t/s
+0.41.681.718 I Cache misses:             0
