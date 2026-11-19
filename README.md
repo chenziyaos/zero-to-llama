@@ -53,6 +53,7 @@
 | `19-test-contrib/` | LCPP-19 测试与贡献 | ctest 标签与 fixture、test-backend-ops 注入融合内核错误、parse_tbo 逐条预测、perf_fuse 和 bench_ab 交替 A/B、load_sql 入库、13 个回归用例 |
 | `20-qwen-24g/` | LCPP-20 实战：24 GB 单卡 | ledger.py 推算 Qwen3-32B 和 Qwen3.8-27B 的显存账（KV、DeltaNet 状态、草稿和 MTP、mmproj、提示缓存）和 decode 区间，27B 几何与字节走共享账本，两套启动命令，18 个回归用例 |
 | `21-deepseek-v41/` | LCPP-21 实战：DeepSeek-V4.1-Flash 装进一台机器 | plan.py 逐张量核对 ISTA GSQ-RCO 三档量化的字节，推算 Engram 懒加载、压缩 KV、路由专家上卡层数和 decode 区间（拟合社区实测扫描），96 GB 和 24 GB 两套启动命令，12 个回归用例 |
+| `22-qwen38-27b/` | LCPP-22 实战：一张卡跑 Qwen3.8-27B | plan.py 推算 16 层 softmax KV 加 48 层 Gated DeltaNet 的显存账、24 GB 单卡的量化档位与上下文上限、MTP 投机解码和 mmproj（全部是推算，没有上 GPU），两套启动命令，8 个回归用例 |
 
 ## 快速试跑
 
