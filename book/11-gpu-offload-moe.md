@@ -291,6 +291,8 @@ decode 两轮平均：granite-1b 缺省 87.3 t/s，-ncmoe 12 是 88.3，-ncmoe 9
 
 一块卡不够时还可以加卡或加机器：多卡的 -sm layer、-sm row、-sm tensor 和 -ts，以及 RPC 后端，放在 LCPP-12；投机解码怎么用一个小模型摊薄大模型每 token 的权重读取，放在 LCPP-13；把这篇和前后几篇的参数汇成调参手册，放在 LCPP-17。CPU 侧的线程和 repack 回到 [LCPP-10｜内部｜CPU 调优：线程、绑核、repack、加载方式和带宽上限](./10-cpu-tuning.md)，带宽上限的推导回到 [LCPP-02｜上手｜推理账本：带宽、算力和启动前算出速度上限](./02-ledger.md)。两个完整的放置算例：24 GB 单卡上 fit 先压上下文、压不够再挪层，以及卸几层到内存速度掉多少，见 [LCPP-20｜实战｜24 GB 单卡：Qwen3-32B 和 Qwen3.8-27B](./20-qwen-24g.md)；一张卡加一堆内存跑 552B 的 MoE、按字节决定专家放几层，见 [LCPP-21｜实战｜一台机器跑 DeepSeek-V4.1-Flash](./21-deepseek-v41.md)。
 
+**延伸阅读**：Maarten Grootendorst 的 [A Visual Guide to Mixture of Experts](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts)（2024 年 10 月）用示意图讲 router、负载均衡的辅助损失、capacity factor、Switch Transformer，以及 Mixtral 的总参数和激活参数之分，适合在读本篇之前先建立直觉。它讲的是模型结构和训练，不涉及推理时的专家放置和通信，这两块以本篇为准。
+
 # 参考文献
 
 按正文首次引用顺序编号，资料截至 2026 年 10 月初。
@@ -373,4 +375,4 @@ decode 两轮平均：granite-1b 缺省 87.3 t/s，-ncmoe 12 是 88.3，-ncmoe 9
 
 ---
 
-上一章：[LCPP-10｜内部｜CPU 调优：线程、绑核、repack、加载方式和带宽上限](./10-cpu-tuning.md) · [目录](./README.md) · 下一章：[LCPP-12｜内部｜多卡与 RPC：-sm layer、流水线、张量并行和 RPC](./12-multi-gpu-rpc.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/11-gpu-offload-moe.ipynb) · 上一章：[LCPP-10｜内部｜CPU 调优：线程、绑核、repack、加载方式和带宽上限](./10-cpu-tuning.md) · [目录](./README.md) · 下一章：[LCPP-12｜内部｜多卡与 RPC：-sm layer、流水线、张量并行和 RPC](./12-multi-gpu-rpc.md)

@@ -42,6 +42,23 @@
 
 选 0.6B 的小模型是有意的：它小到能在 8 GB 机器上同时放下 bf16 和所有量化版本，又大到权重远超 L3，读权重必须走内存。苹果在“LLM in a flash”里讨论的是模型比内存还大的情形[[10]](https://arxiv.org/abs/2312.11514)，本文不碰这个区间：所有变体都完整放在内存里，账本里只有内存带宽，没有磁盘带宽。
 
+## 1.4 开场实验：KV cache 开和关
+
+动手测机器之前，我先用一个小实验确认「decode 是读内存的题」从哪里来。[02-ledger](../02-ledger) 的 `kv_cache_timing.py` 用 numpy 写了一个 4 层的小 decoder（d=128，4 个头，d_ff=512，vocab=512，float64 随机权重），同一个 prompt 用两种做法各 greedy 生成 96 个 token：不带 cache 时，每生成一个 token 都把整段序列重新过一遍模型；带 cache 时只算新 token 一行，K、V 从缓存里取。两种做法生成的 token 必须完全相同，脚本会检查。
+
+![不带 KV cache，运算量涨 55.6 倍，时间只涨 6.5 倍](assets/02-ledger/fig-02.svg)
+
+```bash
+python3 kv_cache_timing.py
+python3 kv_cache_timing.py --prompt 128 --gen 256
+python3 kv_cache_timing.py --params-b 0.6 --layers 28 --d-model 1024 --prompt 512 --gen 256
+python3 test_kv_cache_timing.py
+```
+
+这个实验我是在 Apple M4 Pro 上跑的，不是 1.3 节的 EPYC 云主机，时间随机器变，运算量和 token 一致性不变。prompt 32 个 token、每种做法跑 3 遍取最短：带 cache 用时 0.018 秒、0.23 GFLOP，每 token 0.18 毫秒；不带 cache 用时 0.114 秒、12.72 GFLOP，每 token 1.19 毫秒。运算量差 55.6 倍，时间只差 6.5 倍左右，多次运行在 6.5 到 6.9 倍之间。时间差得少，是因为带 cache 的每一步只算一行，矩阵太小，时间主要花在 Python 和 numpy 的调用开销上；把 prompt 和生成长度调大，时间差会随之拉大。
+
+第三条命令换成本文 Qwen3-0.6B 的尺寸只算账（28 层，d=1024，prompt 512，生成 256）：带 cache 0.95 TFLOP，不带 cache 202.55 TFLOP，差 212.3 倍。llama.cpp 当然一直开着 KV cache。这个实验说明的是：每步只算一个 token 以后，运算量小到喂不饱 CPU，速度就由读权重和读 KV 的字节数决定，这正是第 3 章数字节、第 4 章算上限的出发点；第 8 章会看到，上下文每深一个 token，就要多读 112 KiB 的 KV。
+
 # 第 2 章 · 机器的两个数：带宽和峰值
 
 ## 2.1 用 STREAM 测读带宽
@@ -56,7 +73,7 @@ for t in 1 2 3 4; do OMP_NUM_THREADS=$t ./stream 256; done
 
 结果是 1 到 4 线程分别 30.3、33.7、34.1、35.5 GB/s，一个线程就拿到了四线程带宽的 85%，后面三个线程加起来只多了 5 GB/s。这个形状很重要：它说明 decode 加线程的收益很快见顶，第 7 章的线程扫描会再次看到这一点。
 
-![一个线程就吃掉 85% 的带宽，工作集出了缓存才是真带宽](assets/02-ledger/fig-02.svg)
+![一个线程就吃掉 85% 的带宽，工作集出了缓存才是真带宽](assets/02-ledger/fig-03.svg)
 
 ## 2.2 工作集要比 L3 大
 
@@ -128,7 +145,7 @@ decode 第 n 个 token 时，要把前面 n 个 token 的 K 和 V 都读一遍�
 
 算术强度是运算量除以字节数，Q4_K_M 单序列 decode 是 1.192 G 次运算除以 390.8 MB，约 3.05 op/B。机器的屋脊点是峰值除以带宽，int8 下 1662 除以 35.5，约 46.8 op/B[[1]](https://doi.org/10.1145/1498765.1498785)。算术强度落在屋脊点左边，速度由带宽决定；落在右边，由峰值决定。
 
-![单序列 decode 落在屋脊左边很远的地方](assets/02-ledger/fig-03.svg)
+![单序列 decode 落在屋脊左边很远的地方](assets/02-ledger/fig-04.svg)
 
 单序列 decode 离屋脊点差了 15 倍，这意味着即便内核把整数点积做到峰值，速度也一点不会涨，因为瓶颈在读内存。上限就是带宽除以字节：35.5 GB/s 除以 390.8 MB，90.9 t/s。按峰值算的上限是 1395 t/s，高出一个数量级，可以直接忽略。
 
@@ -162,7 +179,7 @@ bf16 的实测离上限只差 7%，Q2_K 差了 30%，IQ2_M 差了一半还多。
 
 Q4_K_M 的上限 90.9 t/s 对应每步 11.0 ms，实测 72 t/s 对应每步 13.9 ms，中间差了将近 3 ms。我把一步 decode 的时间拆成三块：读权重、整数点积和固定开销。读权重的时间是字节除以带宽，整数点积的时间是运算量除以内核的实际吞吐。固定开销包括建图、线程同步、采样，和模型大小基本无关。
 
-![一步 decode 的时间：读权重、整数点积、固定开销三块](assets/02-ledger/fig-04.svg)
+![一步 decode 的时间：读权重、整数点积、固定开销三块](assets/02-ledger/fig-05.svg)
 
 读权重和整数点积在 CPU 上是重叠的：一个线程在等内存时，另一个线程可能正在算。所以我取两者的较大值，再加上固定开销。写成公式就是一步时间等于 max（权重字节除以带宽，运算量除以 eff_tg 乘峰值） 加 t0，其中 t0 和 eff_tg 是要拟合的两个系数。
 
@@ -208,7 +225,7 @@ IQ2_M、IQ3_XXS 这些 i-quant 用码本存权重，点积前要先查表。我�
 
 拟合系数时我遇到的第一个麻烦是数字不稳：同一个 Q4_K_M，上午测 72 t/s，下午测 85 t/s。后来我在每次 llama-bench 之前都测一次带宽，发现这台云主机的读带宽在 35、46、65 GB/s 三档之间跳，每档持续几分钟到几十分钟。公有云上的性能波动早有系统研究，Leitner 和 Cito 测过多家云厂商，发现同规格实例的性能随时间和位置都会变化[[2]](https://doi.org/10.1145/2885497)。
 
-![同一台云主机，带宽在 35、46、65 GB/s 三档之间跳](assets/02-ledger/fig-05.svg)
+![同一台云主机，带宽在 35、46、65 GB/s 三档之间跳](assets/02-ledger/fig-06.svg)
 
 带宽一跳，tg 跟着跳，任何没有同时记录带宽的 tg 数字都无法解释。Hoefler 和 Belli 在并行计算的基准规范里强调过，测量要报告足以复现的环境状态[[25]](https://doi.org/10.1145/2807591.2807644)，对云主机来说，这个状态里必须包括当时的带宽。
 
@@ -224,7 +241,7 @@ b1=$(OMP_NUM_THREADS=4 ./stream 256 | sed 's/.*"read_GBps": \([0-9.]*\).*/\1/')
 
 24 个点按各自的带宽代入公式，拟合出 t0 和 eff_tg，平均误差 5.3%。如果所有点都用 35.5 GB/s 这一个中位数，平均误差会翻一倍多，快带宽档的点全部被低估。
 
-![按当时的带宽预测，24 次 tg 平均误差 5.3%](assets/02-ledger/fig-06.svg)
+![按当时的带宽预测，24 次 tg 平均误差 5.3%](assets/02-ledger/fig-07.svg)
 
 ## 6.3 误差大的几个点
 
@@ -289,7 +306,7 @@ ubatch 是一次送进计算图的 token 数，我扫了 64、128、256、512 �
 
 decode 第 n 个 token 时，每一层都要把前 n 个 token 的 K 和 V 读一遍。账本里这一项是 KV 每 token 字节乘以深度，再除以带宽和一个效率系数 eff_attn。我用 depth_sweep.sh 扫了深度 0 到 4096，FA 关和开各一遍，每个点前面都测一次带宽。
 
-![上下文越深 decode 越慢，本机开 FA 反而更慢](assets/02-ledger/fig-07.svg)
+![上下文越深 decode 越慢，本机开 FA 反而更慢](assets/02-ledger/fig-08.svg)
 
 FA 关时，深度 0、512、1024、2048、4096 的 tg 分别是 66.9、52.6、48.0、33.1、24.9 t/s。按带宽算，深度 4096 读 KV 只要 13.1 ms，实测多出来的时间是 25.2 ms，有效带宽只有一半，所以 eff_attn 拟合成 0.50。
 
@@ -353,7 +370,7 @@ llama-batched-bench -m q-Q4_K_M.gguf -t 4 -c 8192 -b 2048 -ub 512 \
 
 总吞吐从 62 涨到 199，涨了 3.2 倍；单路速度从 62 掉到 6，掉了 10 倍。并发换来的是机器的总产出，代价落在每个用户身上。B 等于 1 这一行比第 6 章的 72 t/s 慢，因为 batched-bench 的 c 是 8192，生成从深度 128 开始，而且那次测量正好落在慢带宽档。
 
-![并发到 32 路，总吞吐从 62 涨到 199 t/s](assets/02-ledger/fig-08.svg)
+![并发到 32 路，总吞吐从 62 涨到 199 t/s](assets/02-ledger/fig-09.svg)
 
 ## 9.3 每多一路多 4.62 毫秒
 
@@ -401,7 +418,7 @@ PYTHONPATH=. python3 estimate_budget.py --budget 2048 models/*.gguf
 | Q4_K_M | 11520 | 68.5 | 10.9 | KV 1260 MiB |
 | Q2_K | 12800 | 84.9 | 9.9 | KV 1400 MiB |
 
-![2 GiB 内存里，Q4_K_M 能开 11520 的上下文，bf16 只有 2560](assets/02-ledger/fig-09.svg)
+![2 GiB 内存里，Q4_K_M 能开 11520 的上下文，bf16 只有 2560](assets/02-ledger/fig-10.svg)
 
 bf16 的权重就吃掉了 1.4 GiB，剩给 KV 的不到 300 MiB，只能开 2560。量化到 Q4_K_M 后权重省下一个多 GiB，全部换成了 KV，上下文涨到四倍多。再压到 Q2_K，权重只少了 80 MiB，上下文只多 1280。权重小到一定程度之后，长度的瓶颈就变成 KV 本身。
 
@@ -560,4 +577,4 @@ GPU 上的账也是同样的结构，只是带宽换成显存带宽，峰值换�
 
 ---
 
-上一章：[LCPP-01｜上手｜第一次运行：编译、转换、加载和读懂内存账单](./01-first-run.md) · [目录](./README.md) · 下一章：[LCPP-03｜上手｜测量方法：llama-bench、PPL、KLD 和噪声](./03-bench-ppl.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/02-ledger.ipynb) · 上一章：[LCPP-01｜上手｜第一次运行：编译、转换、加载和读懂内存账单](./01-first-run.md) · [目录](./README.md) · 下一章：[LCPP-03｜上手｜测量方法：llama-bench、PPL、KLD 和噪声](./03-bench-ppl.md)

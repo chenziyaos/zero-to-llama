@@ -409,4 +409,4 @@ DFlash 用块扩散的小模型一次前向出整块草稿，不再逐个生成�
 
 ---
 
-上一章：[LCPP-12｜内部｜多卡与 RPC：-sm layer、流水线、张量并行和 RPC](./12-multi-gpu-rpc.md) · [目录](./README.md) · 下一章：[LCPP-14｜内部｜服务端：槽位、连续批处理和提示缓存](./14-server.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/13-speculative.ipynb) · 上一章：[LCPP-12｜内部｜多卡与 RPC：-sm layer、流水线、张量并行和 RPC](./12-multi-gpu-rpc.md) · [目录](./README.md) · 下一章：[LCPP-14｜内部｜服务端：槽位、连续批处理和提示缓存](./14-server.md)

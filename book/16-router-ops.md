@@ -464,4 +464,4 @@ Kubernetes 把探针分成三种：liveness 失败会重启容器，readiness �
 
 ---
 
-上一章：[LCPP-15｜内部｜多模态：mmproj、图片切块和音频](./15-multimodal.md) · [目录](./README.md) · 下一章：[LCPP-17｜内部｜调参手册：默认值、误配、按症状查参数和上线清单](./17-tuning-playbook.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/16-router-ops.ipynb) · 上一章：[LCPP-15｜内部｜多模态：mmproj、图片切块和音频](./15-multimodal.md) · [目录](./README.md) · 下一章：[LCPP-17｜内部｜调参手册：默认值、误配、按症状查参数和上线清单](./17-tuning-playbook.md)

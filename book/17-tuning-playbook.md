@@ -428,4 +428,4 @@ Hoefler 和 Belli 给并行性能报告列了一串规则，其中三条我每�
 
 ---
 
-上一章：[LCPP-16｜内部｜路由与运维：多模型、预设、内存余量和监控](./16-router-ops.md) · [目录](./README.md) · 下一章：[LCPP-18｜内部｜新模型接入：转换、计算图和逐层对拍](./18-add-model.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/17-tuning-playbook.ipynb) · 上一章：[LCPP-16｜内部｜路由与运维：多模型、预设、内存余量和监控](./16-router-ops.md) · [目录](./README.md) · 下一章：[LCPP-18｜内部｜新模型接入：转换、计算图和逐层对拍](./18-add-model.md)
