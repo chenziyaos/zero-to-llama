@@ -7,3 +7,4 @@ models/
 02-ledger/peak
 02-ledger/stream
 09-sampling-grammar/samp_bench
+04-gguf/tiny.gguf

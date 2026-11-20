@@ -1,0 +1,7 @@
+# 真实模型工具：18-add-model 的 hf_ref.py、hf_last.py、tok_compare.py、inject.py，09-sampling-grammar/render_tmpl.py。
+# 都在 CPU 上运行；llama.cpp 本身另行编译，见 README。
+-r requirements-cpu.txt
+torch==2.15.0
+transformers==5.23.0
+gguf==0.19.0
+jinja2==3.1.6

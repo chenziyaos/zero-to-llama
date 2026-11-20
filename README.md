@@ -4,6 +4,12 @@
 
 系列文档的 Markdown 版放在 [`book/`](book/README.md)，从索引页 LCPP-00 读起；各章末尾有上一章、下一章的链接。
 
+## 在 Colab 上跑
+
+[`colab/`](colab/) 下每章一个 notebook，打开后依次执行：克隆本仓库、装 `requirements-cpu.txt`、跑本章单元测试、跑正文里的 CPU 命令。notebook 里的命令都在 Python 3.11 的 CPU 环境下实跑过，退出码为 0；少数演示脚本按设计以非 0 退出（样例本身不达标），已在命令后注明。需要 GPU、模型文件或运行中服务的命令没有放进去。
+
+入口示例：[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/02-ledger.ipynb)
+
 ## 版本基线
 
 - llama.cpp 主干提交 `0ec4027`（2026-10-30），发行版 `v0.8.0`（2026-10-28），ggml `0.28.0`
@@ -57,6 +63,15 @@
 | `21-deepseek-v41/` | LCPP-21 实战：DeepSeek-V4.1-Flash 装进一台机器 | plan.py 逐张量核对 ISTA GSQ-RCO 三档量化的字节，推算 Engram 懒加载、压缩 KV、路由专家上卡层数和 decode 区间（拟合社区实测扫描），96 GB 和 24 GB 两套启动命令，12 个回归用例 |
 | `22-qwen38-27b/` | LCPP-22 实战：一张卡跑 Qwen3.8-27B | plan.py 推算 16 层 softmax KV 加 48 层 Gated DeltaNet 的显存账、24 GB 单卡的量化档位与上下文上限、MTP 投机解码和 mmproj（全部是推算，没有上 GPU），两套启动命令，8 个回归用例 |
 
+## 安装依赖
+
+依赖分两档，版本都锁定了：
+
+```bash
+pip install -r requirements-cpu.txt          # 模拟器和单元测试
+pip install -r requirements-full.txt         # 要跑 18 章真实模型对拍时
+```
+
 ## 快速试跑
 
 不装 llama.cpp 也能跑：
@@ -80,3 +95,17 @@ python3 parse_load_log.py logs/run-*.log --model ~/models/Qwen3-0.6B-Q4_K_M.gguf
 - llama.cpp：https://github.com/ggml-org/llama.cpp
 - ggml：https://github.com/ggml-org/ggml
 - GGUF 规范：https://github.com/ggml-org/ggml/blob/master/docs/gguf.md
+
+## 引用
+
+如果本系列对你的工作有帮助，可以这样引用：
+
+```bibtex
+@misc{zero-to-llama,
+  author       = {chenziyaos},
+  title        = {从 0 开始 llama.cpp（zero-to-llama）},
+  year         = {2026},
+  howpublished = {\url{https://github.com/chenziyaos/zero-to-llama}},
+  note         = {GitHub repository}
+}
+```

@@ -1,5 +1,7 @@
 # 11-gpu-offload-moe：GPU 卸载与 MoE
 
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/11-gpu-offload-moe.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+
 LCPP-11 的配套代码。要回答几个问题：-ngl N 到底把哪几层放上卡，输出层算不算；-cmoe、-ncmoe、-ot 各把哪些张量留在主存；一个 MoE 模型要多少显存，给定一块卡 -ncmoe 至少设多少；--fit 怎么替你选参数，哪些内存它看不见；MoE 的路由有多偏、多有局部性，按层放、钉热专家、LRU、SLRU 四种放法在同样槽位下各命中多少；`--moe-cache-mib` 给多少才不白给。
 
 本机没有 GPU。路由抓取、缓存回放和显存账本和设备无关；`cpu` 组只说明这几个参数在纯 CPU 构建里怎么落地，不代表有卡时的速度。

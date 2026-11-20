@@ -1,5 +1,7 @@
 # 14-server：服务端的槽位、连续批处理和提示缓存
 
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/14-server.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+
 LCPP-14 的配套代码。要回答几个问题：多开几路并发，总吞吐能涨多少、每条请求慢多少；统一 KV（`-kvu`）和分开的 KV 各在什么场景下划算；`-c` 和 `-np` 怎么分账，每个槽位最后拿到多少上下文；共享系统提示能省多少预填充；槽位选择和 `--cache-ram` 的 RAM 缓存在用户比槽位多时能复用多少；上下文撑满以后会怎样。
 
 本机是 4 核 CPU，没有 GPU，数字只代表这台机器上的相对关系。**不启动 llama-server，也不启动任何监听端口的程序**。服务端的调度用三样东西逼近：`llama-batched-bench`（同一上下文里 B 条序列一起解码）、`llama-parallel`（N 个客户端轮流投递请求，带共享系统提示）和 `test-server-component`（服务端组件的单元测试，不加载模型）。槽位选择和 RAM 缓存的淘汰规则用 `slot_sim.py` 按源码复刻。`scripts/server-bench.py` 端到端压测、router 多模型、server 里的投机解码 **都未在本机实测**。

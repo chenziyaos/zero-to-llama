@@ -1,5 +1,7 @@
 # 05-ggml-graph：计算图、内存规划和调度
 
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/05-ggml-graph.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+
 LCPP-05 的配套代码，回答四个问题：
 - 一层 Qwen3 在 ggml 的计算图里是多少个节点，哪些真正要算？
 - gallocr 怎么让中间结果的内存和层数无关？

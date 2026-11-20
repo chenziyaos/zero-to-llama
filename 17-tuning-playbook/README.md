@@ -1,5 +1,7 @@
 # 17-tuning-playbook：按症状查参数
 
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/17-tuning-playbook.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+
 LCPP-17 的配套代码。要回答几个问题：什么都不写时 llama.cpp 给了你哪些参数，上下文为什么开到了训练长度；哪些误配会直接退出、哪些只打一行警告、哪些连警告都没有；decode 慢、prefill 慢、内存爆、长上下文变慢时先动哪个参数；实测速度离带宽上限还差多少，差出来的那部分是谁吃掉的。
 
 本机是 4 核 CPU（2 个物理核、每核 2 个超线程），没有 GPU，数字只代表这台机器上的相对关系。**不启动 llama-server，也不启动任何监听端口的程序**。所有实验只用 `llama-completion` 和 `llama-bench`，诊断和事前账用自己的 Python。
