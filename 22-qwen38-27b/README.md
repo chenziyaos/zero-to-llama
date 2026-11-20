@@ -1,5 +1,7 @@
 # 22-qwen38-27b：一张卡跑 Qwen3.8-27B
 
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/22-qwen38-27b.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+
 LCPP-22 的配套代码。这一篇要回答的是：这个 64 层的稠密模型里只有 16 层存 softmax KV，其余 48 层是 Gated DeltaNet 线性注意力，那长上下文的显存账和普通 Transformer 差在哪；24 GB 单卡选哪档量化、上下文能开多长；自带的 1 个 MTP 头怎么开 draft-mtp 投机解码；看图为什么要挂 mmproj，纯文本 GGUF 的坑在哪。模型是 Qwen3.8-27B，几何和 Qwen3.5-27B 完全一样：官方 config 的 model_type 仍是 qwen3_5，GGUF 元数据里的架构名仍是 qwen35，所以公式一行没改，只换文件口径和采样参数。
 
 我手上没有 GPU 机器，这个目录里的字节、显存和速度数字**全部是推算**，按 llama.cpp 0ec4027 的张量形状和分配逻辑写成公式，放在 `plan.py` 里。两条启动命令只写了，没有在 GPU 上跑过。**不启动 llama-server，也不启动任何监听端口的程序**；`run_*.sh` 是给上机时用的。

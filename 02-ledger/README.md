@@ -1,5 +1,7 @@
 # 02-ledger：推理账本
 
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/02-ledger.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+
 LCPP-02 的配套代码，回答三个问题：
 - 一台机器的内存带宽和峰值算力到底是多少？
 - 一个 GGUF 每生成一个 token 要读多少字节、做多少运算？
@@ -20,6 +22,8 @@ LCPP-02 的配套代码，回答三个问题：
 | `estimate_speed.py` | 账本和预测：`ledger()` 从 GGUF 算字节和运算量，`bounds()` 给上限，`predict()` 套校准系数 | GGUF 或导出的账本 |
 | `fit_ledger.py` | 从 `logs/` 拟合 `t0`、`eff_tg`、`eff_tg_codebook`、`eff_pp`、`eff_batch`、`eff_attn`，打印逐点对账；`--dump` 导出账本 | 只要日志 |
 | `estimate_budget.py` | 给定内存上限，二分查找每个量化文件能开的最大上下文，再算深度 0 和半程深度的 tg | GGUF，复用 `01-first-run/estimate_memory.py` |
+| `kv_cache_timing.py` | 开场实验：随机权重的小模型带 / 不带 KV cache 各生成一遍，比时间和运算量，并核对两边 token 相同 | numpy |
+| `test_kv_cache_timing.py` | 6 个用例：两种做法 token 相同、增量 logits 等于整段重算、运算量公式 | numpy |
 | `test_ledger.py` | 17 个用例：账本字节和运算量、KV 每 token、Roofline、预测对实测、四组拟合；设 `MODELS` 时再核对导出和预算 | 只要仓库 |
 | `logs/` | 4 vCPU EPYC 上的实测，见下 | — |
 
@@ -56,6 +60,38 @@ python3 estimate_budget.py --budget 2048 models/*.gguf                 # 2 GiB �
 python3 estimate_budget.py --budget 2048 --ctk q8_0 --ctv q8_0 models/*.gguf
 MODELS=models python3 test_ledger.py                                   # 多跑两个用例
 ```
+
+## 开场实验：KV cache 开和关
+
+```bash
+python3 kv_cache_timing.py                       # 随机权重的小模型，带 / 不带 KV cache 各生成一遍
+python3 kv_cache_timing.py --prompt 128 --gen 256
+python3 kv_cache_timing.py --params-b 0.6 --layers 28 --d-model 1024 --prompt 512 --gen 256   # 只算账：Qwen3-0.6B 尺寸
+python3 test_kv_cache_timing.py
+```
+
+不带 cache 时，每生成一个 token 都要把整段序列重新过一遍模型；带 cache 时只算新 token 一行，K、V 从缓存里取。两种做法用同一份 float64 权重做 greedy 解码，生成的 token 必须完全相同，脚本会检查。下面的输出在 Apple M4 Pro 上测得，时间随机器变，运算量和 token 一致性不随机器变：
+
+```
+模型：4 层，d=128，4 头，d_ff=512，vocab=512，float64，随机权重
+prompt 32 个 token，greedy 生成 96 个，每种做法跑 3 遍取最短
+               时间 (s)     GFLOP   每 token (ms)
+带 cache         0.018      0.23            0.18
+不带 cache       0.114     12.72            1.19
+不带 / 带：时间 6.5x，运算量 55.6x
+两种做法生成的 token 完全相同
+```
+
+运算量差 55.6 倍，时间只差 6.5 倍左右（本机多次运行在 6.5 到 6.9 倍之间）。原因是带 cache 的每一步只算一行，矩阵很小，时间主要花在 Python 和 numpy 的调用开销上，算力吃不满；把 prompt 和生成长度调大，两种做法的时间差会随之拉大。换成真实模型尺寸只算账：
+
+```
+模型 0.6B，28 层，d=1024，prompt 512，生成 256
+  带 cache         0.95 TFLOP
+  不带 cache     202.55 TFLOP
+  不带 / 带 = 212.3x（只算运算量；带 cache 的 decode 实际受带宽限制，见本章账本）
+```
+
+真实部署里没有人关掉 KV cache。这个实验只是说明：从「每步只算一个 token」开始，decode 的瓶颈就从算力转到了读权重和读 KV 的带宽上，本章后面的账本都建立在这个前提上。
 
 ## 换一台机器
 

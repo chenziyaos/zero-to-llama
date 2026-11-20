@@ -563,4 +563,4 @@ python3 parse_load_log.py logs/run-*.log --model MODEL.gguf
 
 ---
 
-[目录](./README.md) · 下一章：[LCPP-02｜上手｜推理账本：带宽、算力和启动前算出速度上限](./02-ledger.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/01-first-run.ipynb) · [目录](./README.md) · 下一章：[LCPP-02｜上手｜推理账本：带宽、算力和启动前算出速度上限](./02-ledger.md)

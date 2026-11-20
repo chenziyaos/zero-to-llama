@@ -490,4 +490,4 @@ ubatch 的选择我看两个数。吞吐上，pp512 在 ub=32 到 64 之间涨�
 
 ---
 
-上一章：[LCPP-04｜内部｜GGUF：文件结构、元数据、加载方式和分卷](./04-gguf.md) · [目录](./README.md) · 下一章：[LCPP-06｜内部｜后端与编译：CPU 变体、BLAS、repack 和 GPU 架构](./06-backends-build.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/05-ggml-graph.ipynb) · 上一章：[LCPP-04｜内部｜GGUF：文件结构、元数据、加载方式和分卷](./04-gguf.md) · [目录](./README.md) · 下一章：[LCPP-06｜内部｜后端与编译：CPU 变体、BLAS、repack 和 GPU 架构](./06-backends-build.md)

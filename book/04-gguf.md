@@ -527,4 +527,4 @@ LLAMA_CACHE=/data/models llama-cli -hf Qwen/Qwen3-0.6B-GGUF -p hi -n 8 -no-cnv
 
 ---
 
-上一章：[LCPP-03｜上手｜测量方法：llama-bench、PPL、KLD 和噪声](./03-bench-ppl.md) · [目录](./README.md) · 下一章：[LCPP-05｜内部｜ggml 与计算图：建图、内存规划、调度和复用](./05-ggml-graph.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/04-gguf.ipynb) · 上一章：[LCPP-03｜上手｜测量方法：llama-bench、PPL、KLD 和噪声](./03-bench-ppl.md) · [目录](./README.md) · 下一章：[LCPP-05｜内部｜ggml 与计算图：建图、内存规划、调度和复用](./05-ggml-graph.md)

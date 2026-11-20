@@ -1,5 +1,7 @@
 # 07-quantization：量化
 
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/07-quantization.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+
 LCPP-07 的配套代码。要回答四个问题：一个量化块里到底存了什么；Q4_K_M 这类“配方”在不同张量上用了哪些类型；imatrix 改的是量化里的哪一步；同样体积下怎么用 KLD 选类型。
 
 ## 文件

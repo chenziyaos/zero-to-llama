@@ -1,5 +1,7 @@
 # 04-gguf：把 GGUF 拆开看
 
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/04-gguf.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+
 LCPP-04 的配套代码，回答三个问题：
 - 一个 GGUF 文件里每一段各占多少字节？
 - 一个文件坏在哪里时 llama.cpp 会拒绝加载？

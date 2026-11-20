@@ -1,5 +1,7 @@
 # 18-add-model：新模型接入和逐层对拍
 
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/18-add-model.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+
 LCPP-18 的配套代码。要回答几个问题：把一个 HF 模型接进 llama.cpp 要改哪三层代码；转换出来的 GGUF 怎么证明和原始实现一致；转换器常见的几种错各自留下什么指纹；官方 model-conversion 流程只比短提示最后一个位置，哪些错它抓不到；分词器的 pre-tokenizer 选错会错成什么样。
 
 样本模型是 Qwen3-0.6B（llama.cpp 已支持，拿来当“已知正确答案”），对照参考是 HF transformers 的 f32 前向。代码对齐 llama.cpp 0ec4027。本机 4 核 CPU，没有 GPU。**不启动 llama-server，也不启动任何监听端口的程序**，只用 `llama-tokenize`、`llama-debug`、测试程序和自己写的 `dump_logits`。

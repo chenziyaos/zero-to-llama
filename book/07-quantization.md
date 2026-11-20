@@ -473,6 +473,8 @@ LLAMA_BIN=~/llama.cpp/build/bin ./measure.sh MODEL-bf16.gguf wiki.test.raw
 
 > 🔑 **全篇要点**：验收只看对原模型的 KLD 和 top-1，PPL 只当旁证。速度只认多轮区间不重叠的差异，换机器就重测。4 bit 及以下先找带 imatrix 的文件，再在体积预算内沿帕累托前沿挑。
 
+**延伸阅读**：Maarten Grootendorst 的 [A Visual Guide to Quantization](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization)（2024 年 7 月）用示意图讲对称和非对称量化、离群值裁剪、GPTQ、GGUF 的分块量化和 BitNet，适合在读本篇的账本之前先建立直觉。它不讲推理引擎里的 kernel 选择和 KV cache 量化，这两块以本篇为准。
+
 # 参考文献
 
 按正文首次引用顺序编号，资料截至 2026 年 10 月初。
@@ -591,4 +593,4 @@ LLAMA_BIN=~/llama.cpp/build/bin ./measure.sh MODEL-bf16.gguf wiki.test.raw
 
 ---
 
-上一章：[LCPP-06｜内部｜后端与编译：CPU 变体、BLAS、repack 和 GPU 架构](./06-backends-build.md) · [目录](./README.md) · 下一章：[LCPP-08｜内部｜KV cache 与长上下文：账本、深度、量化、SWA 和上下文写满](./08-kv-context.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/07-quantization.ipynb) · 上一章：[LCPP-06｜内部｜后端与编译：CPU 变体、BLAS、repack 和 GPU 架构](./06-backends-build.md) · [目录](./README.md) · 下一章：[LCPP-08｜内部｜KV cache 与长上下文：账本、深度、量化、SWA 和上下文写满](./08-kv-context.md)

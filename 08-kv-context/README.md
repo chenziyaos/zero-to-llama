@@ -1,5 +1,7 @@
 # 08-kv-context：KV cache 与长上下文
 
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/08-kv-context.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+
 LCPP-08 的配套代码。要回答几个问题：KV cache 按什么公式分配、启动前能不能算出来；上下文变深以后预填充和解码各慢多少；CPU 上的 Flash Attention 什么时候帮忙；KV 量化和 Hadamard 旋转换来多少误差；GQA、MLA、滑动窗口各省多少；上下文写满、超出训练长度以后会发生什么。
 
 ## 文件

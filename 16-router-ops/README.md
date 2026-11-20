@@ -1,5 +1,7 @@
 # 16-router-ops：router 多模型、预设、内存余量和监控
 
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/16-router-ops.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+
 LCPP-16 的配套代码。要回答几个问题：router 模式下几个模型同时常驻，谁先被卸载、排队的请求要等多久；`--models-max` 和 `--models-memory-margin` 各管什么，纯 CPU 机器上余量有没有用；预设 INI、`[*]` 全局段、router 命令行三者谁盖谁；不钉 `-c` 时 `--fit` 会把内存吃到多少；mmproj 为什么不进内存账；`/metrics` 上的速率怎么读才不被骗。
 
 本机是 4 核 CPU，没有 GPU，数字只代表这台机器上的相对关系。**不启动 llama-server（包括 router 模式），也不启动任何监听端口的程序**。router 的行为用三样东西逼近：`llama-fit-params`（和 router 的测量子进程走同一套 `--fit` 代码，算每个模型的内存三项）、`llama-completion` 和 `llama-mtmd-cli`（加载一次就退出，量加载耗时和进程峰值常驻内存），以及按 llama.cpp 0ec4027 源码复刻的三个 Python 程序。GPU 场景里的设备是假设的，只用来走通余量逻辑。
