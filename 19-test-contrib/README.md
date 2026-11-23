@@ -1,6 +1,6 @@
 # 19-test-contrib：测试、性能对比和贡献
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/19-test-contrib.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/19-test-contrib.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-19 的配套代码。这一篇要回答几个问题：改了 llama.cpp 以后本地要跑哪些测试，和 CI 怎么对应；test-backend-ops 在没有 GPU 的机器上比的是什么，阈值怎么定；融合路径里的错为什么单算子测试抓不到；性能改动怎么用 compare-llama-bench.py 拿出可信的对比；PR 要满足哪些硬性要求。
 

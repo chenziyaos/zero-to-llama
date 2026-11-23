@@ -1,6 +1,6 @@
 # 06-backends-build：后端与编译
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/06-backends-build.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/06-backends-build.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-06 的配套代码，回答五个问题：
 - 同一份源码换几个 CMake 开关，预填充和解码各差多少？

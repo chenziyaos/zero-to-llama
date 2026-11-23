@@ -375,4 +375,4 @@ decode 两轮平均：granite-1b 缺省 87.3 t/s，-ncmoe 12 是 88.3，-ncmoe 9
 
 ---
 
-[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/11-gpu-offload-moe.ipynb) · 上一章：[LCPP-10｜内部｜CPU 调优：线程、绑核、repack、加载方式和带宽上限](./10-cpu-tuning.md) · [目录](./README.md) · 下一章：[LCPP-12｜内部｜多卡与 RPC：-sm layer、流水线、张量并行和 RPC](./12-multi-gpu-rpc.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/11-gpu-offload-moe.ipynb) · 上一章：[LCPP-10｜内部｜CPU 调优：线程、绑核、repack、加载方式和带宽上限](./10-cpu-tuning.md) · [目录](./README.md) · 下一章：[LCPP-12｜内部｜多卡与 RPC：-sm layer、流水线、张量并行和 RPC](./12-multi-gpu-rpc.md)

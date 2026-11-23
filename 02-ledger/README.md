@@ -1,6 +1,6 @@
 # 02-ledger：推理账本
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/02-ledger.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/02-ledger.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-02 的配套代码，回答三个问题：
 - 一台机器的内存带宽和峰值算力到底是多少？

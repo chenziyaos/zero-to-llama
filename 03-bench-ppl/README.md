@@ -1,6 +1,6 @@
 # 03-bench-ppl：测量方法
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/03-bench-ppl.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/03-bench-ppl.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-03 的配套代码。要回答的问题只有一个：两个数不一样，这个差异算不算数。速度用 `llama-bench`，质量用 `llama-perplexity` 的三种模式（普通 PPL、`--kl-divergence`、`--hellaswag`），两边都先量噪声，再下结论。
 

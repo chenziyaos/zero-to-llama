@@ -529,4 +529,4 @@ llama-server -m models/qwen38-27b/Qwen3.8-27B-UD-Q4_K_XL.gguf \
 
 ---
 
-[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/20-qwen-24g.ipynb) · 上一章：[LCPP-19｜内部｜测试与贡献：ctest、test-backend-ops、性能对比和 PR](./19-test-contrib.md) · [目录](./README.md) · 下一章：[LCPP-21｜实战｜一台机器跑 DeepSeek-V4.1-Flash](./21-deepseek-v41.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/20-qwen-24g.ipynb) · 上一章：[LCPP-19｜内部｜测试与贡献：ctest、test-backend-ops、性能对比和 PR](./19-test-contrib.md) · [目录](./README.md) · 下一章：[LCPP-21｜实战｜一台机器跑 DeepSeek-V4.1-Flash](./21-deepseek-v41.md)
