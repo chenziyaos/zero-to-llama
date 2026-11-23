@@ -407,4 +407,4 @@ ToMe 在 ViT 的每层把相似的 token 两两合并，不用训练就让 ViT-L
 
 ---
 
-[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/15-multimodal.ipynb) · 上一章：[LCPP-14｜内部｜服务端：槽位、连续批处理和提示缓存](./14-server.md) · [目录](./README.md) · 下一章：[LCPP-16｜内部｜路由与运维：多模型、预设、内存余量和监控](./16-router-ops.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/15-multimodal.ipynb) · 上一章：[LCPP-14｜内部｜服务端：槽位、连续批处理和提示缓存](./14-server.md) · [目录](./README.md) · 下一章：[LCPP-16｜内部｜路由与运维：多模型、预设、内存余量和监控](./16-router-ops.md)

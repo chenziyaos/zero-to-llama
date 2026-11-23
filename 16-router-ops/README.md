@@ -1,6 +1,6 @@
 # 16-router-ops：router 多模型、预设、内存余量和监控
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/16-router-ops.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/16-router-ops.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-16 的配套代码。要回答几个问题：router 模式下几个模型同时常驻，谁先被卸载、排队的请求要等多久；`--models-max` 和 `--models-memory-margin` 各管什么，纯 CPU 机器上余量有没有用；预设 INI、`[*]` 全局段、router 命令行三者谁盖谁；不钉 `-c` 时 `--fit` 会把内存吃到多少；mmproj 为什么不进内存账；`/metrics` 上的速率怎么读才不被骗。
 

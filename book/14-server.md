@@ -361,4 +361,4 @@ server 给每个槽位配一个草稿，-md 指定草稿模型，验证时草稿
 
 ---
 
-[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/14-server.ipynb) · 上一章：[LCPP-13｜内部｜投机解码：草稿模型、n-gram 和拒绝采样](./13-speculative.md) · [目录](./README.md) · 下一章：[LCPP-15｜内部｜多模态：mmproj、图片切块和音频](./15-multimodal.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/14-server.ipynb) · 上一章：[LCPP-13｜内部｜投机解码：草稿模型、n-gram 和拒绝采样](./13-speculative.md) · [目录](./README.md) · 下一章：[LCPP-15｜内部｜多模态：mmproj、图片切块和音频](./15-multimodal.md)

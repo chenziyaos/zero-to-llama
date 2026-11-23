@@ -1,6 +1,6 @@
 # 20-qwen-24g：24 GB 单卡跑 Qwen3-32B 和 Qwen3.8-27B
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/20-qwen-24g.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/20-qwen-24g.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-20 的配套代码。这一篇要回答的是：手上一张 RTX 4090 或 3090，该下哪档量化，上下文能开多长，-np 和投机解码怎么配，decode 大概多快。
 

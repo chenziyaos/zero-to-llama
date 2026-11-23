@@ -1,6 +1,6 @@
 # 18-add-model：新模型接入和逐层对拍
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/18-add-model.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/18-add-model.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-18 的配套代码。要回答几个问题：把一个 HF 模型接进 llama.cpp 要改哪三层代码；转换出来的 GGUF 怎么证明和原始实现一致；转换器常见的几种错各自留下什么指纹；官方 model-conversion 流程只比短提示最后一个位置，哪些错它抓不到；分词器的 pre-tokenizer 选错会错成什么样。
 

@@ -452,4 +452,4 @@ PR 模板分 Overview、Additional information 和 Requirements 三块，最后�
 
 ---
 
-[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/19-test-contrib.ipynb) · 上一章：[LCPP-18｜内部｜新模型接入：转换、计算图和逐层对拍](./18-add-model.md) · [目录](./README.md) · 下一章：[LCPP-20｜实战｜24 GB 单卡：Qwen3-32B 和 Qwen3.8-27B](./20-qwen-24g.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/19-test-contrib.ipynb) · 上一章：[LCPP-18｜内部｜新模型接入：转换、计算图和逐层对拍](./18-add-model.md) · [目录](./README.md) · 下一章：[LCPP-20｜实战｜24 GB 单卡：Qwen3-32B 和 Qwen3.8-27B](./20-qwen-24g.md)

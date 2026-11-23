@@ -1,6 +1,6 @@
 # 10-cpu-tuning：CPU 调优
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/10-cpu-tuning.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/10-cpu-tuning.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-10 的配套代码。要回答几个问题：-t 该设多少，超线程算不算核；-C 和 --cpu-strict 什么时候有用、什么时候坑人；OpenMP 和自带线程池差在哪，--poll、--prio、KMP_BLOCKTIME 管不管用；-tb 和 ubatch 怎么配；哪些量化类型走 repack、哪些走 tiled、哪些退回 vec_dot；mmap、mlock、direct io 冷启动和稳态各差多少；THP 和 NUMA 在这台机器上能不能帮忙；怎么判断解码已经贴着内存带宽。
 

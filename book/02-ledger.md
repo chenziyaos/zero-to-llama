@@ -577,4 +577,4 @@ GPU 上的账也是同样的结构，只是带宽换成显存带宽，峰值换�
 
 ---
 
-[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/02-ledger.ipynb) · 上一章：[LCPP-01｜上手｜第一次运行：编译、转换、加载和读懂内存账单](./01-first-run.md) · [目录](./README.md) · 下一章：[LCPP-03｜上手｜测量方法：llama-bench、PPL、KLD 和噪声](./03-bench-ppl.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/02-ledger.ipynb) · 上一章：[LCPP-01｜上手｜第一次运行：编译、转换、加载和读懂内存账单](./01-first-run.md) · [目录](./README.md) · 下一章：[LCPP-03｜上手｜测量方法：llama-bench、PPL、KLD 和噪声](./03-bench-ppl.md)

@@ -1,6 +1,6 @@
 # 13-speculative：投机解码
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/13-speculative.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/13-speculative.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-13 的配套代码。要回答几个问题：草稿模型配多快、猜多长才回本；CPU 上目标模型一次验 k+1 个位置到底贵多少；p_min 早停为什么能把 k = 16 救回来；温度大于 0 时逐位比对和拒绝采样差多少接受率；n-gram、lookup、lookahead 这些不要草稿模型的方法在什么任务上赚。
 

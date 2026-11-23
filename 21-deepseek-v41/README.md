@@ -1,6 +1,6 @@
 # 21-deepseek-v41：把 DeepSeek-V4.1-Flash 装进一台机器
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/21-deepseek-v41.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/21-deepseek-v41.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-21 的配套代码。这一篇要回答的是：ISTA-DASLab 的 GSQ-RCO GGUF（IQ1_M、IQ2_XXS、IQ2_XS 三档）在一张显卡加一台机器的内存上怎么放，Engram 表为什么不占内存，KV 要多少，路由专家放几层上卡，decode 大概多快。
 

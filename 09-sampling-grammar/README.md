@@ -1,6 +1,6 @@
 # 09-sampling-grammar：采样、语法与聊天模板
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/09-sampling-grammar.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/09-sampling-grammar.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-09 的配套代码。要回答几个问题：缺省采样链每一步留下多少候选、花多少微秒；温度放在截断前还是截断后有什么差别；GGUF 里的采样参数什么时候生效；重复惩罚和 DRY 各压住多少重复；GBNF 语法约束的两种用法差多少；后端采样省下什么；聊天模板到底拼出了哪些 token。
 

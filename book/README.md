@@ -181,7 +181,7 @@ GPU 版本只需在第一步加上对应开关，比如 -DGGML_CUDA=ON 或 -DGGM
 ## 4.4 配套仓库
 
 ```bash
-git clone https://github.com/chenziyaos/zero-to-llama.git
+git clone https://github.com/zyaochen/zero-to-llama.git
 cd zero-to-llama/01-first-run
 python3 test_first_run.py
 python3 parse_load_log.py sample_load.log

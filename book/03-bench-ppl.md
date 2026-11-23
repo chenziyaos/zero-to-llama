@@ -568,4 +568,4 @@ LLAMA_BIN=~/llama.cpp/build/bin MODELS=~/models DATA=~/data ./measure.sh
 
 ---
 
-[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/03-bench-ppl.ipynb) · 上一章：[LCPP-02｜上手｜推理账本：带宽、算力和启动前算出速度上限](./02-ledger.md) · [目录](./README.md) · 下一章：[LCPP-04｜内部｜GGUF：文件结构、元数据、加载方式和分卷](./04-gguf.md)
+[在 Colab 里跑本章 CPU 练习](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/03-bench-ppl.ipynb) · 上一章：[LCPP-02｜上手｜推理账本：带宽、算力和启动前算出速度上限](./02-ledger.md) · [目录](./README.md) · 下一章：[LCPP-04｜内部｜GGUF：文件结构、元数据、加载方式和分卷](./04-gguf.md)

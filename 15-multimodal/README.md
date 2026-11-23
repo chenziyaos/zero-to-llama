@@ -1,6 +1,6 @@
 # 15-multimodal：mmproj、图片切块和音频
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/15-multimodal.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/15-multimodal.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-15 的配套代码。要回答几个问题：一张图在 libmtmd 里会切成几块、变成多少 token；`--image-max-tokens` 调高调低各会怎样；同样多的 token，图片比文本贵多少，贵在哪；编码器吃不吃线程、多块图能不能批量编码；一段音频按什么规则变成 token；换一份 mmproj 会不会让 token 数变掉。
 

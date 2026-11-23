@@ -1,14 +1,14 @@
 # Online edition of book/, published to GitHub Pages by .github/workflows/pages.yml.
 # Local preview: pip install -r docs-site/requirements.txt && mkdocs serve
 site_name: 从 0 开始 llama.cpp
-site_url: https://chenziyaos.github.io/zero-to-llama/
+site_url: https://zyaochen.github.io/zero-to-llama/
 site_description: 按章拆 llama.cpp：GGUF / GGML 结构、内存与带宽预测器、量化对照、CPU 调优与投机解码。
-repo_url: https://github.com/chenziyaos/zero-to-llama
-repo_name: chenziyaos/zero-to-llama
+repo_url: https://github.com/zyaochen/zero-to-llama
+repo_name: zyaochen/zero-to-llama
 edit_uri: blob/main/book/
 docs_dir: book
 site_dir: site
-copyright: <a href="https://chenziyaos.github.io/">chenziyaos</a> · MIT
+copyright: <a href="https://zyaochen.github.io/">zyaochen</a> · MIT
 
 theme:
   name: material
@@ -72,4 +72,4 @@ extra:
   repo_prefix: "book"
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/chenziyaos
+      link: https://github.com/zyaochen

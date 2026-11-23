@@ -1,6 +1,6 @@
 # 12-multi-gpu-rpc：多卡与 RPC
 
-[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chenziyaos/zero-to-llama/blob/main/colab/12-multi-gpu-rpc.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
+[![在 Colab 中打开](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zyaochen/zero-to-llama/blob/main/colab/12-multi-gpu-rpc.ipynb)　CPU 练习和单元测试可以直接在 Colab 里跑。
 
 LCPP-12 的配套代码。要回答几个问题：`-sm layer` 把哪几层切给哪张卡，`-ts` 和空闲显存怎么换算；RPC 远端设备为什么总排在本机卡前面；流水线并行什么时候真的打开，打开后多花多少显存；`-sm tensor` 每层要做几次 AllReduce，每次搬多少字节；RPC 每次图计算往网线上送多少字节，图缓存和权重哈希各省掉多少。
 
